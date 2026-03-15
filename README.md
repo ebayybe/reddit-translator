@@ -4,7 +4,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-ff4500?style=for-the-badge)](https://github.com/ebayybe/reddit-translator/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Tampermonkey%20%7C%20Violentmonkey-green?style=for-the-badge)]([https://greasyfork.org](https://greasyfork.org/en/scripts/569819-reddit-translator-pro?locale_override=1))
+[![Platform](https://img.shields.io/badge/Tampermonkey%20%7C%20Violentmonkey-green?style=for-the-badge)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
 [![Reddit](https://img.shields.io/badge/reddit.com-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com)
 
 ---
