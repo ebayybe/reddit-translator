@@ -14,9 +14,9 @@
 // @name:zh-CN  🌐Reddit 翻译器 Pro
 // @name:zh-HK  🌐Reddit 翻譯器 Pro
 // @name:zh-TW  🌐Reddit 翻譯器 Pro
-// @namespace    https://github.com/ebayybe
-// @homepageURL  https://github.com/ebayybe/reddit-translator
-// @supportURL   https://github.com/ebayybe/reddit-translator/issues
+// @namespace    https://github.com/Dylan-ZQL
+// @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-anto
+// @supportURL   https://github.com/Dylan-ZQL/reddit-translator-anto/issues
 // @version      1.0.0
 // @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, история, конвертеры, пасхалки, IntersectionObserver
 // @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, історія, конвертери, пасхалки, IntersectionObserver

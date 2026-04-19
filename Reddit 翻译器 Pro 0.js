@@ -14,9 +14,9 @@
 // @name:zh-CN  🌐Reddit 翻译器 Pro
 // @name:zh-HK  🌐Reddit 翻譯器 Pro
 // @name:zh-TW  🌐Reddit 翻譯器 Pro
-// @namespace    https://github.com/ebayybe
-// @homepageURL  https://github.com/ebayybe/reddit-translator
-// @supportURL   https://github.com/ebayybe/reddit-translator/issues
+// @namespace    https://github.com/Dylan-ZQL
+// @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-anto
+// @supportURL   https://github.com/Dylan-ZQL/reddit-translator-anto/issues
 // @version      1.0.0
 // @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, история, конвертеры, пасхалки, IntersectionObserver
 // @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, історія, конвертери, пасхалки, IntersectionObserver
@@ -43,8 +43,8 @@
 // @grant        GM_addStyle
 // @connect      translate.googleapis.com
 // @connect      api.mymemory.translated.net
-// @downloadURL https://update.greasyfork.org/scripts/569819/%F0%9F%8C%90Reddit%20Translator%20Pro.user.js
-// @updateURL https://update.greasyfork.org/scripts/569819/%F0%9F%8C%90Reddit%20Translator%20Pro.meta.js
+// @downloadURL https://greasyfork.org/scripts/574557-reddit-translator-pro-auto/code/reddit-translator-pro-auto.user.js
+// @updateURL https://greasyfork.org/scripts/574557-reddit-translator-pro-auto/code/reddit-translator-pro-auto.meta.js
 // ==/UserScript==
 
 (function () {
