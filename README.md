@@ -1,162 +1,100 @@
-# Reddit 自动翻译
+# Reddit Translator Pro Auto
 
-这是一个用于 Reddit 页面内容翻译的用户脚本项目。
+一个用于 Reddit 的用户脚本翻译器，支持帖子正文、评论区域和滚动场景下的自动翻译，面向 Tampermonkey / Violentmonkey 使用。
 
-当前仓库只保留一套主线开发文件和一套正式发布文件：
+当前正式发布文件：
 
-- `Reddit 翻译器 Pro 修新.js`
 - `reddit-translator-pro-auto.user.js`
 
-另保留一个历史发布文件：
+当前仓库中的历史阶段文件：
 
+- `Reddit 翻译器 Pro 修1.js`
+- `Reddit 翻译器 Pro 修2.js`
+- `Reddit 翻译器 Pro 修3.js`
+- `Reddit 翻译器 Pro 修4.js`
 - `reddit-translator-v1_0_0.js`
 
-脚本适用于 `Tampermonkey`、`Violentmonkey` 等用户脚本管理器，可为 Reddit 帖子、评论和动态加载内容提供单条翻译、整页翻译、缓存、历史记录、TTS、主题切换、快捷键、自动翻译等增强能力。
+## 当前版本
 
-## 项目入口
+当前主发布版本为 `1.0.6`。
 
-- GitHub 仓库：
-  `https://github.com/Dylan-ZQL/reddit-translator-auto`
-- Greasy Fork 发布页：
-  `https://greasyfork.org/zh-CN/scripts/574557-reddit-translator-pro-auto`
-- Greasy Fork 同步源：
-  `https://raw.githubusercontent.com/Dylan-ZQL/reddit-translator-auto/main/reddit-translator-pro-auto.user.js`
+这一版重点不是单纯改元数据，而是补了几项影响实际使用体验的能力：
 
-## 当前文件说明
+- 新增请求限制设置
+- 新增长文本与多段文本自动分块翻译
+- 新增原文 / 译文一键切换
+- 优化滚动自动翻译触发逻辑
+- 调整设置面板结构，便于集中控制请求行为
 
-- `Reddit 翻译器 Pro 修新.js`
-  当前主开发文件，用于功能修改和调试。
-- `reddit-translator-pro-auto.user.js`
-  当前正式发布文件，用于 GitHub Raw 安装与 Greasy Fork 同步。
-- `reddit-translator-v1_0_0.js`
-  历史保留文件，不再作为当前主线维护目标。
-- `README.md`
-  当前仓库说明文档。
-- `更新日志.md`
-  当前版本线和历史演进说明。
+## 主要能力
 
-## 来源与许可
+- 支持 `Google`、`MyMemory`、`DeepL`
+- 支持 100+ 目标语言
+- 支持自动滚动翻译
+- 支持双语显示
+- 支持 TTS、历史记录、主题切换、快捷键、自定义颜色
+- 支持 DeepL Key 保存、测试与轮换使用
 
-- 本项目基于原始 Reddit Translator Pro 脚本继续修改、整理和维护。
-- 当前仓库主要对发布流程、元数据、版本线结构和部分功能细节进行了持续调整。
-- 许可证沿用仓库中的 `MIT` 许可文本，原版权声明保留不变。
+## 1.0.6 更新重点
 
-## 安装方法
+### 1. 请求限制可配置
 
-### 方式一：通过 Greasy Fork 安装
+设置面板新增请求控制项，可直接调整：
 
-1. 安装用户脚本管理器，例如 `Tampermonkey` 或 `Violentmonkey`
-2. 打开 Greasy Fork 页面：
-   `https://greasyfork.org/zh-CN/scripts/574557-reddit-translator-pro-auto`
-3. 点击安装并在用户脚本管理器中确认
-4. 打开 `https://www.reddit.com/` 进行测试
+- 最大并发请求数
+- 每秒最大请求数
+- 每次请求最大文本长度
+- 每次请求最大段落数
 
-### 方式二：通过 GitHub Raw 安装
+这组配置主要用于控制翻译请求密度，减少批量翻译或连续滚动时的突发请求。
 
-1. 安装用户脚本管理器
-2. 打开以下直链：
-   `https://raw.githubusercontent.com/Dylan-ZQL/reddit-translator-auto/main/reddit-translator-pro-auto.user.js`
-3. 由用户脚本管理器接管安装
-4. 保存并启用脚本
+### 2. 长文本自动分块
 
-## 主要功能
+当单段文本过长，或同一内容包含多个段落时，脚本会先按长度和段落数拆分，再分批翻译后合并结果。这样可以降低单次请求过大导致的失败率，也更适合 DeepL / Google / MyMemory 的实际使用场景。
 
-- Reddit 帖子和评论的单条翻译
-- 当前页面整页批量翻译
-- 多翻译引擎支持
-- 100+ 目标语言选择
-- 界面语言切换
-- 双语显示模式
-- TTS 文本朗读
-- 翻译缓存
-- 翻译历史记录
-- 快捷键操作
-- 自动单位转换
-- 自动滚动相关增强
-- 滚动触发的自动翻译
-- 多主题和自定义配色
-- DeepL API Key 保存、测试和额度查询
+### 3. 原文 / 译文视图切换
 
-## 默认配置特点
+新增独立切换按钮，可在已翻译内容之间快速切换：
 
-当前主线脚本默认配置更偏中文使用场景：
+- 显示原文
+- 显示译文
 
-- 目标语言默认是 `zh`
-- 界面语言默认是 `zh`
-- 默认翻译引擎是 `google`
-- 默认主题是 `dark`
-- 默认关闭双语模式
-- 默认开启 TTS
-- 默认开启自动单位转换
-- 默认关闭滚动自动翻译
+在非双语模式下，切换会直接替换正文显示；在双语模式下，主要控制译文补充内容的显示状态。
 
-## 运行前提
+### 4. 自动滚动翻译更稳
 
-- 浏览器需要安装用户脚本扩展
-- 脚本匹配站点为 `https://www.reddit.com/*`
-- 脚本会访问以下翻译服务：
-  `translate.googleapis.com`
-  `api.mymemory.translated.net`
-  `api.deepl.com`
-  `api-free.deepl.com`
+自动翻译不再只看元素是否出现，而是加入了更稳的视口判断、短暂稳定等待和按钮忙碌状态控制，减少滚动过程中的重复触发、误触发和无效请求。
 
-如果使用 `DeepL`，还需要在脚本面板中填写可用的 API Key。
+### 5. 语言检测与请求流程同步优化
 
-## 使用方式
+语言检测现在优先使用分块后的首段样本，避免超长文本直接参与检测。整体请求队列也从单链串行方式，改为带并发与速率控制的调度模型。
 
-- 进入 Reddit 页面后，脚本会为可翻译内容附加翻译按钮
-- 可通过面板切换目标语言、界面语言、翻译引擎、语气、主题等设置
-- 可使用整页翻译按钮批量处理当前页面内容
-- 可在设置中启用或关闭滚动自动翻译
-- 可在历史记录中查看最近翻译内容
-- 可通过快捷键快速打开面板或翻译整页
+## 文件说明
 
-当前默认快捷键为：
+### `reddit-translator-pro-auto.user.js`
 
-- 打开面板：`F2`
-- 翻译整页：`Ctrl+Shift+T`
+当前正式发布文件，建议安装与分发都以这个文件为准。
 
-## DeepL 说明
+### `Reddit 翻译器 Pro 修1.js` 到 `Reddit 翻译器 Pro 修4.js`
 
-脚本支持在设置面板中配置一个或多个 DeepL API Key，并具备以下能力：
+仓库内保留的阶段性开发副本，用于追溯功能演进过程，不建议作为最终安装入口。
 
-- 多个 API Key 请使用英文 `,` 分隔
-- 自动解析多个 Key
-- 区分 Free 与 Pro 接口
-- 测试 Key 是否可用
-- 查询额度使用情况
-- 在缓存中按 Key 作用域隔离结果，避免串用
+### `reddit-translator-v1_0_0.js`
 
-## 当前版本线
+早期历史版本保留文件，用于对照初始版本。
 
-- 当前开发入口：
-  `Reddit 翻译器 Pro 修新.js`
-- 当前发布入口：
-  `reddit-translator-pro-auto.user.js`
-- 当前主线版本号：
-  `1.0.4`
-- 当前主线命名：
-  `Pro Auto`
-- 当前描述元数据：
-  已补充 `Google`、`MyMemory`、`DeepL`，并按语言规范化标点
+## 安装方式
 
-## 历史说明
+1. 安装浏览器用户脚本扩展，例如 `Tampermonkey` 或 `Violentmonkey`
+2. 导入或安装 `reddit-translator-pro-auto.user.js`
+3. 打开 Reddit 页面后使用脚本面板进行目标语言、翻译引擎和请求限制设置
 
-仓库此前曾保留 `0 / 修1 / 修2 / 修3 / 修4` 等阶段性副本文件，用于记录不同阶段的修改过程。
+## 使用建议
 
-这些脚本现已移除，仓库当前不再保留多份并行副本，而是只维护：
+- 如果翻译内容很多，优先开启请求限制控制，避免短时间内发出过多请求
+- 使用 `DeepL` 时建议先在面板内测试 Key 是否可用
+- 如果你更关注阅读稳定性，可以开启自动滚动翻译，并结合原文 / 译文切换按钮使用
 
-- 一个主开发文件
-- 一个正式发布文件
-- 一个历史保留文件
+## 说明
 
-如果需要了解先前阶段的演进方向，请查看 `更新日志.md` 和 Git 历史记录。
-
-## 建议
-
-- 日常安装优先使用 `reddit-translator-pro-auto.user.js`
-- 日常开发优先修改 `Reddit 翻译器 Pro 修新.js`
-- GitHub 用于版本管理，Greasy Fork 用于面向用户发布
-- 如果需要为 Greasy Fork 启用脚本同步，使用上面的 GitHub Raw 链接即可
-- 如果页面出现频繁请求或误翻，可检查滚动自动翻译是否开启
-- 如果使用 DeepL 失败，先测试 API Key 和接口额度
+仓库中的多个脚本文件并不代表都在并行发布。当前对外发布和后续说明，应以 `reddit-translator-pro-auto.user.js` 为主。

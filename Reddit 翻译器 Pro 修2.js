@@ -1,40 +1,38 @@
 // ==UserScript==
-// @name        🌐Reddit 翻译器 Pro Auto
-// @name:en     🌐Reddit Translator Pro Auto
-// @name:ru     🌐Reddit Переводчик Pro Auto
-// @name:uk     🌐Reddit Перекладач Pro Auto
-// @name:de     🌐Reddit Übersetzer Pro Auto
-// @name:fr     🌐Reddit Traducteur Pro Auto
-// @name:es     🌐Reddit Traductor Pro Auto
-// @name:it     🌐Reddit Traduttore Pro Auto
-// @name:pl     🌐Reddit Tłumacz Pro Auto
-// @name:tr     🌐Reddit Çevirmeni Pro Auto
-// @name:vi     🌐Reddit Biên Dịch Viên Pro Auto
-// @name:ko     🌐Reddit 번역기 Pro Auto
-// @name:ja     🌐Reddit 翻訳者 Pro Auto
-// @name:zh-CN  🌐Reddit 翻译器 Pro Auto
-// @name:zh-HK  🌐Reddit 翻譯器 Pro Auto
-// @name:zh-TW  🌐Reddit 翻譯器 Pro Auto
-// @namespace    https://github.com/Dylan-ZQL
-// @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-anto
-// @supportURL   https://github.com/Dylan-ZQL/reddit-translator-anto/issues
-// @version      1.0.6
-// @description      🏷️业余 Reddit 翻译器 — glassmorphism、100+ 语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
-// @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism、100多种语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
-// @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
-// @description:zh-TW   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
-// @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, Google, MyMemory, DeepL, история, конвертеры, пасхалки, IntersectionObserver
-// @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, Google, MyMemory, DeepL, історія, конвертери, пасхалки, IntersectionObserver
-// @description:en      🏷️Amateur Reddit translator — glassmorphism, 100+ languages, TTS, Google, MyMemory, DeepL, history, converters, easter eggs, IntersectionObserver
-// @description:de      🏷️Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, TTS, Google, MyMemory, DeepL, Verlauf, Konverter, Ostereier, IntersectionObserver
-// @description:it      🏷️Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, TTS, Google, MyMemory, DeepL, cronologia, convertitori, easter egg, IntersectionObserver
-// @description:fr      🏷️Traducteur Reddit amateur — glassmorphism, 100+ langues, TTS, Google, MyMemory, DeepL, historique, convertisseurs, easter eggs, IntersectionObserver
-// @description:es      🏷️Traductor Reddit amateur — glassmorphism, 100+ idiomas, TTS, Google, MyMemory, DeepL, historial, convertidores, easter eggs, IntersectionObserver
-// @description:ko      🏷️아마추어 Reddit 번역기 — glassmorphism、100+ 언어、TTS、Google、MyMemory、DeepL、히스토리、변환기、이스터 에그、IntersectionObserver
-// @description:pl      🏷️Amatorski tłumacz Reddit — glassmorphism, 100+ języków, TTS, Google, MyMemory, DeepL, historia, konwertery, easter eggi, IntersectionObserver
-// @description:tr      🏷️Amatör Reddit çevirmeni — glassmorphism, 100+ dil, TTS, Google, MyMemory, DeepL, geçmiş, dönüştürücüler, sürprizler, IntersectionObserver
-// @description:vi      🏷️Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, TTS, Google, MyMemory, DeepL, lịch sử, bộ chuyển đổi, easter egg, IntersectionObserver
-// @description:ja      🏷️アマチュアReddit翻訳者 — glassmorphism、100以上の言語、TTS、Google、MyMemory、DeepL、履歴、コンバーター、イースターエッグ、IntersectionObserver
+// @name        🌐Reddit Translator Pro
+// @name:ru     🌐Reddit Переводчик Pro
+// @name:uk     🌐Reddit Перекладач Pro
+// @name:de     🌐Reddit Übersetzer Pro
+// @name:fr     🌐Reddit Traducteur Pro
+// @name:es     🌐Reddit Traductor Pro
+// @name:it     🌐Reddit Traduttore Pro
+// @name:pl     🌐Reddit Tłumacz Pro
+// @name:tr     🌐Reddit Çevirmeni Pro
+// @name:vi     🌐Reddit Biên Dịch Viên Pro
+// @name:ko     🌐Reddit 번역기 Pro
+// @name:ja     🌐Reddit 翻訳者 Pro
+// @name:zh-CN  🌐Reddit 翻译器 Pro
+// @name:zh-HK  🌐Reddit 翻譯器 Pro
+// @name:zh-TW  🌐Reddit 翻譯器 Pro
+// @namespace    https://github.com/ebayybe
+// @homepageURL  https://github.com/ebayybe/reddit-translator
+// @supportURL   https://github.com/ebayybe/reddit-translator/issues
+// @version      1.0.0
+// @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, история, конвертеры, пасхалки, IntersectionObserver
+// @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, історія, конвертери, пасхалки, IntersectionObserver
+// @description:en      🏷️Amateur Reddit translator — glassmorphism, 100+ languages, TTS, history, converters, easter eggs, IntersectionObserver
+// @description:de      🏷️Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, TTS, Verlauf, Konverter, Ostereier, IntersectionObserver
+// @description:it      🏷️Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, TTS, cronologia, convertitori, easter egg, IntersectionObserver
+// @description:fr      🏷️Traducteur Reddit amateur — glassmorphism, 100+ langues, TTS, historique, convertisseurs, easter eggs, IntersectionObserver
+// @description:es      🏷️Traductor Reddit amateur — glassmorphism, 100+ idiomas, TTS, historial, convertidores, easter eggs, IntersectionObserver
+// @description:ko      🏷️아마추어 Reddit 번역기 — glassmorphism, 100+ 언어, TTS, 히스토리, 변환기, 이스터 에그, IntersectionObserver
+// @description:pl      🏷️Amatorski tłumacz Reddit — glassmorphism, 100+ języków, TTS, historia, konwertery, easter eggi, IntersectionObserver
+// @description:tr      🏷️Amatör Reddit çevirmeni — glassmorphism, 100+ dil, TTS, geçmiş, dönüştürücüler, sürprizler, IntersectionObserver
+// @description:vi      🏷️Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, TTS, lịch sử, bộ chuyển đổi, easter egg, IntersectionObserver
+// @description:ja      🏷️アマチュアReddit翻訳者 — glassmorphism、100以上の言語、TTS、履歴、コンバーター、イースターエッグ、IntersectionObserver
+// @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism，100多种语言，TTS，历史记录，转换器，彩蛋，IntersectionObserver
+// @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism，100多種語言，TTS，歷史記錄，轉換器，彩蛋，IntersectionObserver
+// @description:zh-TW   🏷️業餘Reddit翻譯器 — glassmorphism，100多種語言，TTS，歷史記錄，轉換器，彩蛋，IntersectionObserver
 // @icon         data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjZmY0NTAwIi8+CiAgPHRleHQgeD0iNjQiIHk9IjkwIiBmb250LXNpemU9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iU2Vnb2UgVUkgRW1vamksQXBwbGUgQ29sb3IgRW1vamksc2Fucy1zZXJpZiI+8J+MkDwvdGV4dD4KPC9zdmc+
 // @author       ebayybe
 // @license      MIT
@@ -47,8 +45,8 @@
 // @connect      api.mymemory.translated.net
 // @connect      api.deepl.com
 // @connect      api-free.deepl.com
-// @downloadURL https://greasyfork.org/scripts/574557-reddit-translator-pro-auto/code/reddit-translator-pro-auto.user.js
-// @updateURL https://greasyfork.org/scripts/574557-reddit-translator-pro-auto/code/reddit-translator-pro-auto.meta.js
+// @downloadURL https://update.greasyfork.org/scripts/569819/%F0%9F%8C%90Reddit%20Translator%20Pro.user.js
+// @updateURL https://update.greasyfork.org/scripts/569819/%F0%9F%8C%90Reddit%20Translator%20Pro.meta.js
 // ==/UserScript==
 
 (function () {
@@ -74,12 +72,8 @@
     hotkeyPanel: 'F2',
     hotkeyAll: 'Ctrl+Shift+T',
     customColors: null,
-    autoTranslateOnScroll: false,
+    autoTranslateOnScroll: true,
     deeplApiKeys: '',
-    maxRequestsPerSecond: 3,
-    maxTextLengthPerRequest: 1800,
-    maxParagraphsPerRequest: 6,
-    maxConcurrentRequests: 3,
   };
 
   // Загружаем конфиг
@@ -275,15 +269,6 @@
       hotkeyPress: 'Press a key…', hotkeyReset: '↺ Reset',
       secColors: 'Theme colors', colorAcc: 'Accent', colorTxt: 'Text', colorBg: 'Background', colorOk: 'Success',
       btnResetColors: '↺ Reset colors',
-      secRequestLimits: 'Request limits',
-      maxConcurrentRequests: 'Max concurrent requests',
-      maxRequestsPerSecond: 'Max requests / sec',
-      maxTextLengthPerRequest: 'Max chars / request',
-      maxParagraphsPerRequest: 'Max paragraphs / request',
-      btnShowOriginals: '📄 SHOW ORIGINAL',
-      btnShowTranslations: '🌐 SHOW TRANSLATION',
-      toastShowingOriginals: '📄 Showing original text',
-      toastShowingTranslations: '🌐 Showing translated text',
     },
     de: {
       title: 'Reddit Übersetzer', ver: 'v1.0.0',
@@ -510,15 +495,6 @@
       hotkeyPress: '按下一个键…', hotkeyReset: '↺ 重置',
       secColors: '主题颜色', colorAcc: '强调色', colorTxt: '文字', colorBg: '背景', colorOk: '成功',
       btnResetColors: '↺ 重置颜色',
-      secRequestLimits: '请求限制',
-      maxConcurrentRequests: '最大并发请求数',
-      maxRequestsPerSecond: '每秒最大请求数',
-      maxTextLengthPerRequest: '每次请求最大文本长度',
-      maxParagraphsPerRequest: '每次请求最大段落数',
-      btnShowOriginals: '📄 显示原文',
-      btnShowTranslations: '🌐 显示译文',
-      toastShowingOriginals: '📄 当前显示原文',
-      toastShowingTranslations: '🌐 当前显示译文',
     },
     ja: {
       title: 'Reddit翻訳', ver: 'v1.0.0',
@@ -711,19 +687,6 @@
     #rtp-cancel.visible { display:flex; }
     #rtp-cancel:hover { transform:translateY(-3px) scale(1.03); background:rgba(255,80,80,.18); box-shadow:0 12px 32px rgba(255,80,80,.3); }
 
-    #rtp-view-toggle {
-        position:fixed; bottom:90px; right:28px; z-index:9998;
-        display:flex; align-items:center; justify-content:center;
-        min-width:160px; height:42px; padding:0 16px;
-        background:rgba(24,24,32,.92); color:var(--rtp-txt); border:1px solid var(--rtp-brd);
-        border-radius:22px; font-family:var(--f); font-size:12px; font-weight:700; letter-spacing:.05em;
-        cursor:pointer; box-shadow:0 8px 24px rgba(0,0,0,.28);
-        backdrop-filter:blur(10px);
-        transition:all .22s cubic-bezier(.34,1.56,.64,1);
-    }
-    #rtp-view-toggle:hover { transform:translateY(-3px) scale(1.02); border-color:var(--rtp-acc); box-shadow:0 12px 30px var(--rtp-glow); }
-    #rtp-view-toggle.originals { color:var(--rtp-acc); background:var(--rtp-dim); border-color:rgba(255,69,0,.24); }
-
     /* Прогресс */
     #rtp-prog { position:fixed; top:0; left:0; right:0; height:3px; z-index:10009; }
     #rtp-prog-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--rtp-acc),#ff8a50); box-shadow:0 0 10px var(--rtp-glow); transition:width .22s ease; }
@@ -822,25 +785,6 @@
     .api-box:focus { border-color:var(--rtp-acc); }
     .api-box::placeholder { color:var(--rtp-mut); }
     .api-help { margin-top:6px; font-size:10.5px; line-height:1.45; color:var(--rtp-mut); }
-
-    .num-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:7px; }
-    .num-card {
-        padding:8px 10px; background:var(--rtp-surf); border:1px solid var(--rtp-brd);
-        border-radius:10px;
-    }
-    @media (max-width: 430px) {
-        .num-grid { grid-template-columns:1fr; }
-    }
-    .num-lbl {
-        display:block; margin-bottom:6px; font-size:10px; line-height:1.35;
-        color:var(--rtp-mut);
-    }
-    .num-inp {
-        width:100%; box-sizing:border-box; background:transparent; border:1px solid var(--rtp-brd);
-        color:var(--rtp-txt); padding:7px 9px; border-radius:8px; font-family:var(--fm); font-size:12px;
-        outline:none;
-    }
-    .num-inp:focus { border-color:var(--rtp-acc); }
 
     /* Пилюли */
     .pills { display:flex; gap:3px; background:var(--rtp-surf); border:1px solid var(--rtp-brd); border-radius:10px; padding:3px; }
@@ -949,137 +893,27 @@
   // ═══════════════════════════════════════════════════════════════════════════
   // § ПЕРЕВОД
   // ═══════════════════════════════════════════════════════════════════════════
+  let reqQ = Promise.resolve();
   let reqGen = 0; // поколение очереди — сброс при отмене
-  let recentRequestTimes = [];
-  let activeRequests = 0;
-  let pendingRequests = [];
-  const AUTO_TRANSLATE_VIEWPORT_MARGIN = 140;
-  const AUTO_TRANSLATE_SETTLE_MS = 50;
-
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-
-  function getPositiveInt(value, fallback, min = 1, max = Number.MAX_SAFE_INTEGER) {
-    const n = Math.floor(Number(value));
-    if (!Number.isFinite(n)) return fallback;
-    return Math.min(max, Math.max(min, n));
-  }
-
-  function getMaxRequestsPerSecond() {
-    return getPositiveInt(cfg.maxRequestsPerSecond, DEF.maxRequestsPerSecond, 1, 50);
-  }
-
-  function getMaxConcurrentRequests() {
-    return getPositiveInt(cfg.maxConcurrentRequests, DEF.maxConcurrentRequests, 1, 20);
-  }
-
-  function getMaxTextLengthPerRequest() {
-    return getPositiveInt(cfg.maxTextLengthPerRequest, DEF.maxTextLengthPerRequest, 100, 20000);
-  }
-
-  function getMaxParagraphsPerRequest() {
-    return getPositiveInt(cfg.maxParagraphsPerRequest, DEF.maxParagraphsPerRequest, 1, 100);
-  }
-
-  async function waitForRateSlot() {
-    const limit = getMaxRequestsPerSecond();
-    while (true) {
-      const now = Date.now();
-      recentRequestTimes = recentRequestTimes.filter(ts => now - ts < 1000);
-      if (recentRequestTimes.length < limit) {
-        recentRequestTimes.push(now);
-        return;
-      }
-      const oldest = recentRequestTimes[0] || now;
-      await sleep(Math.max(20, 1000 - (now - oldest)));
-    }
-  }
-
-  function pumpQueue() {
-    const limit = getMaxConcurrentRequests();
-    const isCurrentTask = (task) => task.gen === reqGen;
-    while (activeRequests < limit && pendingRequests.length) {
-      const task = pendingRequests.shift();
-      activeRequests++;
-
-      (async () => {
-        try {
-          if (!isCurrentTask(task)) return task.resolve(null);
-          await sleep(cfg.requestDelay);
-          if (!isCurrentTask(task)) return task.resolve(null);
-          await waitForRateSlot();
-          if (!isCurrentTask(task)) return task.resolve(null);
-          const result = await task.fn();
-          task.resolve(isCurrentTask(task) ? result : null);
-        } catch {
-          task.resolve(null);
-        } finally {
-          activeRequests = Math.max(0, activeRequests - 1);
-          pumpQueue();
-        }
-      })();
-    }
-  }
 
   function enqueue(fn) {
-    return new Promise(resolve => {
-      pendingRequests.push({ fn, resolve, gen: reqGen });
-      pumpQueue();
-    });
+    const gen = reqGen;
+    reqQ = reqQ
+      .then(() => new Promise(r => setTimeout(r, cfg.requestDelay)))
+      .then(() => gen === reqGen ? fn() : null)
+      .catch(() => { });
+    return reqQ;
   }
 
   function cancelQueue() {
     reqGen++;
-    recentRequestTimes = [];
-    pendingRequests.forEach(task => task.resolve(null));
-    pendingRequests = [];
+    reqQ = Promise.resolve(); // сбрасываем цепочку
   }
 
   function toneHint() {
     if (cfg.tone === 'formal') return 'Translate formally and professionally: ';
     if (cfg.tone === 'slang') return 'Translate casually and colloquially: ';
     return '';
-  }
-
-  function escapeHtml(text) {
-    return String(text || '').replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
-  }
-
-  function parseJsonSafe(text, fallback = null) {
-    try { return JSON.parse(text); } catch { return fallback; }
-  }
-
-  function gmRequest({ method = 'GET', url, headers, data, parse, fallback = null }) {
-    return new Promise(resolve => GM_xmlhttpRequest({
-      method,
-      url,
-      headers,
-      data,
-      onload: (r) => {
-        const parsed = parse ? parse(r) : r.responseText;
-        resolve({
-          ok: r.status >= 200 && r.status < 300,
-          status: r.status,
-          data: parsed ?? fallback,
-          raw: r,
-        });
-      },
-      onerror: () => resolve({
-        ok: false,
-        status: 0,
-        data: fallback,
-        raw: null,
-      }),
-    }));
-  }
-
-  function getEngineScope() {
-    return cfg.engine === 'deepl' ? `${cfg.engine}|${cfg.deeplApiKeys || ''}` : cfg.engine;
-  }
-
-  function getTranslationCacheKey(text) {
-    return `${getEngineScope()}|${cfg.targetLang}|${cfg.tone}|${text}`;
   }
 
   function parseDeepLKeys(raw = cfg.deeplApiKeys) {
@@ -1094,66 +928,6 @@
     return apiKey.endsWith(':fx') ? 'https://api-free.deepl.com' : 'https://api.deepl.com';
   }
 
-  function splitLongText(text, maxChars) {
-    const chunks = [];
-    let remaining = String(text || '').trim();
-
-    while (remaining.length > maxChars) {
-      let cut = remaining.lastIndexOf('. ', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf('! ', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf('? ', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf('。', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf('，', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf(',', maxChars);
-      if (cut < maxChars * 0.5) cut = remaining.lastIndexOf(' ', maxChars);
-      if (cut < maxChars * 0.5) cut = maxChars;
-      const part = remaining.slice(0, cut + (cut === maxChars ? 0 : 1)).trim();
-      if (part) chunks.push(part);
-      remaining = remaining.slice(cut + (cut === maxChars ? 0 : 1)).trim();
-    }
-
-    if (remaining) chunks.push(remaining);
-    return chunks.length ? chunks : [''];
-  }
-
-  function buildRequestChunks(text) {
-    const source = String(text || '').trim();
-    if (!source) return [''];
-
-    const maxChars = getMaxTextLengthPerRequest();
-    const maxParagraphs = getMaxParagraphsPerRequest();
-    const paragraphs = source
-      .split(/\n\s*\n+|\r?\n/)
-      .map(p => p.trim())
-      .filter(Boolean);
-
-    const normalizedParagraphs = (paragraphs.length ? paragraphs : [source]).flatMap(p =>
-      p.length > maxChars ? splitLongText(p, maxChars) : [p]
-    );
-
-    const chunks = [];
-    let current = [];
-    let currentLen = 0;
-
-    normalizedParagraphs.forEach(paragraph => {
-      const nextLen = currentLen + paragraph.length + (current.length ? 2 : 0);
-      const exceedsChars = nextLen > maxChars;
-      const exceedsParagraphs = current.length >= maxParagraphs;
-
-      if (current.length && (exceedsChars || exceedsParagraphs)) {
-        chunks.push(current.join('\n\n'));
-        current = [];
-        currentLen = 0;
-      }
-
-      current.push(paragraph);
-      currentLen += paragraph.length + (current.length > 1 ? 2 : 0);
-    });
-
-    if (current.length) chunks.push(current.join('\n\n'));
-    return chunks.length ? chunks : [source];
-  }
-
   function maskDeepLKey(apiKey) {
     const raw = String(apiKey || '');
     const isFree = raw.endsWith(':fx');
@@ -1165,13 +939,27 @@
 
   async function requestDeepLUsage(apiKey) {
     const endpoint = getDeepLEndpoint(apiKey);
-    return gmRequest({
+    return new Promise(res => GM_xmlhttpRequest({
+      method: 'GET',
       url: `${endpoint}/v2/usage`,
       headers: {
         Authorization: `DeepL-Auth-Key ${apiKey}`,
       },
-      parse: r => parseJsonSafe(r.responseText),
-    });
+      onload: r => {
+        let parsed = null;
+        try { parsed = JSON.parse(r.responseText); } catch { }
+        res({
+          ok: r.status >= 200 && r.status < 300,
+          status: r.status,
+          data: parsed,
+        });
+      },
+      onerror: () => res({
+        ok: false,
+        status: 0,
+        data: null,
+      }),
+    }));
   }
 
   async function testDeepLApi(raw = cfg.deeplApiKeys) {
@@ -1239,103 +1027,6 @@
   }
 
   let deeplKeyCursor = 0;
-
-  // 检测文本语言
-  async function detectLanguage(text) {
-    try {
-      const sample = buildRequestChunks(text)[0] || text;
-      const q = toneHint() + sample;
-      const result = await gmRequest({
-        url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=${encodeURIComponent(q)}`,
-        parse: r => parseJsonSafe(r.responseText, []),
-      });
-      return result.data?.[2] || null;
-    } catch {
-      return null;
-    }
-  }
-
-  function normalizeLangCode(code) {
-    return String(code || '')
-      .trim()
-      .toLowerCase()
-      .replace('_', '-')
-      .split('-')[0];
-  }
-
-  function getElementSourceText(el) {
-    return expandSlang((el?.dataset?.orig || el?.innerText || '').trim());
-  }
-
-  function isElementInAutoTranslateViewport(el) {
-    if (!el || !el.isConnected) return false;
-    const rect = el.getBoundingClientRect();
-    return rect.bottom >= -AUTO_TRANSLATE_VIEWPORT_MARGIN &&
-      rect.top <= window.innerHeight + AUTO_TRANSLATE_VIEWPORT_MARGIN &&
-      rect.right >= 0 &&
-      rect.left <= window.innerWidth;
-  }
-
-  function canAutoTranslateButton(btn) {
-    const el = btn?._targetEl;
-    return !!btn &&
-      !!el &&
-      btn.dataset.st === 'orig' &&
-      !btn.dataset.skip &&
-      !btn.classList.contains('busy') &&
-      isElementInAutoTranslateViewport(el);
-  }
-
-  function markButtonBusy(btn) {
-    if (!btn || btn.dataset.st !== 'orig') return;
-    btn.innerHTML = '<span class="sp"></span>';
-    btn.classList.add('busy');
-  }
-
-  function restoreIdleButton(btn) {
-    if (!btn || btn.dataset.st === 'done') return;
-    btn.classList.remove('busy');
-    btn.innerHTML = `🌐 ${cfg.targetLang.toUpperCase()}`;
-  }
-
-  const autoTranslateTimers = new WeakMap();
-
-  function clearAutoTranslateTimer(btn) {
-    const timer = autoTranslateTimers.get(btn);
-    if (timer) {
-      clearTimeout(timer);
-      autoTranslateTimers.delete(btn);
-    }
-  }
-
-  function scheduleAutoTranslate(btn) {
-    if (!cfg.autoTranslateOnScroll || !canAutoTranslateButton(btn)) return;
-    clearAutoTranslateTimer(btn);
-    const timer = setTimeout(() => {
-      autoTranslateTimers.delete(btn);
-      if (!canAutoTranslateButton(btn)) return;
-      btn.dataset.autoMode = 'scroll';
-      btn.click();
-    }, AUTO_TRANSLATE_SETTLE_MS);
-    autoTranslateTimers.set(btn, timer);
-  }
-
-  async function getDetectedLang(el, text) {
-    if (!el) return normalizeLangCode(await detectLanguage(text));
-    const cached = normalizeLangCode(el.dataset.rtpLang);
-    if (cached) return cached;
-    const detected = normalizeLangCode(await detectLanguage(text));
-    if (detected) el.dataset.rtpLang = detected;
-    return detected;
-  }
-
-  function shouldSkipDetectedLang(detectedLang) {
-    if (!detectedLang) return false;
-    const detected = normalizeLangCode(detectedLang);
-    return detected === normalizeLangCode(cfg.targetLang) ||
-      detected === normalizeLangCode(cfg.uiLang);
-  }
-
   async function doTranslateDeepL(text) {
     const keys = parseDeepLKeys();
     if (!keys.length) {
@@ -1349,80 +1040,73 @@
       return text;
     }
 
-    const chunks = buildRequestChunks(text);
+    const q = toneHint() + text;
     const start = deeplKeyCursor % keys.length;
 
-    const translatedChunks = [];
-    for (const chunk of chunks) {
-      const q = toneHint() + chunk;
-      let translatedChunk = null;
+    for (let offset = 0; offset < keys.length; offset++) {
+      const idx = (start + offset) % keys.length;
+      const apiKey = keys[idx];
+      const endpoint = getDeepLEndpoint(apiKey);
 
-      for (let offset = 0; offset < keys.length; offset++) {
-        const idx = (start + offset) % keys.length;
-        const apiKey = keys[idx];
-        const endpoint = getDeepLEndpoint(apiKey);
+      const translated = await new Promise(res => GM_xmlhttpRequest({
+        method: 'POST',
+        url: `${endpoint}/v2/translate`,
+        headers: {
+          Authorization: `DeepL-Auth-Key ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        data: JSON.stringify({
+          text: [q],
+          target_lang: targetLang,
+        }),
+        onload: r => {
+          try {
+            if (r.status < 200 || r.status >= 300) return res(null);
+            const parsed = JSON.parse(r.responseText);
+            res(parsed?.translations?.[0]?.text || null);
+          } catch {
+            res(null);
+          }
+        },
+        onerror: () => res(null),
+      }));
 
-        const result = await gmRequest({
-          method: 'POST',
-          url: `${endpoint}/v2/translate`,
-          headers: {
-            Authorization: `DeepL-Auth-Key ${apiKey}`,
-            'Content-Type': 'application/json',
-          },
-          data: JSON.stringify({
-            text: [q],
-            target_lang: targetLang,
-          }),
-          parse: r => parseJsonSafe(r.responseText),
-        });
-        const translated = result.ok ? result.data?.translations?.[0]?.text || null : null;
-
-        if (translated) {
-          deeplKeyCursor = idx + 1;
-          translatedChunk = translated;
-          break;
-        }
+      if (translated) {
+        deeplKeyCursor = idx + 1;
+        return translated;
       }
-
-      translatedChunks.push(translatedChunk || chunk);
     }
 
-    return translatedChunks.join('\n\n');
+    return text;
   }
 
-  const ENGINE_TRANSLATORS = {
-    google: async (chunk) => {
-      const q = toneHint() + chunk;
-      const response = await gmRequest({
-        url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${cfg.targetLang}&dt=t&q=${encodeURIComponent(q)}`,
-        parse: r => parseJsonSafe(r.responseText, []),
-        fallback: [],
-      });
-      return response.data?.[0]?.map(i => i[0]).join('') || chunk;
-    },
-    mymemory: async (chunk) => {
-      const q = toneHint() + chunk;
-      const response = await gmRequest({
-        url: `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=auto|${cfg.targetLang}`,
-        parse: r => parseJsonSafe(r.responseText),
-        fallback: { responseData: { translatedText: chunk } },
-      });
-      return response.data?.responseData?.translatedText || chunk;
-    },
-    deepl: doTranslateDeepL,
-  };
-
   async function doTranslate(text) {
-    const key = getTranslationCacheKey(text);
+    const engineScope = cfg.engine === 'deepl' ? `${cfg.engine}|${cfg.deeplApiKeys || ''}` : cfg.engine;
+    const key = `${engineScope}|${cfg.targetLang}|${cfg.tone}|${text}`;
     if (cache[key]) { cache[key].ts = Date.now(); return cache[key].val; }
 
     let result = text;
 
     try {
-      const translateWithEngine = ENGINE_TRANSLATORS[cfg.engine] || ENGINE_TRANSLATORS.google;
-      result = cfg.engine === 'deepl'
-        ? await translateWithEngine(text)
-        : (await Promise.all(buildRequestChunks(text).map(chunk => translateWithEngine(chunk)))).join('\n\n');
+      if (cfg.engine === 'deepl') {
+        result = await doTranslateDeepL(text);
+      } else if (cfg.engine === 'mymemory') {
+        const q = toneHint() + text;
+        result = await new Promise(res => GM_xmlhttpRequest({
+          method: 'GET',
+          url: `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=auto|${cfg.targetLang}`,
+          onload: r => { try { res(JSON.parse(r.responseText).responseData.translatedText); } catch { res(text); } },
+          onerror: () => res(text),
+        }));
+      } else {
+        const q = toneHint() + text;
+        result = await new Promise(res => GM_xmlhttpRequest({
+          method: 'GET',
+          url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${cfg.targetLang}&dt=t&q=${encodeURIComponent(q)}`,
+          onload: r => { try { res(JSON.parse(r.responseText)[0].map(i => i[0]).join('')); } catch { res(text); } },
+          onerror: () => res(text),
+        }));
+      }
     } catch { }
 
     if (pirateMode) result = pirateify(result);
@@ -1476,142 +1160,6 @@
     for (const [id, v] of Object.entries(map)) { const el = document.getElementById(id); if (el) el.textContent = v; }
   }
 
-  let translationDisplayMode = 'translated';
-  let bulkRunId = 0;
-
-  function getViewToggleLabel() {
-    return translationDisplayMode === 'translated' ? S('btnShowOriginals') : S('btnShowTranslations');
-  }
-
-  function updateViewToggleButton() {
-    const btn = document.getElementById('rtp-view-toggle');
-    if (!btn) return;
-    btn.textContent = getViewToggleLabel();
-    btn.classList.toggle('originals', translationDisplayMode === 'original');
-  }
-
-  function applyDisplayModeToButton(btn, el, mode = translationDisplayMode) {
-    if (!btn || !el || btn.dataset.st !== 'done') return;
-    const orig = el.dataset.orig || '';
-    const translated = btn.dataset.translation || '';
-    if (!translated) return;
-
-    if (cfg.bilingualMode) {
-      el.innerText = orig;
-      if (btn._bi) btn._bi.style.display = mode === 'translated' && !btnsHidden ? '' : 'none';
-      return;
-    }
-
-    el.innerText = mode === 'translated' ? translated : orig;
-  }
-
-  function applyDisplayModeToAll(mode) {
-    translationDisplayMode = mode;
-    document.querySelectorAll('.rtp-btn.done').forEach(btn => applyDisplayModeToButton(btn, btn._targetEl, mode));
-    updateViewToggleButton();
-  }
-
-  function resetTranslationView(btn, el) {
-    if (btn._bi) {
-      btn._bi.remove();
-      btn._bi = null;
-    }
-    if (el.dataset.orig) el.innerText = el.dataset.orig;
-    if (btn._tb) {
-      btn._tb.remove();
-      btn._tb = null;
-    }
-    btn.innerHTML = `🌐 ${cfg.targetLang.toUpperCase()}`;
-    btn.classList.remove('done', 'busy');
-    btn.dataset.st = 'orig';
-    btn.dataset.skip = '';
-    btn.dataset.translation = '';
-  }
-
-  function renderTranslationResult(btn, el, text) {
-    btn.classList.remove('busy');
-    btn.classList.add('done');
-    btn.innerHTML = `✓ ${S('btnOrig')}`;
-    btn.dataset.st = 'done';
-    btn.dataset.translation = text;
-
-    if (cfg.bilingualMode) {
-      const bi = document.createElement('div');
-      bi.className = 'rtp-bi rtp-fi';
-      bi.innerText = text;
-      btn._bi = bi;
-      el.after(bi);
-      if (btnsHidden || translationDisplayMode === 'original') bi.style.display = 'none';
-      return;
-    }
-
-    el.classList.add('rtp-fi');
-    applyDisplayModeToButton(btn, el);
-    setTimeout(() => el.classList.remove('rtp-fi'), 450);
-  }
-
-  function finalizeTranslation(btn, el, src, res) {
-    renderTranslationResult(btn, el, res);
-    if (cfg.autoScroll && !cfg.autoTranslateOnScroll) {
-      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-    buildTranslationToolbar(btn, el, src, res);
-
-    cfg.totalCount++;
-    cfg.totalChars += (el.dataset.orig || '').length;
-    flushStats();
-    pushHistory(el.dataset.orig, res, cfg.targetLang);
-    updateStats();
-  }
-
-  function buildTranslationToolbar(btn, el, src, res) {
-    const tb = document.createElement('div');
-    tb.className = 'rtp-tb';
-    const addAction = (label, fn) => {
-      const t = document.createElement('span');
-      t.className = 'rtp-t';
-      t.textContent = label;
-      t.onclick = fn;
-      tb.appendChild(t);
-    };
-
-    addAction(S('btnCopy'), () => navigator.clipboard.writeText(res).then(() => toast(S('copied'))));
-    addAction(S('btnSpeak'), () => speak(res));
-    addAction(S('btnRetry'), async () => {
-      delete cache[getTranslationCacheKey(src)];
-      flushCache();
-      resetTranslationView(btn, el);
-      tb.remove();
-      btn._tb = null;
-      await new Promise(r => setTimeout(r, 50));
-      btn.click();
-    });
-
-    btn._tb = tb;
-    btn.after(tb);
-    if (btnsHidden) tb.style.display = 'none';
-  }
-
-  function getCustomColors() {
-    try {
-      return cfg.customColors
-        ? (typeof cfg.customColors === 'string' ? JSON.parse(cfg.customColors) : cfg.customColors)
-        : {};
-    } catch {
-      return {};
-    }
-  }
-
-  function setExclusivePills(panel, attr, onSelect) {
-    panel.querySelectorAll(`[${attr}]`).forEach(pill => {
-      pill.onclick = () => {
-        panel.querySelectorAll(`[${attr}]`).forEach(x => x.classList.remove('on'));
-        pill.classList.add('on');
-        onSelect(pill.dataset[attr.slice(5)]);
-      };
-    });
-  }
-
   // ═══════════════════════════════════════════════════════════════════════════
   // § ИНЖЕКТ КНОПОК
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1620,71 +1168,108 @@
     'div[shreddit-comment-content]', '.md:not(.rtp-done)',
   ].join(',');
 
-  function attachBtn(el, opts = {}) {
-    const { autoStart = false } = opts;
+  function attachBtn(el) {
     if (!el || el.dataset.rtpDone) return;
     const txt = (el.innerText || '').trim();
     if (txt.length < 5) return;
     el.dataset.rtpDone = '1'; el.classList.add('rtp-done');
-    el.dataset.rtpLang = ''; // 用于缓存检测到的语言
 
     const btn = document.createElement('button');
     btn.className = 'rtp-btn';
     btn.innerHTML = `🌐 ${cfg.targetLang.toUpperCase()}`;
     btn.dataset.st = 'orig';
-    btn.dataset.skip = ''; // 初始化跳过标记为空
-    btn.dataset.translation = '';
-    btn._targetEl = el;
-    el._rtpBtn = btn;
 
     btn.onclick = async (e) => {
       e.preventDefault(); e.stopPropagation();
-      const scrollDriven = btn.dataset.autoMode === 'scroll';
-      btn.dataset.autoMode = '';
-      clearAutoTranslateTimer(btn);
 
-      if (btn.dataset.st === 'done') return resetTranslationView(btn, el);
-      if (btn.classList.contains('busy')) return;
-
-      if (!el.dataset.orig) el.dataset.orig = el.innerText.trim();
-      const src = getElementSourceText(el);
-      const detectedLang = await getDetectedLang(el, src);
-      if (shouldSkipDetectedLang(detectedLang)) {
-        btn.dataset.skip = '1';
+      // ── Откат к оригиналу ──
+      if (btn.dataset.st === 'done') {
+        if (btn._bi) { btn._bi.remove(); btn._bi = null; }
+        else { el.innerText = el.dataset.orig; }
+        btn.innerHTML = `🌐 ${cfg.targetLang.toUpperCase()}`;
+        btn.classList.remove('done');
+        btn.dataset.st = 'orig';
+        if (btn._tb) { btn._tb.remove(); btn._tb = null; }
         return;
       }
-      if (scrollDriven && !isElementInAutoTranslateViewport(el)) return;
 
-      markButtonBusy(btn);
+      if (!el.dataset.orig) el.dataset.orig = el.innerText.trim();
+      btn.innerHTML = '<span class="sp"></span>';
+      btn.classList.add('busy');
+
+      const src = expandSlang(el.dataset.orig);
       const res = await enqueue(() => doTranslate(src));
-      if (res == null) return restoreIdleButton(btn);
-      finalizeTranslation(btn, el, src, res);
+
+      btn.classList.remove('busy'); btn.classList.add('done');
+      btn.innerHTML = `✓ ${S('btnOrig')}`; btn.dataset.st = 'done';
+
+      if (cfg.bilingualMode) {
+        const bi = document.createElement('div');
+        bi.className = 'rtp-bi rtp-fi'; bi.innerText = res;
+        btn._bi = bi; el.after(bi);
+        if (btnsHidden) bi.style.display = 'none';
+      } else {
+        el.classList.add('rtp-fi');
+        el.innerText = res;
+        setTimeout(() => el.classList.remove('rtp-fi'), 450);
+      }
+
+      if (cfg.autoScroll && !cfg.autoTranslateOnScroll) btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Тулбар
+      const tb = document.createElement('div'); tb.className = 'rtp-tb';
+      const mk = (label, fn) => {
+        const t = document.createElement('span'); t.className = 'rtp-t';
+        t.textContent = label; t.onclick = fn; return t;
+      };
+      tb.append(
+        mk(S('btnCopy'), () => navigator.clipboard.writeText(res).then(() => toast(S('copied')))),
+        mk(S('btnSpeak'), () => speak(res)),
+        mk(S('btnRetry'), async () => {
+          // Очищаем кэш этой записи и делаем чистый повтор
+          const engineScope = cfg.engine === 'deepl' ? `${cfg.engine}|${cfg.deeplApiKeys || ''}` : cfg.engine;
+          const k = `${engineScope}|${cfg.targetLang}|${cfg.tone}|${src}`;
+          delete cache[k]; flushCache();
+          // Откатываем состояние
+          if (btn._bi) { btn._bi.remove(); btn._bi = null; }
+          else if (el.dataset.orig) { el.innerText = el.dataset.orig; }
+          btn.classList.remove('done'); btn.dataset.st = 'orig';
+          tb.remove(); btn._tb = null;
+          // Запускаем перевод заново
+          await new Promise(r => setTimeout(r, 50));
+          btn.click();
+        }),
+      );
+      btn._tb = tb; btn.after(tb);
+      if (btnsHidden) tb.style.display = 'none';
+
+      cfg.totalCount++;
+      cfg.totalChars += (el.dataset.orig || '').length;
+      flushStats();
+      pushHistory(el.dataset.orig, res, cfg.targetLang);
+      updateStats();
     };
 
     el.after(btn);
     if (btnsHidden) btn.style.display = 'none';
-    autoTranslateObserver.observe(el);
 
     // 如果启用滚动时自动翻译，自动触发翻译
-    if (autoStart && cfg.autoTranslateOnScroll) {
-      requestAnimationFrame(() => scheduleAutoTranslate(btn));
+    if (cfg.autoTranslateOnScroll) {
+      // 使用 requestAnimationFrame 确保按钮已附加，然后立即触发翻译
+      requestAnimationFrame(() => {
+        // 确保按钮仍然存在且未被翻译过
+        if (btn && btn.dataset.st === 'orig') {
+          btn.click();
+        }
+      });
     }
   }
 
   // IntersectionObserver — переводим сначала видимые
   const ioQueue = new Set();
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { attachBtn(e.target, { autoStart: true }); ioQueue.delete(e.target); io.unobserve(e.target); } });
+    entries.forEach(e => { if (e.isIntersecting) { attachBtn(e.target); ioQueue.delete(e.target); io.unobserve(e.target); } });
   }, { rootMargin: '200px' });
-
-  const autoTranslateObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const btn = entry.target._rtpBtn;
-      if (!btn) return;
-      if (entry.isIntersecting) scheduleAutoTranslate(btn);
-      else clearAutoTranslateTimer(btn);
-    });
-  }, { rootMargin: `${AUTO_TRANSLATE_VIEWPORT_MARGIN}px 0px ${AUTO_TRANSLATE_VIEWPORT_MARGIN}px 0px` });
 
   function injectButtons() {
     document.querySelectorAll(SELS).forEach(el => {
@@ -1698,9 +1283,8 @@
         rect.right >= -200
       );
       if (inViewport) {
-        // 视口内元素也需要遵循自动翻译配置：
-        // 否则首屏内容和动态加载后直接落在视口里的内容只会显示按钮，不会自动翻译。
-        attachBtn(el, { autoStart: cfg.autoTranslateOnScroll });
+        // 如果在视口内，直接附加并翻译（如果启用自动翻译）
+        attachBtn(el);
         // 如果之前在队列中，移除并取消观察
         if (ioQueue.has(el)) {
           ioQueue.delete(el);
@@ -1736,22 +1320,11 @@
     cancelBtn.textContent = S('btnCancel');
     document.body.appendChild(cancelBtn);
 
-    const viewToggleBtn = document.createElement('button');
-    viewToggleBtn.id = 'rtp-view-toggle';
-    viewToggleBtn.onclick = () => {
-      const nextMode = translationDisplayMode === 'translated' ? 'original' : 'translated';
-      applyDisplayModeToAll(nextMode);
-      toast(S(nextMode === 'original' ? 'toastShowingOriginals' : 'toastShowingTranslations'));
-    };
-    document.body.appendChild(viewToggleBtn);
-    updateViewToggleButton();
-
     const fab = document.createElement('button'); fab.id = 'rtp-fab';
     fab.innerHTML = `🌍 ${S('translateAll')} <span class="badge" id="fab-n">0</span>`;
 
     let busy = false;
     let cancelled = false;
-    let activeRunId = 0;
 
     cancelBtn.onclick = () => {
       if (!busy) return;
@@ -1764,60 +1337,23 @@
       const btns = [...document.querySelectorAll('.rtp-btn')].filter(b => b.dataset.st !== 'done');
       if (!btns.length) { toast('✅ ' + S('toastAll')); return; }
 
-      const runId = ++bulkRunId;
-      activeRunId = runId;
       busy = true; cancelled = false;
       fab.style.opacity = '.6';
       cancelBtn.classList.add('visible');
-      setProgress(0);
 
-      const pendingSet = new Set(btns);
-      const doneSet = new Set();
-      const updateBulkProgress = () => {
-        if (activeRunId !== runId) return;
-        const total = btns.length || 1;
-        const completed = doneSet.size;
-        setProgress(Math.min(100, completed / total * 100));
-      };
-
-      const watchers = btns.map(btn => new Promise(resolve => {
-        let settled = false;
-        const finish = () => {
-          if (settled) return;
-          settled = true;
-          pendingSet.delete(btn);
-          doneSet.add(btn);
-          updateBulkProgress();
-          resolve();
-        };
-
-        const poll = () => {
-          if (activeRunId !== runId || !pendingSet.has(btn)) return resolve();
-          if (btn.dataset.st === 'done' || !btn.classList.contains('busy')) return finish();
-          setTimeout(poll, 80);
-        };
-
-        setTimeout(poll, 80);
-      }));
-
-      const CHUNK = Math.max(2, getMaxConcurrentRequests() * 2);
+      const CHUNK = 6;
       for (let i = 0; i < btns.length; i += CHUNK) {
         if (cancelled) break;
         btns.slice(i, i + CHUNK).forEach(b => b.click());
-        await new Promise(r => setTimeout(r, Math.max(120, cfg.requestDelay + 80)));
+        setProgress((i + CHUNK) / btns.length * 100);
+        await new Promise(r => setTimeout(r, cfg.requestDelay * 3 + 250));
       }
 
-      await Promise.all(watchers);
-      if (activeRunId === runId) {
-        setProgress(cancelled ? 0 : 100);
-        if (!cancelled) setTimeout(() => {
-          if (activeRunId === runId) setProgress(0);
-        }, 1000);
-      }
+      setProgress(cancelled ? 0 : 100);
+      if (!cancelled) setTimeout(() => setProgress(0), 1000);
       cancelBtn.classList.remove('visible');
       busy = false; fab.style.opacity = '1';
-      activeRunId = 0;
-      toast(cancelled ? S('toastCancelled') : `${S('toastAll')}: ${doneSet.size}`);
+      toast(cancelled ? S('toastCancelled') : `${S('toastAll')}: ${btns.length}`);
     };
 
     document.body.appendChild(fab);
@@ -1830,356 +1366,6 @@
   // ═══════════════════════════════════════════════════════════════════════════
   let activeTab = 'settings';
   let btnsHidden = true;
-
-  function setupPanelLanguageControls(panel) {
-    const uiSel = panel.querySelector('#ui-sel');
-    const uiSearch = panel.querySelector('#ui-s');
-    const uiOpts = UI_SUPPORTED.map(c => ({ c, n: langName(c, c) })).sort((a, b) => a.n.localeCompare(b.n));
-    const renderUi = (q = '') => {
-      const f = q.toLowerCase();
-      uiSel.innerHTML = uiOpts
-        .filter(({ c, n }) => !f || n.toLowerCase().includes(f) || c.includes(f))
-        .map(({ c, n }) => `<option value="${c}" ${c === cfg.uiLang ? 'selected' : ''}>${n} (${c.toUpperCase()})</option>`)
-        .join('');
-    };
-
-    renderUi();
-    uiSearch.addEventListener('input', () => renderUi(uiSearch.value));
-    buildLangSelect(panel.querySelector('#tg-sel'), panel.querySelector('#tg-s'), ALL_LANGS, cfg.targetLang);
-
-    panel.querySelector('#btn-apply-ui').onclick = () => {
-      save('uiLang', uiSel.value);
-      updateViewToggleButton();
-      panel.remove();
-      toast(S('toastApply'));
-      setTimeout(buildPanel, 180);
-    };
-
-    panel.querySelector('#btn-save-lang').onclick = () => {
-      save('targetLang', panel.querySelector('#tg-sel').value);
-      toast(S('toastSave'));
-      setTimeout(() => location.reload(), 900);
-    };
-  }
-
-  function setupDeepLControls(panel) {
-    const box = panel.querySelector('#deepl-api-keys');
-    const testBtn = panel.querySelector('#btn-test-deepl');
-
-    panel.querySelector('#btn-save-deepl').onclick = () => {
-      const normalized = parseDeepLKeys(box.value).join(', ');
-      save('deeplApiKeys', normalized);
-      box.value = normalized;
-      toast(S('toastDeepLKeysSaved'));
-    };
-
-    testBtn.onclick = async () => {
-      const originalLabel = S('btnTestDeepL');
-      const normalized = parseDeepLKeys(box.value).join(', ');
-      box.value = normalized;
-
-      if (!normalized) return toast(S('toastDeepLKeysMissing'));
-
-      testBtn.disabled = true;
-      testBtn.textContent = S('toastDeepLTesting');
-
-      const result = await testDeepLApi(normalized);
-
-      testBtn.disabled = false;
-      testBtn.textContent = originalLabel;
-
-      if (result.ok) {
-        const used = Number(result.data?.character_count || 0).toLocaleString();
-        const limitRaw = Number(result.data?.character_limit || 0);
-        const limit = limitRaw > 0 ? limitRaw.toLocaleString() : '∞';
-        return toast(`${S('toastDeepLOk')} · ${maskDeepLKey(result.apiKey)} · ${used}/${limit}`);
-      }
-      if (result.reason === 'missing_keys') return toast(S('toastDeepLKeysMissing'));
-
-      const statusText = result?.status ? `HTTP ${result.status}` : 'NETWORK';
-      toast(`${S('toastDeepLFail')} · ${maskDeepLKey(result?.apiKey)} · ${statusText}`, 4200);
-    };
-  }
-
-  function setupPanelPills(panel) {
-    setExclusivePills(panel, 'data-eng', (engine) => {
-      save('engine', engine);
-      if (engine === 'deepl' && !parseDeepLKeys().length) toast(S('toastDeepLKeysMissing'));
-    });
-    setExclusivePills(panel, 'data-tone', (tone) => save('tone', tone));
-    setExclusivePills(panel, 'data-th', (theme) => {
-      save('theme', theme);
-      applyTheme(theme);
-    });
-  }
-
-  function setupPanelToggles(panel) {
-    const toggleKeys = ['bilingualMode', 'ttsEnabled', 'autoConvert', 'autoScroll', 'incognito', 'autoTranslateOnScroll'];
-    panel.querySelectorAll('.tog-row').forEach((row, i) => {
-      const key = toggleKeys[i];
-      if (!key) return;
-      row.appendChild(mkToggle(cfg[key], v => save(key, v)));
-    });
-  }
-
-  function setupRequestLimitControls(panel) {
-    const sl = panel.querySelector('#sl-delay');
-    sl.oninput = () => {
-      save('requestDelay', +sl.value);
-      panel.querySelector('#sl-val').textContent = sl.value + ' мс';
-    };
-
-    [
-      ['#limit-concurrency', 'maxConcurrentRequests', DEF.maxConcurrentRequests, 1, 20],
-      ['#limit-rps', 'maxRequestsPerSecond', DEF.maxRequestsPerSecond, 1, 50],
-      ['#limit-chars', 'maxTextLengthPerRequest', DEF.maxTextLengthPerRequest, 100, 20000],
-      ['#limit-paragraphs', 'maxParagraphsPerRequest', DEF.maxParagraphsPerRequest, 1, 100],
-    ].forEach(([selector, key, fallback, min, max]) => {
-      const input = panel.querySelector(selector);
-      if (!input) return;
-      const sync = () => {
-        const value = getPositiveInt(input.value, fallback, min, max);
-        input.value = value;
-        save(key, value);
-      };
-      input.addEventListener('change', sync);
-      input.addEventListener('blur', sync);
-    });
-  }
-
-  function setupHotkeyCapturer(panel, btnId, resetId, cfgKey, defaultVal) {
-    const btn = panel.querySelector(`#${btnId}`);
-    const rst = panel.querySelector(`#${resetId}`);
-    if (!btn || !rst) return;
-
-    let capturing = false;
-    let captureHandler = null;
-    const stopCapture = () => {
-      if (captureHandler) document.removeEventListener('keydown', captureHandler, true);
-      captureHandler = null;
-      capturing = false;
-      btn.classList.remove('capturing');
-    };
-
-    btn.onclick = () => {
-      if (capturing) return;
-      capturing = true;
-      btn.textContent = S('hotkeyPress');
-      btn.classList.add('capturing');
-
-      captureHandler = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        if (['Control', 'Alt', 'Shift', 'Meta'].includes(e.key)) return;
-
-        const parts = [];
-        if (e.ctrlKey) parts.push('Ctrl');
-        if (e.altKey) parts.push('Alt');
-        if (e.shiftKey) parts.push('Shift');
-        if (e.metaKey) parts.push('Meta');
-        parts.push(e.key.length === 1 ? e.key.toUpperCase() : e.key);
-
-        const combo = parts.join('+');
-        save(cfgKey, combo);
-        btn.textContent = combo;
-        stopCapture();
-      };
-
-      document.addEventListener('keydown', captureHandler, true);
-    };
-
-    rst.onclick = () => {
-      stopCapture();
-      save(cfgKey, defaultVal);
-      btn.textContent = defaultVal;
-    };
-  }
-
-  function setupPanelHotkeys(panel) {
-    setupHotkeyCapturer(panel, 'hk-panel', 'hk-panel-r', 'hotkeyPanel', 'F2');
-    setupHotkeyCapturer(panel, 'hk-all', 'hk-all-r', 'hotkeyAll', 'Ctrl+Shift+T');
-  }
-
-  function setupPanelColorPickers(panel) {
-    const base = THEMES[cfg.theme] || THEMES.dark;
-    const merged = Object.assign({}, base, getCustomColors());
-    const colorInputs = [
-      { id: 'clr-acc', key: 'acc' },
-      { id: 'clr-txt', key: 'txt' },
-      { id: 'clr-bg', key: 'bg' },
-      { id: 'clr-ok', key: 'ok' },
-    ];
-
-    colorInputs.forEach(({ id, key }) => {
-      const inp = panel.querySelector(`#${id}`);
-      if (!inp) return;
-      inp.value = colorToHex(merged[key] || '#888888');
-      inp.oninput = () => {
-        const newCC = getCustomColors();
-        newCC[key] = inp.value;
-
-        if (key === 'bg') {
-          const r = parseInt(inp.value.slice(1, 3), 16);
-          const g = parseInt(inp.value.slice(3, 5), 16);
-          const b = parseInt(inp.value.slice(5, 7), 16);
-          newCC.surf = `rgba(${r},${g},${b},.85)`;
-        }
-        if (key === 'acc') {
-          const r = parseInt(inp.value.slice(1, 3), 16);
-          const g = parseInt(inp.value.slice(3, 5), 16);
-          const b = parseInt(inp.value.slice(5, 7), 16);
-          newCC.glow = `rgba(${r},${g},${b},.38)`;
-          newCC.dim = `rgba(${r},${g},${b},.11)`;
-        }
-        if (key === 'ok') {
-          const r = parseInt(inp.value.slice(1, 3), 16);
-          const g = parseInt(inp.value.slice(3, 5), 16);
-          const b = parseInt(inp.value.slice(5, 7), 16);
-          newCC.okd = `rgba(${r},${g},${b},.11)`;
-        }
-
-        save('customColors', JSON.stringify(newCC));
-        applyTheme(cfg.theme);
-      };
-    });
-
-    panel.querySelector('#btn-reset-clr').onclick = () => {
-      save('customColors', null);
-      applyTheme(cfg.theme);
-      colorInputs.forEach(({ id, key }) => {
-        const inp = panel.querySelector(`#${id}`);
-        if (inp) inp.value = colorToHex(base[key] || '#888888');
-      });
-    };
-  }
-
-  function setupPanelMiscControls(panel) {
-    panel.querySelector('#btn-rpos').onclick = () => {
-      panel.style.top = '11%';
-      panel.style.left = 'calc(50% - 186px)';
-      GM_setValue('panelX', null);
-      GM_setValue('panelY', null);
-    };
-
-    panel.querySelector('#btn-ccache').onclick = () => {
-      cache = {};
-      flushCache();
-      toast(S('cacheCleared'));
-    };
-
-    panel.querySelector('#btn-exp').onclick = () => {
-      const a = document.createElement('a');
-      a.href = 'data:text/json,' + encodeURIComponent(JSON.stringify({ v: 8, cfg }, null, 2));
-      a.download = 'rtp-v8-settings.json';
-      a.click();
-    };
-
-    panel.querySelector('#btn-imp').onclick = () => {
-      const inp = document.createElement('input');
-      inp.type = 'file';
-      inp.accept = '.json';
-      inp.onchange = e => {
-        const fr = new FileReader();
-        fr.onload = ev => {
-          try {
-            const d = JSON.parse(ev.target.result);
-            const src = d.cfg || d;
-            Object.entries(src).forEach(([k, v]) => {
-              if (k in DEF) {
-                cfg[k] = v;
-                GM_setValue(k, v);
-              }
-            });
-            location.reload();
-          } catch {
-            toast('❌ Ошибка импорта');
-          }
-        };
-        fr.readAsText(e.target.files[0]);
-      };
-      inp.click();
-    };
-
-    panel.querySelector('#btn-surp').onclick = () => {
-      const r = ALL_LANGS[Math.floor(Math.random() * ALL_LANGS.length)];
-      save('targetLang', r);
-      toast(`${S('toastSurprise')} ${getLangName(r)}`);
-      setTimeout(() => location.reload(), 1100);
-    };
-
-    const pirBtn = panel.querySelector('#btn-pir');
-    pirBtn.onclick = () => {
-      pirateMode = !pirateMode;
-      pirBtn.classList.toggle('active', pirateMode);
-      toast(pirateMode ? S('toastPirateOn') : S('toastPirateOff'));
-    };
-    pirBtn.classList.toggle('active', pirateMode);
-
-    const yodBtn = panel.querySelector('#btn-yoda');
-    yodBtn.onclick = () => {
-      yodaMode = !yodaMode;
-      yodBtn.classList.toggle('active', yodaMode);
-      toast(yodaMode ? S('toastYodaOn') : S('toastYodaOff'));
-    };
-    yodBtn.classList.toggle('active', yodaMode);
-
-    const hideBtn = panel.querySelector('#btn-hide');
-    hideBtn.classList.toggle('active', btnsHidden);
-    hideBtn.onclick = () => {
-      btnsHidden = !btnsHidden;
-      document.querySelectorAll('.rtp-btn,.rtp-tb,.rtp-bi').forEach(el => el.style.display = btnsHidden ? 'none' : '');
-      if (!btnsHidden) {
-        document.querySelectorAll('.rtp-btn.done').forEach(btn => applyDisplayModeToButton(btn, btn._targetEl));
-      }
-      hideBtn.textContent = btnsHidden ? S('btnShow') : S('btnHide');
-      hideBtn.classList.toggle('active', btnsHidden);
-    };
-
-    const autoScrollBtn = panel.querySelector('#btn-auto-scroll');
-    autoScrollBtn.classList.toggle('active', cfg.autoTranslateOnScroll);
-    autoScrollBtn.onclick = () => {
-      const newState = !cfg.autoTranslateOnScroll;
-      save('autoTranslateOnScroll', newState);
-      cfg.autoTranslateOnScroll = newState;
-      autoScrollBtn.textContent = (newState ? '✅ ' : '') + S('togAutoTranslateOnScroll');
-      autoScrollBtn.classList.toggle('active', newState);
-      toast(newState ? S('toastAutoScrollOn') : S('toastAutoScrollOff'));
-    };
-  }
-
-  function setupPanelTabs(panel) {
-    panel.querySelectorAll('.tab').forEach(tab => tab.onclick = () => {
-      activeTab = tab.dataset.tab;
-      panel.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
-      tab.classList.add('on');
-      panel.querySelectorAll('.pane').forEach(p => p.style.display = 'none');
-      panel.querySelector(`#pane-${activeTab}`).style.display = 'flex';
-      if (activeTab === 'history') renderHistory(panel);
-      if (activeTab === 'settings') updateStats();
-    });
-  }
-
-  function setupPanelDrag(panel) {
-    const hdr = panel.querySelector('#rtp-hdr');
-    hdr.onmousedown = e => {
-      if (e.target.id === 'rtp-close') return;
-      const ox = e.clientX - panel.offsetLeft;
-      const oy = e.clientY - panel.offsetTop;
-      const mm = ev => {
-        panel.style.left = (ev.clientX - ox) + 'px';
-        panel.style.top = (ev.clientY - oy) + 'px';
-      };
-      const cleanup = () => {
-        GM_setValue('panelX', panel.style.left);
-        GM_setValue('panelY', panel.style.top);
-        document.removeEventListener('mousemove', mm);
-        document.removeEventListener('mouseup', cleanup);
-      };
-      document.addEventListener('mousemove', mm);
-      document.addEventListener('mouseup', cleanup, { once: true });
-      document.addEventListener('mouseleave', cleanup, { once: true });
-    };
-  }
 
   function buildPanel() {
     const old = document.getElementById('rtp-panel');
@@ -2249,7 +1435,7 @@
 
             <div>
                 <span class="lbl">${S('secDeepLApi')}</span>
-                <textarea class="api-box" id="deepl-api-keys" placeholder="${S('deeplApiPlaceholder')}">${escapeHtml(cfg.deeplApiKeys || '')}</textarea>
+                <textarea class="api-box" id="deepl-api-keys" placeholder="${S('deeplApiPlaceholder')}">${String(cfg.deeplApiKeys || '').replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]))}</textarea>
                 <div class="api-help">${S('deeplApiHelp')}</div>
                 <div class="g2" style="margin-top:8px;">
                     <button class="btn-p ghost" id="btn-save-deepl" style="height:40px;font-size:11px;">${S('saveDeepLApi')}</button>
@@ -2319,27 +1505,6 @@
                 <input type="range" class="slider" id="sl-delay" min="50" max="600" value="${cfg.requestDelay}">
                 <div class="slider-v" id="sl-val">${cfg.requestDelay} мс</div>
             </div>
-            <div>
-                <span class="lbl">${S('secRequestLimits')}</span>
-                <div class="num-grid">
-                    <div class="num-card">
-                        <span class="num-lbl">${S('maxConcurrentRequests')}</span>
-                        <input type="number" class="num-inp" id="limit-concurrency" min="1" max="20" step="1" value="${getMaxConcurrentRequests()}">
-                    </div>
-                    <div class="num-card">
-                        <span class="num-lbl">${S('maxRequestsPerSecond')}</span>
-                        <input type="number" class="num-inp" id="limit-rps" min="1" max="50" step="1" value="${getMaxRequestsPerSecond()}">
-                    </div>
-                    <div class="num-card">
-                        <span class="num-lbl">${S('maxTextLengthPerRequest')}</span>
-                        <input type="number" class="num-inp" id="limit-chars" min="100" max="20000" step="100" value="${getMaxTextLengthPerRequest()}">
-                    </div>
-                    <div class="num-card">
-                        <span class="num-lbl">${S('maxParagraphsPerRequest')}</span>
-                        <input type="number" class="num-inp" id="limit-paragraphs" min="1" max="100" step="1" value="${getMaxParagraphsPerRequest()}">
-                    </div>
-                </div>
-            </div>
             <div class="div"></div>
             <div>
                 <span class="lbl">⌨️ ${S('secHotkeys')}</span>
@@ -2369,17 +1534,327 @@
         `;
 
     document.body.appendChild(panel);
-    setupPanelLanguageControls(panel);
-    setupDeepLControls(panel);
-    setupPanelPills(panel);
-    setupPanelToggles(panel);
-    setupRequestLimitControls(panel);
-    setupPanelHotkeys(panel);
-    setupPanelColorPickers(panel);
-    setupPanelMiscControls(panel);
-    setupPanelTabs(panel);
+
+    // ── Языки ──────────────────────────────────────────────────────────
+    // UI lang (только поддерживаемые)
+    const uiSel = panel.querySelector('#ui-sel');
+    const uiSearch = panel.querySelector('#ui-s');
+    const uiOpts = UI_SUPPORTED.map(c => ({ c, n: langName(c, c) })).sort((a, b) => a.n.localeCompare(b.n));
+    function renderUi(q) {
+      const f = q.toLowerCase();
+      uiSel.innerHTML = uiOpts.filter(({ c, n }) => !f || n.toLowerCase().includes(f) || c.includes(f))
+        .map(({ c, n }) => `<option value="${c}" ${c === cfg.uiLang ? 'selected' : ''}>${n} (${c.toUpperCase()})</option>`).join('');
+    }
+    renderUi('');
+    uiSearch.addEventListener('input', () => renderUi(uiSearch.value));
+
+    // Target lang (все языки)
+    buildLangSelect(panel.querySelector('#tg-sel'), panel.querySelector('#tg-s'), ALL_LANGS, cfg.targetLang);
+
+    // ── КНОПКА «ПРИМЕНИТЬ ИНТЕРФЕЙС» (без перезагрузки) ──────────────
+    panel.querySelector('#btn-apply-ui').onclick = () => {
+      const newLang = uiSel.value;
+      save('uiLang', newLang);
+      panel.remove();
+      toast(S('toastApply'));
+      setTimeout(buildPanel, 180);  // перестраиваем с новым языком
+    };
+
+    // ── КНОПКА «СОХРАНИТЬ ЯЗЫК ПЕРЕВОДА» (с перезагрузкой) ───────────
+    panel.querySelector('#btn-save-lang').onclick = () => {
+      save('targetLang', panel.querySelector('#tg-sel').value);
+      toast(S('toastSave'));
+      setTimeout(() => location.reload(), 900);
+    };
+
+    panel.querySelector('#btn-save-deepl').onclick = () => {
+      const raw = panel.querySelector('#deepl-api-keys').value;
+      const normalized = parseDeepLKeys(raw).join(', ');
+      save('deeplApiKeys', normalized);
+      panel.querySelector('#deepl-api-keys').value = normalized;
+      toast(S('toastDeepLKeysSaved'));
+    };
+
+    panel.querySelector('#btn-test-deepl').onclick = async () => {
+      const btn = panel.querySelector('#btn-test-deepl');
+      const box = panel.querySelector('#deepl-api-keys');
+      const originalLabel = S('btnTestDeepL');
+      const normalized = parseDeepLKeys(box.value).join(', ');
+      box.value = normalized;
+
+      if (!normalized) {
+        toast(S('toastDeepLKeysMissing'));
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = S('toastDeepLTesting');
+
+      const result = await testDeepLApi(normalized);
+
+      btn.disabled = false;
+      btn.textContent = originalLabel;
+
+      if (result.ok) {
+        const used = Number(result.data?.character_count || 0).toLocaleString();
+        const limitRaw = Number(result.data?.character_limit || 0);
+        const limit = limitRaw > 0 ? limitRaw.toLocaleString() : '∞';
+        toast(`${S('toastDeepLOk')} · ${maskDeepLKey(result.apiKey)} · ${used}/${limit}`);
+        return;
+      }
+
+      if (result.reason === 'missing_keys') {
+        toast(S('toastDeepLKeysMissing'));
+        return;
+      }
+
+      const statusText = result?.status ? `HTTP ${result.status}` : 'NETWORK';
+      toast(`${S('toastDeepLFail')} · ${maskDeepLKey(result?.apiKey)} · ${statusText}`, 4200);
+    };
+
+    // ── Пилюли: движок ────────────────────────────────────────────────
+    panel.querySelectorAll('[data-eng]').forEach(p => p.onclick = () => {
+      panel.querySelectorAll('[data-eng]').forEach(x => x.classList.remove('on'));
+      p.classList.add('on');
+      save('engine', p.dataset.eng);
+      if (p.dataset.eng === 'deepl' && !parseDeepLKeys().length) {
+        toast(S('toastDeepLKeysMissing'));
+      }
+    });
+
+    // ── Пилюли: тон ───────────────────────────────────────────────────
+    panel.querySelectorAll('[data-tone]').forEach(p => p.onclick = () => {
+      panel.querySelectorAll('[data-tone]').forEach(x => x.classList.remove('on'));
+      p.classList.add('on'); save('tone', p.dataset.tone);
+    });
+
+    // ── Пилюли: тема (мгновенно) ──────────────────────────────────────
+    panel.querySelectorAll('[data-th]').forEach(p => p.onclick = () => {
+      panel.querySelectorAll('[data-th]').forEach(x => x.classList.remove('on'));
+      p.classList.add('on'); save('theme', p.dataset.th); applyTheme(p.dataset.th);
+    });
+
+    // ── Тогглы ────────────────────────────────────────────────────────
+    const toggles = [
+      ['bilingualMode'], ['ttsEnabled'], ['autoConvert'], ['autoScroll'], ['incognito'], ['autoTranslateOnScroll'],
+    ];
+    panel.querySelectorAll('.tog-row').forEach((row, i) => {
+      if (!toggles[i]) return;
+      const [key] = toggles[i];
+      row.appendChild(mkToggle(cfg[key], v => save(key, v)));
+    });
+
+    // ── Слайдер ───────────────────────────────────────────────────────
+    const sl = panel.querySelector('#sl-delay');
+    sl.oninput = () => {
+      save('requestDelay', +sl.value);
+      panel.querySelector('#sl-val').textContent = sl.value + ' мс';
+    };
+
+    // ── Горячие клавиши ───────────────────────────────────────────────
+    function setupHotkeyCapturer(btnId, resetId, cfgKey, defaultVal) {
+      const btn = panel.querySelector(`#${btnId}`);
+      const rst = panel.querySelector(`#${resetId}`);
+      if (!btn || !rst) return;
+      let capturing = false;
+      let captureHandler = null;
+
+      btn.onclick = () => {
+        if (capturing) return;
+        capturing = true;
+        btn.textContent = S('hotkeyPress');
+        btn.classList.add('capturing');
+
+        captureHandler = (e) => {
+          e.preventDefault(); e.stopPropagation();
+          // Игнорируем одиночные модификаторы
+          if (['Control', 'Alt', 'Shift', 'Meta'].includes(e.key)) return;
+          const parts = [];
+          if (e.ctrlKey) parts.push('Ctrl');
+          if (e.altKey) parts.push('Alt');
+          if (e.shiftKey) parts.push('Shift');
+          if (e.metaKey) parts.push('Meta');
+          const k = e.key.length === 1 ? e.key.toUpperCase() : e.key;
+          parts.push(k);
+          const combo = parts.join('+');
+          save(cfgKey, combo);
+          btn.textContent = combo;
+          btn.classList.remove('capturing');
+          capturing = false;
+          document.removeEventListener('keydown', captureHandler, true);
+        };
+        document.addEventListener('keydown', captureHandler, true);
+      };
+
+      rst.onclick = () => {
+        if (captureHandler) document.removeEventListener('keydown', captureHandler, true);
+        capturing = false; btn.classList.remove('capturing');
+        save(cfgKey, defaultVal);
+        btn.textContent = defaultVal;
+      };
+    }
+    setupHotkeyCapturer('hk-panel', 'hk-panel-r', 'hotkeyPanel', 'F2');
+    setupHotkeyCapturer('hk-all', 'hk-all-r', 'hotkeyAll', 'Ctrl+Shift+T');
+
+    // ── Цвета темы ────────────────────────────────────────────────────
+    (function initColorPickers() {
+      const base = THEMES[cfg.theme] || THEMES.dark;
+      const cc = (() => { try { return cfg.customColors ? (typeof cfg.customColors === 'string' ? JSON.parse(cfg.customColors) : cfg.customColors) : {}; } catch { return {}; } })();
+      const merged = Object.assign({}, base, cc);
+
+      const map = [
+        { id: 'clr-acc', key: 'acc' },
+        { id: 'clr-txt', key: 'txt' },
+        { id: 'clr-bg', key: 'bg' },
+        { id: 'clr-ok', key: 'ok' },
+      ];
+
+      map.forEach(({ id, key }) => {
+        const inp = panel.querySelector(`#${id}`);
+        if (!inp) return;
+        inp.value = colorToHex(merged[key] || '#888888');
+        inp.oninput = () => {
+          const newCC = (() => { try { return cfg.customColors ? (typeof cfg.customColors === 'string' ? JSON.parse(cfg.customColors) : cfg.customColors) : {}; } catch { return {}; } })();
+          newCC[key] = inp.value;
+          // Для bg/surf — также обновляем прозрачность surf на основе bg
+          if (key === 'bg') {
+            const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
+            newCC.surf = `rgba(${r},${g},${b},.85)`;
+          }
+          // glow и dim автоматически из acc
+          if (key === 'acc') {
+            const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
+            newCC.glow = `rgba(${r},${g},${b},.38)`;
+            newCC.dim = `rgba(${r},${g},${b},.11)`;
+          }
+          // okd из ok
+          if (key === 'ok') {
+            const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
+            newCC.okd = `rgba(${r},${g},${b},.11)`;
+          }
+          save('customColors', JSON.stringify(newCC));
+          applyTheme(cfg.theme);
+        };
+      });
+
+      panel.querySelector('#btn-reset-clr').onclick = () => {
+        save('customColors', null);
+        applyTheme(cfg.theme);
+        // Сбрасываем пикеры на значения базовой темы
+        const base2 = THEMES[cfg.theme] || THEMES.dark;
+        map.forEach(({ id, key }) => {
+          const inp = panel.querySelector(`#${id}`);
+          if (inp) inp.value = colorToHex(base2[key] || '#888888');
+        });
+      };
+    })();
+
+    // ── Управление ────────────────────────────────────────────────────
+    panel.querySelector('#btn-rpos').onclick = () => {
+      panel.style.top = '11%'; panel.style.left = 'calc(50% - 186px)';
+      GM_setValue('panelX', null); GM_setValue('panelY', null);
+    };
+
+    panel.querySelector('#btn-ccache').onclick = () => {
+      cache = {}; flushCache(); toast(S('cacheCleared'));
+    };
+
+    panel.querySelector('#btn-exp').onclick = () => {
+      const a = document.createElement('a');
+      a.href = 'data:text/json,' + encodeURIComponent(JSON.stringify({ v: 8, cfg }, null, 2));
+      a.download = 'rtp-v8-settings.json'; a.click();
+    };
+
+    panel.querySelector('#btn-imp').onclick = () => {
+      const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json';
+      inp.onchange = e => {
+        const fr = new FileReader();
+        fr.onload = ev => {
+          try {
+            const d = JSON.parse(ev.target.result);
+            const src = d.cfg || d;
+            Object.entries(src).forEach(([k, v]) => { if (k in DEF) { cfg[k] = v; GM_setValue(k, v); } });
+            location.reload();
+          } catch { toast('❌ Ошибка импорта'); }
+        };
+        fr.readAsText(e.target.files[0]);
+      };
+      inp.click();
+    };
+
+    // ── Пасхалки ──────────────────────────────────────────────────────
+    panel.querySelector('#btn-surp').onclick = () => {
+      const r = ALL_LANGS[Math.floor(Math.random() * ALL_LANGS.length)];
+      save('targetLang', r);
+      toast(`${S('toastSurprise')} ${getLangName(r)}`);
+      setTimeout(() => location.reload(), 1100);
+    };
+
+    const pirBtn = panel.querySelector('#btn-pir');
+    pirBtn.onclick = () => {
+      pirateMode = !pirateMode;
+      pirBtn.classList.toggle('active', pirateMode);
+      toast(pirateMode ? S('toastPirateOn') : S('toastPirateOff'));
+    };
+    if (pirateMode) pirBtn.classList.add('active');
+
+    const yodBtn = panel.querySelector('#btn-yoda');
+    yodBtn.onclick = () => {
+      yodaMode = !yodaMode;
+      yodBtn.classList.toggle('active', yodaMode);
+      toast(yodaMode ? S('toastYodaOn') : S('toastYodaOff'));
+    };
+    if (yodaMode) yodBtn.classList.add('active');
+
+    const hideBtn = panel.querySelector('#btn-hide');
+    if (btnsHidden) hideBtn.classList.add('active');
+    hideBtn.onclick = () => {
+      btnsHidden = !btnsHidden;
+      document.querySelectorAll('.rtp-btn,.rtp-tb,.rtp-bi').forEach(el => el.style.display = btnsHidden ? 'none' : '');
+      hideBtn.textContent = btnsHidden ? S('btnShow') : S('btnHide');
+      hideBtn.classList.toggle('active', btnsHidden);
+    };
+
+    const autoScrollBtn = panel.querySelector('#btn-auto-scroll');
+    autoScrollBtn.onclick = () => {
+      const newState = !cfg.autoTranslateOnScroll;
+      save('autoTranslateOnScroll', newState);
+      cfg.autoTranslateOnScroll = newState;
+      autoScrollBtn.textContent = (newState ? '✅ ' : '') + S('togAutoTranslateOnScroll');
+      autoScrollBtn.classList.toggle('active', newState);
+      toast(newState ? S('toastAutoScrollOn') : S('toastAutoScrollOff'));
+    };
+    autoScrollBtn.classList.toggle('active', cfg.autoTranslateOnScroll);
+
+    // ── Табы ──────────────────────────────────────────────────────────
+    panel.querySelectorAll('.tab').forEach(tab => tab.onclick = () => {
+      activeTab = tab.dataset.tab;
+      panel.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
+      tab.classList.add('on');
+      panel.querySelectorAll('.pane').forEach(p => p.style.display = 'none');
+      panel.querySelector(`#pane-${activeTab}`).style.display = 'flex';
+      if (activeTab === 'history') renderHistory(panel);
+      if (activeTab === 'settings') updateStats();
+    });
+
     renderHistory(panel);
-    setupPanelDrag(panel);
+
+    // ── Drag ──────────────────────────────────────────────────────────
+    const hdr = panel.querySelector('#rtp-hdr');
+    hdr.onmousedown = e => {
+      if (e.target.id === 'rtp-close') return;
+      const ox = e.clientX - panel.offsetLeft, oy = e.clientY - panel.offsetTop;
+      const mm = ev => { panel.style.left = (ev.clientX - ox) + 'px'; panel.style.top = (ev.clientY - oy) + 'px'; };
+      const cleanup = () => {
+        GM_setValue('panelX', panel.style.left); GM_setValue('panelY', panel.style.top);
+        document.removeEventListener('mousemove', mm);
+        document.removeEventListener('mouseup', cleanup);
+      };
+      document.addEventListener('mousemove', mm);
+      document.addEventListener('mouseup', cleanup, { once: true });
+      document.addEventListener('mouseleave', cleanup, { once: true });
+    };
+
     panel.querySelector('#rtp-close').onclick = () => panel.remove();
     updateStats();
   }
