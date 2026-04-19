@@ -52,6 +52,9 @@
 (function () {
   'use strict';
 
+  // Unique prefix for this script to avoid conflicts with other scripts
+  const PREFIX = '_x3_';
+
   // ═══════════════════════════════════════════════════════════════════════════
   // § КОНФИГУРАЦИЯ
   // ═══════════════════════════════════════════════════════════════════════════
@@ -78,12 +81,12 @@
 
   // Загружаем конфиг
   const cfg = Object.fromEntries(
-    Object.entries(DEF).map(([k, def]) => [k, GM_getValue(k, def)])
+    Object.entries(DEF).map(([k, def]) => [k, GM_getValue(PREFIX + k, def)])
   );
 
   function save(key, val) {
     cfg[key] = val;
-    GM_setValue(key, val);
+    GM_setValue(PREFIX + key, val);
   }
 
   // Батч-сохранение счётчиков
@@ -91,8 +94,8 @@
   function flushStats() {
     clearTimeout(statTimer);
     statTimer = setTimeout(() => {
-      GM_setValue('totalChars', cfg.totalChars);
-      GM_setValue('totalCount', cfg.totalCount);
+      GM_setValue(PREFIX + 'totalChars', cfg.totalChars);
+      GM_setValue(PREFIX + 'totalCount', cfg.totalCount);
     }, 1200);
   }
 
@@ -105,7 +108,7 @@
   (function loadCache() {
     try {
       const now = Date.now();
-      const raw = JSON.parse(GM_getValue(CACHE_KEY, '{}'));
+      const raw = JSON.parse(GM_getValue(PREFIX + CACHE_KEY, '{}'));
       const entries = Object.entries(raw)
         .filter(([, v]) => now - v.ts < 86_400_000)
         .sort((a, b) => b[1].ts - a[1].ts)
@@ -119,7 +122,7 @@
     if (cfg.incognito) return;
     clearTimeout(cacheTimer);
     cacheTimer = setTimeout(() => {
-      try { GM_setValue(CACHE_KEY, JSON.stringify(cache)); } catch { }
+      try { GM_setValue(PREFIX + CACHE_KEY, JSON.stringify(cache)); } catch { }
     }, 2000);
   }
 
@@ -137,13 +140,13 @@
   // § ИСТОРИЯ (50 записей)
   // ═══════════════════════════════════════════════════════════════════════════
   let history = [];
-  try { history = JSON.parse(GM_getValue('rtp_v8_history', '[]')); } catch { }
+  try { history = JSON.parse(GM_getValue(PREFIX + 'rtp_v8_history', '[]')); } catch { }
 
   function pushHistory(orig, translated, lang) {
     if (cfg.incognito) return;
     history.unshift({ orig: orig.slice(0, 130), translated: translated.slice(0, 130), lang, ts: Date.now() });
     if (history.length > 50) history.length = 50;
-    GM_setValue('rtp_v8_history', JSON.stringify(history));
+    GM_setValue(PREFIX + 'rtp_v8_history', JSON.stringify(history));
   }
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1257,7 +1260,11 @@
       const t = document.createElement('span');
       t.className = 'rtp-t';
       t.textContent = label;
-      t.onclick = fn;
+      t.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        fn();
+      };
       tb.appendChild(t);
     };
 
@@ -1479,8 +1486,8 @@
     if (old) { old.remove(); return; }
 
     const panel = document.createElement('div'); panel.id = 'rtp-panel';
-    panel.style.top = GM_getValue('panelY', '11%');
-    panel.style.left = GM_getValue('panelX', 'calc(50% - 186px)');
+    panel.style.top = GM_getValue(PREFIX + 'panelY', '11%');
+    panel.style.left = GM_getValue(PREFIX + 'panelX', 'calc(50% - 186px)');
 
     panel.innerHTML = `
         <div id="rtp-hdr">
@@ -1851,7 +1858,7 @@
     // ── Управление ────────────────────────────────────────────────────
     panel.querySelector('#btn-rpos').onclick = () => {
       panel.style.top = '11%'; panel.style.left = 'calc(50% - 186px)';
-      GM_setValue('panelX', null); GM_setValue('panelY', null);
+      GM_setValue(PREFIX + 'panelX', null); GM_setValue(PREFIX + 'panelY', null);
     };
 
     panel.querySelector('#btn-ccache').onclick = () => {
@@ -1945,7 +1952,7 @@
       const ox = e.clientX - panel.offsetLeft, oy = e.clientY - panel.offsetTop;
       const mm = ev => { panel.style.left = (ev.clientX - ox) + 'px'; panel.style.top = (ev.clientY - oy) + 'px'; };
       const cleanup = () => {
-        GM_setValue('panelX', panel.style.left); GM_setValue('panelY', panel.style.top);
+        GM_setValue(PREFIX + 'panelX', panel.style.left); GM_setValue(PREFIX + 'panelY', panel.style.top);
         document.removeEventListener('mousemove', mm);
         document.removeEventListener('mouseup', cleanup);
       };
@@ -1980,7 +1987,7 @@
 
     const clr = document.createElement('div'); clr.className = 'btn-s'; clr.style.marginTop = '4px';
     clr.textContent = S('histClear');
-    clr.onclick = () => { history = []; GM_setValue('rtp_v8_history', '[]'); renderHistory(panel); };
+    clr.onclick = () => { history = []; GM_setValue(PREFIX + 'rtp_v8_history', '[]'); renderHistory(panel); };
     pane.appendChild(clr);
   }
 
