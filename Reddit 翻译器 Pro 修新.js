@@ -18,7 +18,7 @@
 // @namespace    https://github.com/Dylan-ZQL
 // @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-anto
 // @supportURL   https://github.com/Dylan-ZQL/reddit-translator-anto/issues
-// @version      1.0.4
+// @version      1.0.5
 // @description      🏷️业余 Reddit 翻译器 — glassmorphism、100+ 语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
 // @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism、100多种语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
 // @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
