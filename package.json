@@ -1,7 +1,7 @@
 {
   "name": "reddit-translator-pro-auto",
   "private": true,
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Local tooling for browser-based verification of the Reddit userscript.",
   "scripts": {
     "browser:chrome": "powershell -ExecutionPolicy Bypass -File .\\scripts\\open-chrome.ps1",

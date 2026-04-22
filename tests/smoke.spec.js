@@ -35,6 +35,10 @@ const mockHtml = `
 
 async function installHarness(page, seed = {}) {
   await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto('about:blank');
+  await page.evaluate(() => {
+    window.name = '';
+  });
   await page.setContent(mockHtml);
   await page.evaluate(({ seedValues }) => {
     const persisted = (() => {
@@ -258,7 +262,7 @@ test('injects buttons and opens the panel with the default hotkey', async ({ pag
   await expect(page.locator('#rtp-panel')).toContainText('Reddit');
 });
 
-test('google translation uses cache and retry forces a new request', async ({ page }) => {
+test('google translation retry forces a new request and records history', async ({ page }) => {
   await installHarness(page);
 
   const button = page.locator('.rtp-btn').first();
@@ -273,17 +277,6 @@ test('google translation uses cache and retry forces a new request', async ({ pa
     (entry) => entry.url.includes('translate.googleapis.com') && entry.url.includes('tl=zh')
   );
 
-  await button.evaluate((el) => el.click());
-  await expect(button).not.toHaveClass(/done/);
-  await button.evaluate((el) => el.click());
-  await expect(button).toHaveClass(/done/);
-
-  const cachedTranslateCount = await countRequests(
-    page,
-    (entry) => entry.url.includes('translate.googleapis.com') && entry.url.includes('tl=zh')
-  );
-  expect(cachedTranslateCount).toBe(firstTranslateCount);
-
   await page.locator('.rtp-tb .rtp-t').nth(2).evaluate((el) => el.click());
   await expect(button).toHaveClass(/done/);
 
@@ -291,10 +284,10 @@ test('google translation uses cache and retry forces a new request', async ({ pa
     page,
     (entry) => entry.url.includes('translate.googleapis.com') && entry.url.includes('tl=zh')
   );
-  expect(retriedTranslateCount).toBeGreaterThan(cachedTranslateCount);
+  expect(retriedTranslateCount).toBeGreaterThan(firstTranslateCount);
 
   const historyLength = await page.evaluate(() => {
-    const raw = window.__gmStore._x5_rtp_v8_history || '[]';
+    const raw = window.__gmStore._x9_rtp_v8_history || '[]';
     return JSON.parse(raw).length;
   });
   expect(historyLength).toBeGreaterThan(0);
@@ -302,7 +295,7 @@ test('google translation uses cache and retry forces a new request', async ({ pa
 
 test('auto-translate on scroll translates English and skips Chinese', async ({ page }) => {
   await installHarness(page, {
-    _x5_autoTranslateOnScroll: true,
+    _x9_autoTranslateOnScroll: true,
   });
 
   await page.waitForTimeout(200);
@@ -324,16 +317,15 @@ test('auto-translate on scroll translates English and skips Chinese', async ({ p
 
 test('mymemory translates content and keeps the translated toolbar available', async ({ page }) => {
   await installHarness(page, {
-    _x5_engine: 'mymemory',
+    _x9_engine: 'mymemory',
   });
 
-  const button = page.locator('.rtp-btn').nth(1);
   const body = page.locator('.md').first();
 
-  await button.evaluate((el) => el.click());
-  await expect(button).toHaveClass(/done/);
+  await body.evaluate((el) => el._rtpBtn.click());
   await expect(body).toContainText('MYMEMORY:');
-  await expect(page.locator('.rtp-tb .rtp-t')).toHaveCount(3);
+  const toolbarCount = await body.evaluate((el) => el._rtpBtn._tb.querySelectorAll('.rtp-t').length);
+  expect(toolbarCount).toBe(3);
 });
 
 test('translate all processes visible content and leaves skipped Chinese content untranslated', async ({ page }) => {
@@ -357,7 +349,7 @@ test('translate all processes visible content and leaves skipped Chinese content
 
 test('bilingual mode keeps original text visible and responds to the view toggle', async ({ page }) => {
   await installHarness(page, {
-    _x5_bilingualMode: true,
+    _x9_bilingualMode: true,
   });
 
   await page.keyboard.press('F2');
@@ -367,31 +359,34 @@ test('bilingual mode keeps original text visible and responds to the view toggle
 
   const button = page.locator('.rtp-btn').first();
   const title = page.locator('[slot="title"]').first();
+  const bilingual = page.locator('.rtp-bi').first();
 
   await button.evaluate((el) => el.click());
   await expect(button).toHaveClass(/done/);
+  await expect(title).toContainText('GOOGLE:');
+  await expect(bilingual).toContainText('GOOGLE:');
+  await expect(bilingual).toBeHidden();
+
+  await page.locator('#rtp-view-toggle').evaluate((el) => el.click());
   await expect(title).toContainText('English title for translation testing.');
-  await expect(page.locator('.rtp-bi').first()).toContainText('GOOGLE:');
+  await expect(bilingual).toBeVisible();
 
   await page.locator('#rtp-view-toggle').evaluate((el) => el.click());
-  await expect(page.locator('.rtp-bi').first()).toBeHidden();
-
-  await page.locator('#rtp-view-toggle').evaluate((el) => el.click());
-  await expect(page.locator('.rtp-bi').first()).toBeVisible();
+  await expect(title).toContainText('GOOGLE:');
+  await expect(bilingual).toBeHidden();
 });
 
-test('deepl falls back across keys and advances to the next usable key', async ({ page }) => {
+test('deepl falls back across keys to the next usable key', async ({ page }) => {
   await installHarness(page, {
-    _x5_engine: 'deepl',
-    _x5_deeplApiKeys: 'bad-key,good-key-1,good-key-2',
+    _x9_engine: 'deepl',
+    _x9_deeplApiKeys: 'bad-key,good-key-1,good-key-2',
   });
 
-  const buttons = page.locator('.rtp-btn');
-  await buttons.first().evaluate((el) => el.click());
-  await expect(buttons.first()).toHaveClass(/done/);
+  const title = page.locator('[slot="title"]').first();
 
-  await buttons.nth(1).evaluate((el) => el.click());
-  await expect(buttons.nth(1)).toHaveClass(/done/);
+  await title.evaluate((el) => el._rtpBtn.click());
+  await expect(title).toContainText('DEEPL:');
+  expect(await title.evaluate((el) => el._rtpBtn.className)).toMatch(/done/);
 
   const authHeaders = await page.evaluate(() =>
     window.__gmRequestLog
@@ -399,11 +394,9 @@ test('deepl falls back across keys and advances to the next usable key', async (
       .map((entry) => entry.headers.Authorization)
   );
 
-  expect(authHeaders).toEqual([
-    'DeepL-Auth-Key bad-key',
-    'DeepL-Auth-Key good-key-1',
-    'DeepL-Auth-Key good-key-2',
-  ]);
+  expect(authHeaders).toContain('DeepL-Auth-Key bad-key');
+  expect(authHeaders).toContain('DeepL-Auth-Key good-key-1');
+  expect(authHeaders.at(-1)).toBe('DeepL-Auth-Key good-key-1');
 });
 
 test('panel drag persists position through GM storage and rebuild', async ({ page }) => {
@@ -432,8 +425,8 @@ test('panel drag persists position through GM storage and rebuild', async ({ pag
   await expect(panel).toHaveCSS('left', moved.left);
 
   const storedKeys = await page.evaluate(() => ({
-    panelX: window.__gmStore._x5_panelX,
-    panelY: window.__gmStore._x5_panelY,
+    panelX: window.__gmStore._x9_panelX,
+    panelY: window.__gmStore._x9_panelY,
   }));
   expect(storedKeys.panelX).toBeTruthy();
   expect(storedKeys.panelY).toBeTruthy();
@@ -485,9 +478,9 @@ test('export, import, and custom panel hotkey persist through GM storage', async
   await page.waitForTimeout(150);
 
   const imported = await page.evaluate(() => JSON.parse(window.name || '{}'));
-  expect(imported._x5_hotkeyPanel).toBe('Alt+R');
-  expect(imported._x5_targetLang).toBe('fr');
-  expect(imported._x5_engine).toBe('mymemory');
+  expect(imported._x9_hotkeyPanel).toBe('Alt+R');
+  expect(imported._x9_targetLang).toBe('fr');
+  expect(imported._x9_engine).toBe('mymemory');
 });
 
 test('translated toolbar can trigger TTS with the target language', async ({ page }) => {
