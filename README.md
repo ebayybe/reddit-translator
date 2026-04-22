@@ -36,7 +36,7 @@
 - `reddit-translator-pro-auto.user.js`
   当前正式发布产物。已同步 `修7` 内容，用于安装、分发、GreasyFork 更新和版本说明。
 - `archive/`
-  存放 `修1` 到 `修5` 以及更早的历史快照，仅用于回溯和对照。
+  存放 `修1` 到 `修6` 以及更早的历史快照，仅用于回溯和对照。
 - `tests/`
   Playwright 冒烟测试。
 - `scripts/`
@@ -110,6 +110,7 @@
 - `archive/Reddit 翻译器 Pro 修3.js`
 - `archive/Reddit 翻译器 Pro 修4.js`
 - `archive/Reddit 翻译器 Pro 修5.js`
+- `archive/Reddit 翻译器 Pro 修6.js`
 - `archive/reddit-translator-v1_0_0.js`
 
 这些文件用于保留脚本演进过程，不作为当前正式安装入口。
