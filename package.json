@@ -1,0 +1,17 @@
+{
+  "name": "reddit-translator-pro-auto",
+  "private": true,
+  "version": "1.0.9",
+  "description": "Local tooling for browser-based verification of the Reddit userscript.",
+  "scripts": {
+    "browser:chrome": "powershell -ExecutionPolicy Bypass -File .\\scripts\\open-chrome.ps1",
+    "browser:edge": "powershell -ExecutionPolicy Bypass -File .\\scripts\\open-edge.ps1",
+    "pw:smoke": "playwright test",
+    "pw:codegen:chrome": "playwright codegen --channel chrome https://www.reddit.com/",
+    "pw:codegen:edge": "playwright codegen --channel msedge https://www.reddit.com/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "playwright": "^1.59.1"
+  }
+}

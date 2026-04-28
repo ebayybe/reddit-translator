@@ -1,474 +1,123 @@
-<div align="center">
+# Reddit Translator Pro Auto
+
+`Reddit Translator Pro Auto` 是一个面向 `Reddit` 页面使用的用户脚本，适用于 `Tampermonkey` 和 `Violentmonkey`。它用于翻译帖子正文、评论内容和滚动浏览中的可见文本，并提供多引擎、双语阅读、历史记录、快捷键、缓存和自动翻译控制能力。
+
+## 当前状态
+
+- 当前开发源：`Reddit 翻译器 Pro 修7.js`
+- 当前正式发布文件：`reddit-translator-pro-auto.user.js`
+- 当前正式发布版本：`v1.0.9`
+
+仓库中的开发、发布和历史文件现在按职责分开维护：
+
+- `Reddit 翻译器 Pro 修7.js` 用于继续开发、调试和功能迭代
+- `reddit-translator-pro-auto.user.js` 用于安装、分发和对外发布
+- `archive/` 用于保留旧阶段快照，不作为当前安装入口
+
+## 功能概览
+
+- 支持 `Google`、`MyMemory`、`DeepL` 三种翻译引擎
+- 支持 100+ 目标语言
+- 支持帖子正文与评论内容翻译
+- 支持右下角小地球按钮一键翻译当前可见内容
+- 支持双语显示与原文 / 译文切换
+- 支持滚动场景中的自动翻译
+- 支持长文本与多段内容自动分块翻译
+- 支持请求并发、速率、单次文本长度、单次段落数限制
+- 支持请求超时保护，降低网络异常导致队列卡住的概率
+- 支持 `TTS`、历史记录、缓存、隐身模式
+- 支持主题切换、自定义颜色和快捷键
+- 支持 `DeepL API Key` 保存、测试和轮换
+
+## 仓库结构
+
+- `Reddit 翻译器 Pro 修7.js`
+  当前开发源文件。后续功能修改优先落在这里。
+- `reddit-translator-pro-auto.user.js`
+  当前正式发布产物。已同步 `修7` 内容，用于安装、分发、GreasyFork 更新和版本说明。
+- `archive/`
+  存放 `修1` 到 `修6` 以及更早的历史快照，仅用于回溯和对照。
+- `tests/`
+  Playwright 冒烟测试。
+- `scripts/`
+  本地浏览器启动脚本。
+- `更新日志.md`
+  发布记录与阶段演进说明。
+
+## 安装方式
+
+1. 在浏览器中安装 `Tampermonkey` 或 `Violentmonkey`
+2. 任选一种安装方式：
+   通过 Greasy Fork 直接[安装](https://greasyfork.org/zh-CN/scripts/574557-reddit-%E7%BF%BB%E8%AF%91%E5%99%A8-pro-auto)
+   或导入仓库中的 `reddit-translator-pro-auto.user.js`
+3. 打开 `https://www.reddit.com/`
+4. 按 `F2` 打开脚本面板并完成语言、引擎与自动翻译设置
+
+## 发布入口
+
+- Greasy Fork 页面地址：<https://greasyfork.org/scripts/574557-reddit-translator-pro-auto>
+- GitHub 仓库地址：<https://github.com/Dylan-ZQL/reddit-translator-auto>
+
+## 使用方法
+
+1. 进入任意 Reddit 帖子页、评论页或首页信息流
+2. 点击帖子或评论旁的翻译按钮翻译当前内容
+3. 单击右下角小地球按钮 `🌐`，可批量翻译当前屏幕附近可见内容
+4. 双击右下角小地球按钮 `🌐`，可打开设置面板
+5. 使用右下角“显示原文 / 显示译文”按钮，可在原文和译文之间切换
+6. 在设置面板中选择目标语言、翻译引擎和双语模式
+7. 如需长文本稳定性，可调整请求并发、请求频率、单次字符数和单次段落数
+8. 开启自动翻译后，脚本会在内容进入视口时自动尝试翻译
+
+## 当前发布线说明
+
+`v1.0.9` 是当前正式发布版本。发布文件已由 `Reddit 翻译器 Pro 修7.js` 同步产出，当前发布线的重点包括：
+
+- 发布入口统一为 `reddit-translator-pro-auto.user.js`
+- 默认体验偏向开箱即用，发布文件内的默认配置已针对自动翻译场景做过整理
+- 请求调度、分块翻译、滚动触发、缓存和历史记录能力已进入稳定可用阶段
+- 右下角小地球按钮恢复为可见内容批量翻译入口，并保留 `F2` 面板快捷键
+- 网络请求加入超时保护，异常响应解析也会回落到默认结果
+- `DeepL` 缓存键不再写入完整 API Key，降低本地存储暴露风险
+- 发布线与历史快照分离，减少仓库根目录中的版本噪音
+
+当前 `Reddit 翻译器 Pro 修7.js` 与 `reddit-translator-pro-auto.user.js` 已同步。后续文档、安装说明和外部链接都应以 `reddit-translator-pro-auto.user.js` 为准。
+
+## 开发与发布约定
+
+1. 新功能、修复和结构调整优先修改 `Reddit 翻译器 Pro 修7.js`
+2. 需要对外发布时，再整理生成 `reddit-translator-pro-auto.user.js`
+3. 发布版本号、README 说明和 `更新日志.md` 需要同步更新
+4. 历史阶段文件不再放回根目录，继续留在 `archive/`
+
+## 本地验证
+
+仓库内已经保留本地验证工具：
+
+- `npm run pw:smoke`
+  运行 Playwright 冒烟测试
+- `npm run browser:chrome`
+  使用脚本启动 Chrome
+- `npm run browser:edge`
+  使用脚本启动 Edge
 
-# 🌐 Reddit Translator Pro
+如果只是安装脚本给浏览器使用，不需要这些 Node.js 工具；这些内容仅用于本地验证和回归检查。
 
-[![Version](https://img.shields.io/badge/version-1.0.0-ff4500?style=for-the-badge)](https://github.com/ebayybe/reddit-translator/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Tampermonkey%20%7C%20Violentmonkey-green?style=for-the-badge)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-[![Reddit](https://img.shields.io/badge/reddit.com-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com)
+## 历史文件
 
----
+- `archive/Reddit 翻译器 Pro 修1.js`
+- `archive/Reddit 翻译器 Pro 修2.js`
+- `archive/Reddit 翻译器 Pro 修3.js`
+- `archive/Reddit 翻译器 Pro 修4.js`
+- `archive/Reddit 翻译器 Pro 修5.js`
+- `archive/Reddit 翻译器 Pro 修6.js`
+- `archive/reddit-translator-v1_0_0.js`
 
-### 🌍 Выбери язык · Select language · 言語を選択
+这些文件用于保留脚本演进过程，不作为当前正式安装入口。
 
-[🇬🇧 English](#-english) · [🇷🇺 Русский](#-русский) · [🇺🇦 Українська](#-українська) · [🇩🇪 Deutsch](#-deutsch) · [🇫🇷 Français](#-français) · [🇪🇸 Español](#-español) · [🇵🇱 Polski](#-polski) · [🇹🇷 Türkçe](#-türkçe) · [🇨🇳 中文](#-中文) · [🇯🇵 日本語](#-日本語)
+## 维护原则
 
-</div>
-
----
-
-## 🇬🇧 English
-
-<details open>
-<summary><b>Expand / Collapse</b></summary>
-
-### About
-An amateur Reddit translator with glassmorphism UI. Translate posts and comments directly on the page without leaving Reddit.
-
-### ✨ Features
-
-| Feature | Description |
-|---|---|
-| 🌍 **100+ languages** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 themes + color customization |
-| 🔊 **TTS** | Built-in text-to-speech |
-| 📖 **History** | Last 50 translations |
-| 🔄 **Bilingual mode** | Original and translation side by side |
-| 📏 **Unit converter** | °F→°C, miles→km, lbs→kg, etc. |
-| ⌨️ **Hotkeys** | Fully customizable shortcuts |
-| 🎨 **Color editor** | Customize any theme's colors |
-| 🏴‍☠️ **Easter eggs** | Pirate mode, Yoda mode |
-| 🕵️ **Incognito** | No history, no cache |
-
-### ⬇️ Installation
-
-1. Install [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) or [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Click: [![Install](https://img.shields.io/badge/⬇️_Install-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Go to [reddit.com](https://www.reddit.com) — the script activates automatically
-
-### 📖 Usage
-
-- A **🌐 EN** button appears next to every post and comment — click to translate
-- The **🌍 TRANSLATE ALL** button translates everything on the page
-- `F2` — open settings panel *(customizable)*
-- `Ctrl+Shift+T` — translate all *(customizable)*
-
-### ⚠️ Disclaimer
-Unofficial amateur project. Not affiliated with Reddit or Google.
-
-</details>
-
----
-
-<br>
-
-## 🇷🇺 Русский
-
-<details>
-<summary><b>Развернуть / Свернуть</b></summary>
-
-### О проекте
-Любительский переводчик Reddit с glassmorphism UI. Переводи посты и комментарии прямо на странице, не покидая Reddit.
-
-### ✨ Функции
-
-| Функция | Описание |
-|---|---|
-| 🌍 **100+ языков** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 темы + кастомизация цветов |
-| 🔊 **TTS** | Встроенная озвучка переводов |
-| 📖 **История** | Последние 50 переводов |
-| 🔄 **Двуязычный режим** | Оригинал и перевод одновременно |
-| 📏 **Конвертер единиц** | °F→°C, мили→км, фунты→кг и др. |
-| ⌨️ **Горячие клавиши** | Настраиваемые комбинации |
-| 🎨 **Цветовой редактор** | Меняй цвета любой темы |
-| 🏴‍☠️ **Пасхалки** | Пиратский режим, режим Йоды |
-| 🕵️ **Инкогнито** | Без истории и кэша |
-
-### ⬇️ Установка
-
-1. Установи [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) или [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Нажми: [![Install](https://img.shields.io/badge/⬇️_Установить-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Зайди на [reddit.com](https://www.reddit.com) — скрипт активируется автоматически
-
-### 📖 Использование
-
-- Рядом с каждым постом и комментарием появляется кнопка **🌐 EN** — нажми для перевода
-- Кнопка **🌍 ПЕРЕВЕСТИ ВСЁ** переводит всё на странице
-- `F2` — открыть панель настроек *(настраивается)*
-- `Ctrl+Shift+T` — перевести всё *(настраивается)*
-
-### ⚠️ Дисклеймер
-Неофициальный любительский проект. Не аффилирован с Reddit или Google.
-
-</details>
-
----
-
-## 🇺🇦 Українська
-
-<details>
-<summary><b>Розгорнути / Згорнути</b></summary>
-
-### Про проєкт
-Аматорський перекладач Reddit з glassmorphism UI. Перекладай пости та коментарі прямо на сторінці.
-
-### ✨ Функції
-
-| Функція | Опис |
-|---|---|
-| 🌍 **100+ мов** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 теми + кастомізація кольорів |
-| 🔊 **TTS** | Вбудована озвучка перекладів |
-| 📖 **Історія** | Останні 50 перекладів |
-| 🔄 **Двомовний режим** | Оригінал і переклад одночасно |
-| 📏 **Конвертер одиниць** | °F→°C, милі→км, фунти→кг тощо |
-| ⌨️ **Гарячі клавіші** | Налаштовувані комбінації |
-| 🎨 **Редактор кольорів** | Змінюй кольори будь-якої теми |
-| 🏴‍☠️ **Пасхалки** | Піратський режим, режим Йоди |
-| 🕵️ **Інкогніто** | Без історії та кешу |
-
-### ⬇️ Встановлення
-
-1. Встанови [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) або [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Натисни: [![Install](https://img.shields.io/badge/⬇️_Встановити-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Зайди на [reddit.com](https://www.reddit.com) — скрипт активується автоматично
-
-### 📖 Використання
-
-- Поруч із кожним постом та коментарем з'являється кнопка **🌐 EN** — натисни для перекладу
-- Кнопка **🌍 ПЕРЕКЛАСТИ ВСЕ** перекладає все на сторінці
-- `F2` — відкрити панель налаштувань *(налаштовується)*
-- `Ctrl+Shift+T` — перекласти все *(налаштовується)*
-
-### ⚠️ Відмова від відповідальності
-Неофіційний аматорський проєкт. Не пов'язаний з Reddit або Google.
-
-</details>
-
-## 🇩🇪 Deutsch
-
-<details>
-<summary><b>Erweitern / Einklappen</b></summary>
-
-### Über das Projekt
-Ein Amateur-Reddit-Übersetzer mit Glassmorphism-UI. Übersetze Beiträge und Kommentare direkt auf der Seite.
-
-### ✨ Funktionen
-
-| Funktion | Beschreibung |
-|---|---|
-| 🌍 **100+ Sprachen** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 Themen + Farbanpassung |
-| 🔊 **TTS** | Eingebaute Sprachausgabe |
-| 📖 **Verlauf** | Letzte 50 Übersetzungen |
-| 🔄 **Zweisprachiger Modus** | Original und Übersetzung gleichzeitig |
-| 📏 **Einheitenumrechner** | °F→°C, Meilen→km, Pfund→kg usw. |
-| ⌨️ **Tastenkürzel** | Vollständig anpassbar |
-| 🎨 **Farbeditor** | Farben jedes Themas anpassen |
-| 🏴‍☠️ **Easter Eggs** | Piraten-Modus, Yoda-Modus |
-| 🕵️ **Inkognito** | Ohne Verlauf und Cache |
-
-### ⬇️ Installation
-
-1. Installiere [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) oder [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Klicke: [![Install](https://img.shields.io/badge/⬇️_Installieren-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Gehe zu [reddit.com](https://www.reddit.com) — das Skript aktiviert sich automatisch
-
-### 📖 Verwendung
-
-- Neben jedem Beitrag und Kommentar erscheint ein **🌐 EN**-Button — klicken zum Übersetzen
-- Der **🌍 ALLES ÜBERSETZEN**-Button übersetzt alles auf der Seite
-- `F2` — Einstellungsfeld öffnen *(anpassbar)*
-- `Ctrl+Shift+T` — alles übersetzen *(anpassbar)*
-
-### ⚠️ Haftungsausschluss
-Inoffizielles Hobbyprojekt. Nicht mit Reddit oder Google verbunden.
-
-</details>
-
----
-
-## 🇫🇷 Français
-
-<details>
-<summary><b>Développer / Réduire</b></summary>
-
-### À propos
-Un traducteur Reddit amateur avec une interface glassmorphism. Traduisez les posts et commentaires directement sur la page.
-
-### ✨ Fonctionnalités
-
-| Fonctionnalité | Description |
-|---|---|
-| 🌍 **100+ langues** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 thèmes + personnalisation des couleurs |
-| 🔊 **TTS** | Synthèse vocale intégrée |
-| 📖 **Historique** | 50 dernières traductions |
-| 🔄 **Mode bilingue** | Original et traduction côte à côte |
-| 📏 **Convertisseur** | °F→°C, miles→km, livres→kg, etc. |
-| ⌨️ **Raccourcis** | Entièrement personnalisables |
-| 🎨 **Éditeur de couleurs** | Personnalise les couleurs de chaque thème |
-| 🏴‍☠️ **Easter eggs** | Mode pirate, mode Yoda |
-| 🕵️ **Incognito** | Sans historique ni cache |
-
-### ⬇️ Installation
-
-1. Installez [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) ou [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Cliquez : [![Install](https://img.shields.io/badge/⬇️_Installer-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Allez sur [reddit.com](https://www.reddit.com) — le script s'active automatiquement
-
-### 📖 Utilisation
-
-- Un bouton **🌐 EN** apparaît à côté de chaque post et commentaire — cliquez pour traduire
-- Le bouton **🌍 TOUT TRADUIRE** traduit tout sur la page
-- `F2` — ouvrir le panneau de réglages *(personnalisable)*
-- `Ctrl+Shift+T` — tout traduire *(personnalisable)*
-
-### ⚠️ Avertissement
-Projet amateur non officiel. Non affilié à Reddit ou Google.
-
-</details>
-
----
-
-## 🇪🇸 Español
-
-<details>
-<summary><b>Expandir / Contraer</b></summary>
-
-### Acerca del proyecto
-Un traductor amateur de Reddit con interfaz glassmorphism. Traduce posts y comentarios directamente en la página.
-
-### ✨ Funciones
-
-| Función | Descripción |
-|---|---|
-| 🌍 **100+ idiomas** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 temas + personalización de colores |
-| 🔊 **TTS** | Síntesis de voz integrada |
-| 📖 **Historial** | Últimas 50 traducciones |
-| 🔄 **Modo bilingüe** | Original y traducción al mismo tiempo |
-| 📏 **Conversor** | °F→°C, millas→km, libras→kg, etc. |
-| ⌨️ **Atajos** | Totalmente personalizables |
-| 🎨 **Editor de colores** | Personaliza los colores de cada tema |
-| 🏴‍☠️ **Easter eggs** | Modo pirata, modo Yoda |
-| 🕵️ **Incógnito** | Sin historial ni caché |
-
-### ⬇️ Instalación
-
-1. Instala [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) o [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Haz clic: [![Install](https://img.shields.io/badge/⬇️_Instalar-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Ve a [reddit.com](https://www.reddit.com) — el script se activa automáticamente
-
-### 📖 Uso
-
-- Aparece un botón **🌐 EN** junto a cada post y comentario — haz clic para traducir
-- El botón **🌍 TRADUCIR TODO** traduce todo en la página
-- `F2` — abrir panel de configuración *(personalizable)*
-- `Ctrl+Shift+T` — traducir todo *(personalizable)*
-
-### ⚠️ Aviso
-Proyecto amateur no oficial. No afiliado con Reddit ni Google.
-
-</details>
-
----
-
-## 🇵🇱 Polski
-
-<details>
-<summary><b>Rozwiń / Zwiń</b></summary>
-
-### O projekcie
-Amatorski tłumacz Reddit z interfejsem glassmorphism. Tłumacz posty i komentarze bezpośrednio na stronie.
-
-### ✨ Funkcje
-
-| Funkcja | Opis |
-|---|---|
-| 🌍 **100+ języków** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 motywy + personalizacja kolorów |
-| 🔊 **TTS** | Wbudowana synteza mowy |
-| 📖 **Historia** | Ostatnie 50 tłumaczeń |
-| 🔄 **Tryb dwujęzyczny** | Oryginał i tłumaczenie jednocześnie |
-| 📏 **Konwerter jednostek** | °F→°C, mile→km, funty→kg itp. |
-| ⌨️ **Skróty klawiszowe** | W pełni konfigurowalne |
-| 🎨 **Edytor kolorów** | Dostosuj kolory każdego motywu |
-| 🏴‍☠️ **Easter eggi** | Tryb piracki, tryb Yody |
-| 🕵️ **Incognito** | Bez historii i pamięci podręcznej |
-
-### ⬇️ Instalacja
-
-1. Zainstaluj [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) lub [Violentmonkey](https://violentmonkey.github.io/) (Firefox)
-2. Kliknij: [![Install](https://img.shields.io/badge/⬇️_Zainstaluj-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. Wejdź na [reddit.com](https://www.reddit.com) — skrypt aktywuje się automatycznie
-
-### 📖 Użytkowanie
-
-- Obok każdego posta i komentarza pojawia się przycisk **🌐 EN** — kliknij, aby przetłumaczyć
-- Przycisk **🌍 PRZETŁUMACZ WSZYSTKO** tłumaczy wszystko na stronie
-- `F2` — otwórz panel ustawień *(konfigurowalny)*
-- `Ctrl+Shift+T` — przetłumacz wszystko *(konfigurowalny)*
-
-### ⚠️ Zastrzeżenie
-Nieoficjalny projekt amatorski. Nie jest powiązany z Reddit ani Google.
-
-</details>
-
----
-
-## 🇹🇷 Türkçe
-
-<details>
-<summary><b>Genişlet / Daralt</b></summary>
-
-### Proje Hakkında
-Glassmorphism arayüzlü amatör bir Reddit çevirmeni. Sayfadan ayrılmadan post ve yorumları çevirin.
-
-### ✨ Özellikler
-
-| Özellik | Açıklama |
-|---|---|
-| 🌍 **100+ dil** | Google Translate + MyMemory API |
-| 🎨 **Glassmorphism UI** | 4 tema + renk özelleştirme |
-| 🔊 **TTS** | Yerleşik metin okuma |
-| 📖 **Geçmiş** | Son 50 çeviri |
-| 🔄 **İki dilli mod** | Orijinal ve çeviri aynı anda |
-| 📏 **Birim dönüştürücü** | °F→°C, mil→km, lb→kg vb. |
-| ⌨️ **Kısayollar** | Tamamen özelleştirilebilir |
-| 🎨 **Renk editörü** | Her temanın renklerini özelleştir |
-| 🏴‍☠️ **Sürprizler** | Korsan modu, Yoda modu |
-| 🕵️ **Gizli mod** | Geçmiş ve önbellek yok |
-
-### ⬇️ Kurulum
-
-1. [Tampermonkey](https://www.tampermonkey.net/) (Chrome/Edge) veya [Violentmonkey](https://violentmonkey.github.io/) (Firefox) yükleyin
-2. Tıklayın: [![Install](https://img.shields.io/badge/⬇️_Yükle-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. [reddit.com](https://www.reddit.com) adresine gidin — betik otomatik olarak etkinleşir
-
-### 📖 Kullanım
-
-- Her post ve yorumun yanında **🌐 EN** butonu görünür — çevirmek için tıklayın
-- **🌍 HEPSİNİ ÇEVİR** butonu sayfadaki her şeyi çevirir
-- `F2` — ayarlar panelini aç *(özelleştirilebilir)*
-- `Ctrl+Shift+T` — hepsini çevir *(özelleştirilebilir)*
-
-### ⚠️ Sorumluluk reddi
-Gayri resmi amatör proje. Reddit veya Google ile bağlantısı yoktur.
-
-</details>
-
----
-
-## 🇨🇳 中文
-
-<details>
-<summary><b>展开 / 收起</b></summary>
-
-### 关于项目
-一款具有玻璃态UI的业余Reddit翻译器。直接在页面上翻译帖子和评论，无需离开Reddit。
-
-### ✨ 功能
-
-| 功能 | 说明 |
-|---|---|
-| 🌍 **100+种语言** | Google翻译 + MyMemory API |
-| 🎨 **玻璃态UI** | 4种主题 + 颜色自定义 |
-| 🔊 **TTS** | 内置文字转语音 |
-| 📖 **历史记录** | 最近50条翻译 |
-| 🔄 **双语模式** | 同时显示原文和译文 |
-| 📏 **单位转换** | °F→°C、英里→千米、磅→千克等 |
-| ⌨️ **快捷键** | 完全可自定义 |
-| 🎨 **颜色编辑器** | 自定义任何主题的颜色 |
-| 🏴‍☠️ **彩蛋** | 海盗模式、尤达模式 |
-| 🕵️ **隐身模式** | 无历史记录和缓存 |
-
-### ⬇️ 安装
-
-1. 安装 [Tampermonkey](https://www.tampermonkey.net/)（Chrome/Edge）或 [Violentmonkey](https://violentmonkey.github.io/)（Firefox）
-2. 点击：[![Install](https://img.shields.io/badge/⬇️_安装-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. 前往 [reddit.com](https://www.reddit.com) — 脚本自动激活
-
-### 📖 使用方法
-
-- 每个帖子和评论旁边都会出现 **🌐 EN** 按钮 — 点击即可翻译
-- **🌍 翻译全部** 按钮翻译页面上的所有内容
-- `F2` — 打开设置面板 *（可自定义）*
-- `Ctrl+Shift+T` — 翻译全部 *（可自定义）*
-
-### ⚠️ 免责声明
-非官方业余项目，与Reddit或Google无关。
-
-</details>
-
----
-
-## 🇯🇵 日本語
-
-<details>
-<summary><b>展開 / 折りたたむ</b></summary>
-
-### プロジェクトについて
-グラスモーフィズムUIを持つアマチュアReddit翻訳ツールです。Redditを離れることなく、ページ上で直接投稿やコメントを翻訳できます。
-
-### ✨ 機能
-
-| 機能 | 説明 |
-|---|---|
-| 🌍 **100以上の言語** | Google翻訳 + MyMemory API |
-| 🎨 **グラスモーフィズムUI** | 4テーマ + カラーカスタマイズ |
-| 🔊 **TTS** | テキスト読み上げ内蔵 |
-| 📖 **履歴** | 直近50件の翻訳 |
-| 🔄 **バイリンガルモード** | 原文と翻訳を同時表示 |
-| 📏 **単位変換** | °F→°C、マイル→km、ポンド→kgなど |
-| ⌨️ **ホットキー** | 完全カスタマイズ可能 |
-| 🎨 **カラーエディター** | 各テーマの色をカスタマイズ |
-| 🏴‍☠️ **イースターエッグ** | 海賊モード、ヨーダモード |
-| 🕵️ **シークレット** | 履歴・キャッシュなし |
-
-### ⬇️ インストール
-
-1. [Tampermonkey](https://www.tampermonkey.net/)（Chrome/Edge）または [Violentmonkey](https://violentmonkey.github.io/)（Firefox）をインストール
-2. クリック：[![Install](https://img.shields.io/badge/⬇️_インストール-ff4500?style=flat-square)](https://greasyfork.org/en/scripts/569819-reddit-translator-pro/post-install?locale_override=1)
-3. [reddit.com](https://www.reddit.com) へアクセス — スクリプトが自動的に有効になります
-
-### 📖 使い方
-
-- 各投稿とコメントの横に **🌐 EN** ボタンが表示されます — クリックで翻訳
-- **🌍 すべて翻訳** ボタンでページ上のすべてを翻訳
-- `F2` — 設定パネルを開く *（カスタマイズ可能）*
-- `Ctrl+Shift+T` — すべて翻訳 *（カスタマイズ可能）*
-
-### ⚠️ 免責事項
-非公式のアマチュアプロジェクトです。RedditやGoogleとは一切関係ありません。
-
-</details>
-
----
-
-<br>
-
-<div align="center">
-
-## 📋 Changelog
-
-### v1.0.0 — 2025
-✅ Glassmorphism UI · ✅ 4 themes · ✅ 100+ languages · ✅ TTS · ✅ History  
-✅ Bilingual mode · ✅ Unit converter · ✅ Cache TTL 24h · ✅ Easter eggs  
-✅ Custom hotkeys · ✅ Color editor · ✅ Incognito · ✅ Export/Import  
-✅ IntersectionObserver · ✅ 10 UI languages
-
----
-
-## 📄 License · Лицензия · ライセンス
-
-**MIT License** — © 2025 [ebayybe](https://github.com/ebayybe)
-
----
-
-Сделано с ❤️ · Made with ❤️ · ❤️で作られました
-
-[⭐ Star](https://github.com/ebayybe/reddit-translator) · [🐛 Bug report](https://github.com/ebayybe/reddit-translator/issues) · [💡 Feature request](https://github.com/ebayybe/reddit-translator/issues/new)
-
-</div>
+- 对外发布、安装和说明，以 `reddit-translator-pro-auto.user.js` 为准
+- 日常开发和调试，以 `Reddit 翻译器 Pro 修7.js` 为准
+- 历史快照只做归档和对照，不再作为并行维护入口
+- 变更记录请参考 [更新日志.md](./更新日志.md)

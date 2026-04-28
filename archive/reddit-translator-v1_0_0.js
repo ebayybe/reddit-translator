@@ -1,38 +1,38 @@
 // ==UserScript==
-// @name        🌐Reddit Translator Pro
-// @name:ru     🌐Reddit Переводчик Pro
-// @name:uk     🌐Reddit Перекладач Pro
-// @name:de     🌐Reddit Übersetzer Pro
-// @name:fr     🌐Reddit Traducteur Pro
-// @name:es     🌐Reddit Traductor Pro
-// @name:it     🌐Reddit Traduttore Pro
-// @name:pl     🌐Reddit Tłumacz Pro
-// @name:tr     🌐Reddit Çevirmeni Pro
-// @name:vi     🌐Reddit Biên Dịch Viên Pro
-// @name:ko     🌐Reddit 번역기 Pro
-// @name:ja     🌐Reddit 翻訳者 Pro
-// @name:zh-CN  🌐Reddit 翻译器 Pro
-// @name:zh-HK  🌐Reddit 翻譯器 Pro
-// @name:zh-TW  🌐Reddit 翻譯器 Pro
-// @namespace    https://github.com/ebayybe
-// @homepageURL  https://github.com/ebayybe/reddit-translator
-// @supportURL   https://github.com/ebayybe/reddit-translator/issues
+// @name        🌐Reddit Translator Pro Auto
+// @name:ru     🌐Reddit Переводчик Pro Auto
+// @name:uk     🌐Reddit Перекладач Pro Auto
+// @name:de     🌐Reddit Übersetzer Pro Auto
+// @name:fr     🌐Reddit Traducteur Pro Auto
+// @name:es     🌐Reddit Traductor Pro Auto
+// @name:it     🌐Reddit Traduttore Pro Auto
+// @name:pl     🌐Reddit Tłumacz Pro Auto
+// @name:tr     🌐Reddit Çevirmeni Pro Auto
+// @name:vi     🌐Reddit Biên Dịch Viên Pro Auto
+// @name:ko     🌐Reddit 번역기 Pro Auto
+// @name:ja     🌐Reddit 翻訳者 Pro Auto
+// @name:zh-CN  🌐Reddit 翻译器 Pro Auto
+// @name:zh-HK  🌐Reddit 翻譯器 Pro Auto
+// @name:zh-TW  🌐Reddit 翻譯器 Pro Auto
+// @namespace    https://github.com/Dylan-ZQL
+// @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-anto
+// @supportURL   https://github.com/Dylan-ZQL/reddit-translator-anto/issues
 // @version      1.0.0
-// @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, история, конвертеры, пасхалки, IntersectionObserver
-// @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, історія, конвертери, пасхалки, IntersectionObserver
-// @description:en      🏷️Amateur Reddit translator — glassmorphism, 100+ languages, TTS, history, converters, easter eggs, IntersectionObserver
-// @description:de      🏷️Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, TTS, Verlauf, Konverter, Ostereier, IntersectionObserver
-// @description:it      🏷️Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, TTS, cronologia, convertitori, easter egg, IntersectionObserver
-// @description:fr      🏷️Traducteur Reddit amateur — glassmorphism, 100+ langues, TTS, historique, convertisseurs, easter eggs, IntersectionObserver
-// @description:es      🏷️Traductor Reddit amateur — glassmorphism, 100+ idiomas, TTS, historial, convertidores, easter eggs, IntersectionObserver
-// @description:ko      🏷️아마추어 Reddit 번역기 — glassmorphism, 100+ 언어, TTS, 히스토리, 변환기, 이스터 에그, IntersectionObserver
-// @description:pl      🏷️Amatorski tłumacz Reddit — glassmorphism, 100+ języków, TTS, historia, konwertery, easter eggi, IntersectionObserver
-// @description:tr      🏷️Amatör Reddit çevirmeni — glassmorphism, 100+ dil, TTS, geçmiş, dönüştürücüler, sürprizler, IntersectionObserver
-// @description:vi      🏷️Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, TTS, lịch sử, bộ chuyển đổi, easter egg, IntersectionObserver
-// @description:ja      🏷️アマチュアReddit翻訳者 — glassmorphism、100以上の言語、TTS、履歴、コンバーター、イースターエッグ、IntersectionObserver
-// @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism，100多种语言，TTS，历史记录，转换器，彩蛋，IntersectionObserver
-// @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism，100多種語言，TTS，歷史記錄，轉換器，彩蛋，IntersectionObserver
-// @description:zh-TW   🏷️業餘Reddit翻譯器 — glassmorphism，100多種語言，TTS，歷史記錄，轉換器，彩蛋，IntersectionObserver
+// @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, Google, MyMemory, DeepL, история, конвертеры, пасхалки, IntersectionObserver
+// @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, Google, MyMemory, DeepL, історія, конвертери, пасхалки, IntersectionObserver
+// @description:en      🏷️Amateur Reddit translator — glassmorphism, 100+ languages, TTS, Google, MyMemory, DeepL, history, converters, easter eggs, IntersectionObserver
+// @description:de      🏷️Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, TTS, Google, MyMemory, DeepL, Verlauf, Konverter, Ostereier, IntersectionObserver
+// @description:it      🏷️Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, TTS, Google, MyMemory, DeepL, cronologia, convertitori, easter egg, IntersectionObserver
+// @description:fr      🏷️Traducteur Reddit amateur — glassmorphism, 100+ langues, TTS, Google, MyMemory, DeepL, historique, convertisseurs, easter eggs, IntersectionObserver
+// @description:es      🏷️Traductor Reddit amateur — glassmorphism, 100+ idiomas, TTS, Google, MyMemory, DeepL, historial, convertidores, easter eggs, IntersectionObserver
+// @description:ko      🏷️아마추어 Reddit 번역기 — glassmorphism、100+ 언어、TTS、Google、MyMemory、DeepL、히스토리、변환기、이스터 에그、IntersectionObserver
+// @description:pl      🏷️Amatorski tłumacz Reddit — glassmorphism, 100+ języków, TTS, Google, MyMemory, DeepL, historia, konwertery, easter eggi, IntersectionObserver
+// @description:tr      🏷️Amatör Reddit çevirmeni — glassmorphism, 100+ dil, TTS, Google, MyMemory, DeepL, geçmiş, dönüştürücüler, sürprizler, IntersectionObserver
+// @description:vi      🏷️Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, TTS, Google, MyMemory, DeepL, lịch sử, bộ chuyển đổi, easter egg, IntersectionObserver
+// @description:ja      🏷️アマチュアReddit翻訳者 — glassmorphism、100以上の言語、TTS、Google、MyMemory、DeepL、履歴、コンバーター、イースターエッグ、IntersectionObserver
+// @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism、100多种语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
+// @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
+// @description:zh-TW   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
 // @icon         data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjZmY0NTAwIi8+CiAgPHRleHQgeD0iNjQiIHk9IjkwIiBmb250LXNpemU9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iU2Vnb2UgVUkgRW1vamksQXBwbGUgQ29sb3IgRW1vamksc2Fucy1zZXJpZiI+8J+MkDwvdGV4dD4KPC9zdmc+
 // @author       ebayybe
 // @license      MIT
@@ -52,22 +52,22 @@
     // § КОНФИГУРАЦИЯ
     // ═══════════════════════════════════════════════════════════════════════════
     const DEF = {
-        targetLang:    'en',
-        uiLang:        'en',
-        engine:        'google',
-        tone:          'normal',
-        theme:         'dark',
+        targetLang: 'en',
+        uiLang: 'en',
+        engine: 'google',
+        tone: 'normal',
+        theme: 'dark',
         bilingualMode: false,
-        ttsEnabled:    true,
-        autoConvert:   true,
-        autoScroll:    false,
-        incognito:     false,
-        requestDelay:  120,
-        totalChars:    0,
-        totalCount:    0,
-        hotkeyPanel:   'F2',
-        hotkeyAll:     'Ctrl+Shift+T',
-        customColors:  null,
+        ttsEnabled: true,
+        autoConvert: true,
+        autoScroll: false,
+        incognito: false,
+        requestDelay: 120,
+        totalChars: 0,
+        totalCount: 0,
+        hotkeyPanel: 'F2',
+        hotkeyAll: 'Ctrl+Shift+T',
+        customColors: null,
     };
 
     // Загружаем конфиг
@@ -105,7 +105,7 @@
                 .sort((a, b) => b[1].ts - a[1].ts)
                 .slice(0, 600);
             entries.forEach(([k, v]) => (cache[k] = v));
-        } catch {}
+        } catch { }
     })();
 
     let cacheTimer = null;
@@ -113,7 +113,7 @@
         if (cfg.incognito) return;
         clearTimeout(cacheTimer);
         cacheTimer = setTimeout(() => {
-            try { GM_setValue(CACHE_KEY, JSON.stringify(cache)); } catch {}
+            try { GM_setValue(CACHE_KEY, JSON.stringify(cache)); } catch { }
         }, 2000);
     }
 
@@ -131,7 +131,7 @@
     // § ИСТОРИЯ (50 записей)
     // ═══════════════════════════════════════════════════════════════════════════
     let history = [];
-    try { history = JSON.parse(GM_getValue('rtp_v8_history', '[]')); } catch {}
+    try { history = JSON.parse(GM_getValue('rtp_v8_history', '[]')); } catch { }
 
     function pushHistory(orig, translated, lang) {
         if (cfg.incognito) return;
@@ -143,348 +143,348 @@
     // ═══════════════════════════════════════════════════════════════════════════
     // § UI — МУЛЬТИЯЗЫЧНОСТЬ ИНТЕРФЕЙСА
     // ═══════════════════════════════════════════════════════════════════════════
-    const UI_SUPPORTED = ['ru','uk','en','de','fr','es','pl','tr','zh','ja'];
+    const UI_SUPPORTED = ['ru', 'uk', 'en', 'de', 'fr', 'es', 'pl', 'tr', 'zh', 'ja'];
 
     const STRINGS = {
         ru: {
-            title:'Reddit Переводчик',  ver:'v1.0.0',
-            tabSettings:'⚙️ Настройки', tabHistory:'📖 История', tabExtras:'✨ Дополнения',
-            translateAll:'ПЕРЕВЕСТИ ВСЁ',
-            secUiLang:'Язык интерфейса', applyUi:'✨ ПРИМЕНИТЬ ИНТЕРФЕЙС',
-            secTargetLang:'Язык перевода', saveLang:'💾 СОХРАНИТЬ ЯЗЫК',
-            secEngine:'Движок', secTone:'Стиль перевода', secTheme:'Тема',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Нейтральный', toneFormal:'Официальный', toneSlang:'Разговорный',
-            themeDark:'Тёмная', themeLight:'Светлая', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Двуязычный режим', togTts:'Озвучка (TTS)',
-            togAutoConvert:'Авто-конвертация единиц', togAutoScroll:'Авто-скролл к новым',
-            togIncognito:'Инкогнито (без истории)',
-            btnResetPos:'🏠 Сброс позиции', btnClearCache:'🧹 Очистить кэш',
-            btnExport:'📤 Экспорт', btnImport:'📥 Импорт',
-            btnSurprise:'🎲 Случайный язык', btnPirate:'🏴‍☠️ Пиратский',
-            btnYoda:'🧙 Режим Йоды', btnHide:'👁 Скрыть кнопки', btnShow:'👁 Показать кнопки',
-            sliderDelay:'Задержка запросов',
-            statTranslations:'Переводов', statChars:'Символов', statOnPage:'На странице',
-            histEmpty:'История пуста', histClear:'🗑 Очистить историю',
-            searchLang:'Поиск языка…',
-            btnOrig:'↩ Оригинал', btnCopy:'📋 Копировать', btnSpeak:'🔊', btnRetry:'↺ Ещё раз',
-            copied:'✅ Скопировано!', cacheCleared:'🧹 Кэш очищен',
-            toastAll:'✅ Переведено', toastApply:'✅ Интерфейс обновлён',
-            toastSave:'💾 Сохранено — перезагрузка…', toastSurprise:'🎲 Язык:',
-            toastPirateOn:'🏴‍☠️ Arrr! Пиратский режим!', toastPirateOff:'🏴‍☠️ Режим выключен',
-            toastYodaOn:'🧙 Включён режим, хммм.', toastYodaOff:'🧙 Выключен он.',
-            shortcutHint:'F2 = панель · Ctrl+Shift+T = всё',
-            btnCancel:'⛔ Отмена', toastCancelled:'⛔ Перевод отменён',
-            secHotkeys:'Горячие клавиши', hotkeyPanel:'Открыть панель', hotkeyAll:'Перевести всё',
-            hotkeyPress:'Нажмите клавишу…', hotkeyReset:'↺ Сброс',
-            secColors:'Цвета темы', colorAcc:'Акцент', colorTxt:'Текст', colorBg:'Фон', colorOk:'Успех',
-            btnResetColors:'↺ Сброс цветов',
+            title: 'Reddit Переводчик', ver: 'v1.0.0',
+            tabSettings: '⚙️ Настройки', tabHistory: '📖 История', tabExtras: '✨ Дополнения',
+            translateAll: 'ПЕРЕВЕСТИ ВСЁ',
+            secUiLang: 'Язык интерфейса', applyUi: '✨ ПРИМЕНИТЬ ИНТЕРФЕЙС',
+            secTargetLang: 'Язык перевода', saveLang: '💾 СОХРАНИТЬ ЯЗЫК',
+            secEngine: 'Движок', secTone: 'Стиль перевода', secTheme: 'Тема',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Нейтральный', toneFormal: 'Официальный', toneSlang: 'Разговорный',
+            themeDark: 'Тёмная', themeLight: 'Светлая', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Двуязычный режим', togTts: 'Озвучка (TTS)',
+            togAutoConvert: 'Авто-конвертация единиц', togAutoScroll: 'Авто-скролл к новым',
+            togIncognito: 'Инкогнито (без истории)',
+            btnResetPos: '🏠 Сброс позиции', btnClearCache: '🧹 Очистить кэш',
+            btnExport: '📤 Экспорт', btnImport: '📥 Импорт',
+            btnSurprise: '🎲 Случайный язык', btnPirate: '🏴‍☠️ Пиратский',
+            btnYoda: '🧙 Режим Йоды', btnHide: '👁 Скрыть кнопки', btnShow: '👁 Показать кнопки',
+            sliderDelay: 'Задержка запросов',
+            statTranslations: 'Переводов', statChars: 'Символов', statOnPage: 'На странице',
+            histEmpty: 'История пуста', histClear: '🗑 Очистить историю',
+            searchLang: 'Поиск языка…',
+            btnOrig: '↩ Оригинал', btnCopy: '📋 Копировать', btnSpeak: '🔊', btnRetry: '↺ Ещё раз',
+            copied: '✅ Скопировано!', cacheCleared: '🧹 Кэш очищен',
+            toastAll: '✅ Переведено', toastApply: '✅ Интерфейс обновлён',
+            toastSave: '💾 Сохранено — перезагрузка…', toastSurprise: '🎲 Язык:',
+            toastPirateOn: '🏴‍☠️ Arrr! Пиратский режим!', toastPirateOff: '🏴‍☠️ Режим выключен',
+            toastYodaOn: '🧙 Включён режим, хммм.', toastYodaOff: '🧙 Выключен он.',
+            shortcutHint: 'F2 = панель · Ctrl+Shift+T = всё',
+            btnCancel: '⛔ Отмена', toastCancelled: '⛔ Перевод отменён',
+            secHotkeys: 'Горячие клавиши', hotkeyPanel: 'Открыть панель', hotkeyAll: 'Перевести всё',
+            hotkeyPress: 'Нажмите клавишу…', hotkeyReset: '↺ Сброс',
+            secColors: 'Цвета темы', colorAcc: 'Акцент', colorTxt: 'Текст', colorBg: 'Фон', colorOk: 'Успех',
+            btnResetColors: '↺ Сброс цветов',
         },
         uk: {
-            title:'Reddit Перекладач', ver:'v1.0.0',
-            tabSettings:'⚙️ Налаштування', tabHistory:'📖 Історія', tabExtras:'✨ Додатково',
-            translateAll:'ПЕРЕКЛАСТИ ВСЕ',
-            secUiLang:'Мова інтерфейсу', applyUi:'✨ ЗАСТОСУВАТИ ІНТЕРФЕЙС',
-            secTargetLang:'Мова перекладу', saveLang:'💾 ЗБЕРЕГТИ МОВУ',
-            secEngine:'Рушій', secTone:'Стиль', secTheme:'Тема',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Нейтральний', toneFormal:'Офіційний', toneSlang:'Розмовний',
-            themeDark:'Темна', themeLight:'Світла', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Двомовний режим', togTts:'Озвучка (TTS)',
-            togAutoConvert:'Авто-конвертація', togAutoScroll:'Авто-скрол',
-            togIncognito:'Інкогніто',
-            btnResetPos:'🏠 Скинути позицію', btnClearCache:'🧹 Очистити кеш',
-            btnExport:'📤 Експорт', btnImport:'📥 Імпорт',
-            btnSurprise:'🎲 Випадкова мова', btnPirate:'🏴‍☠️ Піратський',
-            btnYoda:'🧙 Режим Йоди', btnHide:'👁 Сховати', btnShow:'👁 Показати',
-            sliderDelay:'Затримка запитів',
-            statTranslations:'Перекладів', statChars:'Символів', statOnPage:'На сторінці',
-            histEmpty:'Історія порожня', histClear:'🗑 Очистити',
-            searchLang:'Пошук мови…',
-            btnOrig:'↩ Оригінал', btnCopy:'📋 Копіювати', btnSpeak:'🔊', btnRetry:'↺ Ще раз',
-            copied:'✅ Скопійовано!', cacheCleared:'🧹 Кеш очищено',
-            toastAll:'✅ Перекладено', toastApply:'✅ Інтерфейс оновлено',
-            toastSave:'💾 Збережено — перезавантаження…', toastSurprise:'🎲 Мова:',
-            toastPirateOn:'🏴‍☠️ Arrr! Піратський режим!', toastPirateOff:'🏴‍☠️ Вимкнено',
-            toastYodaOn:'🧙 Увімкнено режим, хммм.', toastYodaOff:'🧙 Вимкнено.',
-            shortcutHint:'F2 = панель · Ctrl+Shift+T = все',
-            btnCancel:'⛔ Скасувати', toastCancelled:'⛔ Переклад скасовано',
-            secHotkeys:'Гарячі клавіші', hotkeyPanel:'Відкрити панель', hotkeyAll:'Перекласти все',
-            hotkeyPress:'Натисніть клавішу…', hotkeyReset:'↺ Скинути',
-            secColors:'Кольори теми', colorAcc:'Акцент', colorTxt:'Текст', colorBg:'Фон', colorOk:'Успіх',
-            btnResetColors:'↺ Скинути кольори',
+            title: 'Reddit Перекладач', ver: 'v1.0.0',
+            tabSettings: '⚙️ Налаштування', tabHistory: '📖 Історія', tabExtras: '✨ Додатково',
+            translateAll: 'ПЕРЕКЛАСТИ ВСЕ',
+            secUiLang: 'Мова інтерфейсу', applyUi: '✨ ЗАСТОСУВАТИ ІНТЕРФЕЙС',
+            secTargetLang: 'Мова перекладу', saveLang: '💾 ЗБЕРЕГТИ МОВУ',
+            secEngine: 'Рушій', secTone: 'Стиль', secTheme: 'Тема',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Нейтральний', toneFormal: 'Офіційний', toneSlang: 'Розмовний',
+            themeDark: 'Темна', themeLight: 'Світла', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Двомовний режим', togTts: 'Озвучка (TTS)',
+            togAutoConvert: 'Авто-конвертація', togAutoScroll: 'Авто-скрол',
+            togIncognito: 'Інкогніто',
+            btnResetPos: '🏠 Скинути позицію', btnClearCache: '🧹 Очистити кеш',
+            btnExport: '📤 Експорт', btnImport: '📥 Імпорт',
+            btnSurprise: '🎲 Випадкова мова', btnPirate: '🏴‍☠️ Піратський',
+            btnYoda: '🧙 Режим Йоди', btnHide: '👁 Сховати', btnShow: '👁 Показати',
+            sliderDelay: 'Затримка запитів',
+            statTranslations: 'Перекладів', statChars: 'Символів', statOnPage: 'На сторінці',
+            histEmpty: 'Історія порожня', histClear: '🗑 Очистити',
+            searchLang: 'Пошук мови…',
+            btnOrig: '↩ Оригінал', btnCopy: '📋 Копіювати', btnSpeak: '🔊', btnRetry: '↺ Ще раз',
+            copied: '✅ Скопійовано!', cacheCleared: '🧹 Кеш очищено',
+            toastAll: '✅ Перекладено', toastApply: '✅ Інтерфейс оновлено',
+            toastSave: '💾 Збережено — перезавантаження…', toastSurprise: '🎲 Мова:',
+            toastPirateOn: '🏴‍☠️ Arrr! Піратський режим!', toastPirateOff: '🏴‍☠️ Вимкнено',
+            toastYodaOn: '🧙 Увімкнено режим, хммм.', toastYodaOff: '🧙 Вимкнено.',
+            shortcutHint: 'F2 = панель · Ctrl+Shift+T = все',
+            btnCancel: '⛔ Скасувати', toastCancelled: '⛔ Переклад скасовано',
+            secHotkeys: 'Гарячі клавіші', hotkeyPanel: 'Відкрити панель', hotkeyAll: 'Перекласти все',
+            hotkeyPress: 'Натисніть клавішу…', hotkeyReset: '↺ Скинути',
+            secColors: 'Кольори теми', colorAcc: 'Акцент', colorTxt: 'Текст', colorBg: 'Фон', colorOk: 'Успіх',
+            btnResetColors: '↺ Скинути кольори',
         },
         en: {
-            title:'Reddit Translator', ver:'v1.0.0',
-            tabSettings:'⚙️ Settings', tabHistory:'📖 History', tabExtras:'✨ Extras',
-            translateAll:'TRANSLATE ALL',
-            secUiLang:'UI Language', applyUi:'✨ APPLY INTERFACE',
-            secTargetLang:'Target language', saveLang:'💾 SAVE LANGUAGE',
-            secEngine:'Engine', secTone:'Translation tone', secTheme:'Theme',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Neutral', toneFormal:'Formal', toneSlang:'Casual',
-            themeDark:'Dark', themeLight:'Light', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Bilingual mode', togTts:'Text-to-Speech',
-            togAutoConvert:'Auto-convert units', togAutoScroll:'Auto-scroll to new',
-            togIncognito:'Incognito (no history)',
-            btnResetPos:'🏠 Reset position', btnClearCache:'🧹 Clear cache',
-            btnExport:'📤 Export', btnImport:'📥 Import',
-            btnSurprise:'🎲 Surprise me', btnPirate:'🏴‍☠️ Pirate mode',
-            btnYoda:'🧙 Yoda mode', btnHide:'👁 Hide buttons', btnShow:'👁 Show buttons',
-            sliderDelay:'Request delay',
-            statTranslations:'Translations', statChars:'Characters', statOnPage:'On page',
-            histEmpty:'No history yet', histClear:'🗑 Clear history',
-            searchLang:'Search language…',
-            btnOrig:'↩ Original', btnCopy:'📋 Copy', btnSpeak:'🔊', btnRetry:'↺ Retry',
-            copied:'✅ Copied!', cacheCleared:'🧹 Cache cleared',
-            toastAll:'✅ Translated', toastApply:'✅ Interface updated',
-            toastSave:'💾 Saved — reloading…', toastSurprise:'🎲 Language:',
-            toastPirateOn:'🏴‍☠️ Arrr! Pirate mode on!', toastPirateOff:'🏴‍☠️ Pirate mode off',
-            toastYodaOn:'🧙 Yoda mode on, hmm.', toastYodaOff:'🧙 Yoda mode off.',
-            shortcutHint:'F2 = panel · Ctrl+Shift+T = all',
-            btnCancel:'⛔ Cancel', toastCancelled:'⛔ Translation cancelled',
-            secHotkeys:'Hotkeys', hotkeyPanel:'Open panel', hotkeyAll:'Translate all',
-            hotkeyPress:'Press a key…', hotkeyReset:'↺ Reset',
-            secColors:'Theme colors', colorAcc:'Accent', colorTxt:'Text', colorBg:'Background', colorOk:'Success',
-            btnResetColors:'↺ Reset colors',
+            title: 'Reddit Translator', ver: 'v1.0.0',
+            tabSettings: '⚙️ Settings', tabHistory: '📖 History', tabExtras: '✨ Extras',
+            translateAll: 'TRANSLATE ALL',
+            secUiLang: 'UI Language', applyUi: '✨ APPLY INTERFACE',
+            secTargetLang: 'Target language', saveLang: '💾 SAVE LANGUAGE',
+            secEngine: 'Engine', secTone: 'Translation tone', secTheme: 'Theme',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Neutral', toneFormal: 'Formal', toneSlang: 'Casual',
+            themeDark: 'Dark', themeLight: 'Light', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Bilingual mode', togTts: 'Text-to-Speech',
+            togAutoConvert: 'Auto-convert units', togAutoScroll: 'Auto-scroll to new',
+            togIncognito: 'Incognito (no history)',
+            btnResetPos: '🏠 Reset position', btnClearCache: '🧹 Clear cache',
+            btnExport: '📤 Export', btnImport: '📥 Import',
+            btnSurprise: '🎲 Surprise me', btnPirate: '🏴‍☠️ Pirate mode',
+            btnYoda: '🧙 Yoda mode', btnHide: '👁 Hide buttons', btnShow: '👁 Show buttons',
+            sliderDelay: 'Request delay',
+            statTranslations: 'Translations', statChars: 'Characters', statOnPage: 'On page',
+            histEmpty: 'No history yet', histClear: '🗑 Clear history',
+            searchLang: 'Search language…',
+            btnOrig: '↩ Original', btnCopy: '📋 Copy', btnSpeak: '🔊', btnRetry: '↺ Retry',
+            copied: '✅ Copied!', cacheCleared: '🧹 Cache cleared',
+            toastAll: '✅ Translated', toastApply: '✅ Interface updated',
+            toastSave: '💾 Saved — reloading…', toastSurprise: '🎲 Language:',
+            toastPirateOn: '🏴‍☠️ Arrr! Pirate mode on!', toastPirateOff: '🏴‍☠️ Pirate mode off',
+            toastYodaOn: '🧙 Yoda mode on, hmm.', toastYodaOff: '🧙 Yoda mode off.',
+            shortcutHint: 'F2 = panel · Ctrl+Shift+T = all',
+            btnCancel: '⛔ Cancel', toastCancelled: '⛔ Translation cancelled',
+            secHotkeys: 'Hotkeys', hotkeyPanel: 'Open panel', hotkeyAll: 'Translate all',
+            hotkeyPress: 'Press a key…', hotkeyReset: '↺ Reset',
+            secColors: 'Theme colors', colorAcc: 'Accent', colorTxt: 'Text', colorBg: 'Background', colorOk: 'Success',
+            btnResetColors: '↺ Reset colors',
         },
         de: {
-            title:'Reddit Übersetzer', ver:'v1.0.0',
-            tabSettings:'⚙️ Einstellungen', tabHistory:'📖 Verlauf', tabExtras:'✨ Extras',
-            translateAll:'ALLES ÜBERSETZEN',
-            secUiLang:'UI-Sprache', applyUi:'✨ INTERFACE ANWENDEN',
-            secTargetLang:'Zielsprache', saveLang:'💾 SPRACHE SPEICHERN',
-            secEngine:'Motor', secTone:'Übersetzungsstil', secTheme:'Thema',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Neutral', toneFormal:'Formell', toneSlang:'Umgangssprachlich',
-            themeDark:'Dunkel', themeLight:'Hell', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Zweisprachig', togTts:'Sprachausgabe',
-            togAutoConvert:'Einheiten konvertieren', togAutoScroll:'Auto-Scrollen',
-            togIncognito:'Inkognito',
-            btnResetPos:'🏠 Position reset', btnClearCache:'🧹 Cache leeren',
-            btnExport:'📤 Exportieren', btnImport:'📥 Importieren',
-            btnSurprise:'🎲 Überrasch mich', btnPirate:'🏴‍☠️ Piraten-Modus',
-            btnYoda:'🧙 Yoda-Modus', btnHide:'👁 Ausblenden', btnShow:'👁 Anzeigen',
-            sliderDelay:'Anfrageverzögerung',
-            statTranslations:'Übersetzungen', statChars:'Zeichen', statOnPage:'Auf Seite',
-            histEmpty:'Kein Verlauf', histClear:'🗑 Verlauf löschen',
-            searchLang:'Sprache suchen…',
-            btnOrig:'↩ Original', btnCopy:'📋 Kopieren', btnSpeak:'🔊', btnRetry:'↺ Nochmal',
-            copied:'✅ Kopiert!', cacheCleared:'🧹 Cache geleert',
-            toastAll:'✅ Übersetzt', toastApply:'✅ Interface aktualisiert',
-            toastSave:'💾 Gespeichert — neu laden…', toastSurprise:'🎲 Sprache:',
-            toastPirateOn:'🏴‍☠️ Arrr! Piraten-Modus!', toastPirateOff:'🏴‍☠️ Modus aus',
-            toastYodaOn:'🧙 Yoda-Modus an, hmm.', toastYodaOff:'🧙 Modus aus.',
-            shortcutHint:'F2 = Panel · Ctrl+Shift+T = alles',
-            btnCancel:'⛔ Abbrechen', toastCancelled:'⛔ Übersetzung abgebrochen',
-            secHotkeys:'Tastenkürzel', hotkeyPanel:'Panel öffnen', hotkeyAll:'Alles übersetzen',
-            hotkeyPress:'Taste drücken…', hotkeyReset:'↺ Zurücksetzen',
-            secColors:'Themenfarben', colorAcc:'Akzent', colorTxt:'Text', colorBg:'Hintergrund', colorOk:'Erfolg',
-            btnResetColors:'↺ Farben zurücksetzen',
+            title: 'Reddit Übersetzer', ver: 'v1.0.0',
+            tabSettings: '⚙️ Einstellungen', tabHistory: '📖 Verlauf', tabExtras: '✨ Extras',
+            translateAll: 'ALLES ÜBERSETZEN',
+            secUiLang: 'UI-Sprache', applyUi: '✨ INTERFACE ANWENDEN',
+            secTargetLang: 'Zielsprache', saveLang: '💾 SPRACHE SPEICHERN',
+            secEngine: 'Motor', secTone: 'Übersetzungsstil', secTheme: 'Thema',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Neutral', toneFormal: 'Formell', toneSlang: 'Umgangssprachlich',
+            themeDark: 'Dunkel', themeLight: 'Hell', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Zweisprachig', togTts: 'Sprachausgabe',
+            togAutoConvert: 'Einheiten konvertieren', togAutoScroll: 'Auto-Scrollen',
+            togIncognito: 'Inkognito',
+            btnResetPos: '🏠 Position reset', btnClearCache: '🧹 Cache leeren',
+            btnExport: '📤 Exportieren', btnImport: '📥 Importieren',
+            btnSurprise: '🎲 Überrasch mich', btnPirate: '🏴‍☠️ Piraten-Modus',
+            btnYoda: '🧙 Yoda-Modus', btnHide: '👁 Ausblenden', btnShow: '👁 Anzeigen',
+            sliderDelay: 'Anfrageverzögerung',
+            statTranslations: 'Übersetzungen', statChars: 'Zeichen', statOnPage: 'Auf Seite',
+            histEmpty: 'Kein Verlauf', histClear: '🗑 Verlauf löschen',
+            searchLang: 'Sprache suchen…',
+            btnOrig: '↩ Original', btnCopy: '📋 Kopieren', btnSpeak: '🔊', btnRetry: '↺ Nochmal',
+            copied: '✅ Kopiert!', cacheCleared: '🧹 Cache geleert',
+            toastAll: '✅ Übersetzt', toastApply: '✅ Interface aktualisiert',
+            toastSave: '💾 Gespeichert — neu laden…', toastSurprise: '🎲 Sprache:',
+            toastPirateOn: '🏴‍☠️ Arrr! Piraten-Modus!', toastPirateOff: '🏴‍☠️ Modus aus',
+            toastYodaOn: '🧙 Yoda-Modus an, hmm.', toastYodaOff: '🧙 Modus aus.',
+            shortcutHint: 'F2 = Panel · Ctrl+Shift+T = alles',
+            btnCancel: '⛔ Abbrechen', toastCancelled: '⛔ Übersetzung abgebrochen',
+            secHotkeys: 'Tastenkürzel', hotkeyPanel: 'Panel öffnen', hotkeyAll: 'Alles übersetzen',
+            hotkeyPress: 'Taste drücken…', hotkeyReset: '↺ Zurücksetzen',
+            secColors: 'Themenfarben', colorAcc: 'Akzent', colorTxt: 'Text', colorBg: 'Hintergrund', colorOk: 'Erfolg',
+            btnResetColors: '↺ Farben zurücksetzen',
         },
         fr: {
-            title:'Traducteur Reddit', ver:'v1.0.0',
-            tabSettings:'⚙️ Paramètres', tabHistory:'📖 Historique', tabExtras:'✨ Extras',
-            translateAll:'TOUT TRADUIRE',
-            secUiLang:'Langue UI', applyUi:'✨ APPLIQUER INTERFACE',
-            secTargetLang:'Langue cible', saveLang:'💾 ENREGISTRER',
-            secEngine:'Moteur', secTone:'Style', secTheme:'Thème',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Neutre', toneFormal:'Formel', toneSlang:'Familier',
-            themeDark:'Sombre', themeLight:'Clair', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Mode bilingue', togTts:'Synthèse vocale',
-            togAutoConvert:'Conversion auto', togAutoScroll:'Défilement auto',
-            togIncognito:'Incognito',
-            btnResetPos:'🏠 Réinitialiser', btnClearCache:'🧹 Vider cache',
-            btnExport:'📤 Exporter', btnImport:'📥 Importer',
-            btnSurprise:'🎲 Surprends-moi', btnPirate:'🏴‍☠️ Mode Pirate',
-            btnYoda:'🧙 Mode Yoda', btnHide:'👁 Masquer', btnShow:'👁 Afficher',
-            sliderDelay:'Délai de requête',
-            statTranslations:'Traductions', statChars:'Caractères', statOnPage:'Sur page',
-            histEmpty:'Historique vide', histClear:'🗑 Effacer',
-            searchLang:'Chercher langue…',
-            btnOrig:'↩ Original', btnCopy:'📋 Copier', btnSpeak:'🔊', btnRetry:'↺ Réessayer',
-            copied:'✅ Copié!', cacheCleared:'🧹 Cache vidé',
-            toastAll:'✅ Traduit', toastApply:'✅ Interface mise à jour',
-            toastSave:'💾 Sauvegardé — rechargement…', toastSurprise:'🎲 Langue:',
-            toastPirateOn:'🏴‍☠️ Arrr! Mode Pirate!', toastPirateOff:'🏴‍☠️ Mode désactivé',
-            toastYodaOn:'🧙 Mode Yoda activé, hmm.', toastYodaOff:'🧙 Mode Yoda désactivé.',
-            shortcutHint:'F2 = panneau · Ctrl+Shift+T = tout',
-            btnCancel:'⛔ Annuler', toastCancelled:'⛔ Traduction annulée',
-            secHotkeys:'Raccourcis', hotkeyPanel:'Ouvrir panneau', hotkeyAll:'Tout traduire',
-            hotkeyPress:'Appuyez sur une touche…', hotkeyReset:'↺ Réinitialiser',
-            secColors:'Couleurs du thème', colorAcc:'Accent', colorTxt:'Texte', colorBg:'Fond', colorOk:'Succès',
-            btnResetColors:'↺ Réinitialiser couleurs',
+            title: 'Traducteur Reddit', ver: 'v1.0.0',
+            tabSettings: '⚙️ Paramètres', tabHistory: '📖 Historique', tabExtras: '✨ Extras',
+            translateAll: 'TOUT TRADUIRE',
+            secUiLang: 'Langue UI', applyUi: '✨ APPLIQUER INTERFACE',
+            secTargetLang: 'Langue cible', saveLang: '💾 ENREGISTRER',
+            secEngine: 'Moteur', secTone: 'Style', secTheme: 'Thème',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Neutre', toneFormal: 'Formel', toneSlang: 'Familier',
+            themeDark: 'Sombre', themeLight: 'Clair', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Mode bilingue', togTts: 'Synthèse vocale',
+            togAutoConvert: 'Conversion auto', togAutoScroll: 'Défilement auto',
+            togIncognito: 'Incognito',
+            btnResetPos: '🏠 Réinitialiser', btnClearCache: '🧹 Vider cache',
+            btnExport: '📤 Exporter', btnImport: '📥 Importer',
+            btnSurprise: '🎲 Surprends-moi', btnPirate: '🏴‍☠️ Mode Pirate',
+            btnYoda: '🧙 Mode Yoda', btnHide: '👁 Masquer', btnShow: '👁 Afficher',
+            sliderDelay: 'Délai de requête',
+            statTranslations: 'Traductions', statChars: 'Caractères', statOnPage: 'Sur page',
+            histEmpty: 'Historique vide', histClear: '🗑 Effacer',
+            searchLang: 'Chercher langue…',
+            btnOrig: '↩ Original', btnCopy: '📋 Copier', btnSpeak: '🔊', btnRetry: '↺ Réessayer',
+            copied: '✅ Copié!', cacheCleared: '🧹 Cache vidé',
+            toastAll: '✅ Traduit', toastApply: '✅ Interface mise à jour',
+            toastSave: '💾 Sauvegardé — rechargement…', toastSurprise: '🎲 Langue:',
+            toastPirateOn: '🏴‍☠️ Arrr! Mode Pirate!', toastPirateOff: '🏴‍☠️ Mode désactivé',
+            toastYodaOn: '🧙 Mode Yoda activé, hmm.', toastYodaOff: '🧙 Mode Yoda désactivé.',
+            shortcutHint: 'F2 = panneau · Ctrl+Shift+T = tout',
+            btnCancel: '⛔ Annuler', toastCancelled: '⛔ Traduction annulée',
+            secHotkeys: 'Raccourcis', hotkeyPanel: 'Ouvrir panneau', hotkeyAll: 'Tout traduire',
+            hotkeyPress: 'Appuyez sur une touche…', hotkeyReset: '↺ Réinitialiser',
+            secColors: 'Couleurs du thème', colorAcc: 'Accent', colorTxt: 'Texte', colorBg: 'Fond', colorOk: 'Succès',
+            btnResetColors: '↺ Réinitialiser couleurs',
         },
         es: {
-            title:'Traductor Reddit', ver:'v1.0.0',
-            tabSettings:'⚙️ Config', tabHistory:'📖 Historial', tabExtras:'✨ Extras',
-            translateAll:'TRADUCIR TODO',
-            secUiLang:'Idioma UI', applyUi:'✨ APLICAR INTERFAZ',
-            secTargetLang:'Idioma destino', saveLang:'💾 GUARDAR IDIOMA',
-            secEngine:'Motor', secTone:'Estilo', secTheme:'Tema',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Neutral', toneFormal:'Formal', toneSlang:'Coloquial',
-            themeDark:'Oscuro', themeLight:'Claro', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Modo bilingüe', togTts:'Texto a voz',
-            togAutoConvert:'Convertir unidades', togAutoScroll:'Auto-desplazamiento',
-            togIncognito:'Incógnito',
-            btnResetPos:'🏠 Resetear', btnClearCache:'🧹 Limpiar caché',
-            btnExport:'📤 Exportar', btnImport:'📥 Importar',
-            btnSurprise:'🎲 Sorpréndeme', btnPirate:'🏴‍☠️ Modo Pirata',
-            btnYoda:'🧙 Modo Yoda', btnHide:'👁 Ocultar', btnShow:'👁 Mostrar',
-            sliderDelay:'Retraso de solicitud',
-            statTranslations:'Traducciones', statChars:'Caracteres', statOnPage:'En página',
-            histEmpty:'Sin historial', histClear:'🗑 Borrar',
-            searchLang:'Buscar idioma…',
-            btnOrig:'↩ Original', btnCopy:'📋 Copiar', btnSpeak:'🔊', btnRetry:'↺ Reintentar',
-            copied:'✅ ¡Copiado!', cacheCleared:'🧹 Caché limpiado',
-            toastAll:'✅ Traducido', toastApply:'✅ Interfaz actualizada',
-            toastSave:'💾 Guardado — recargando…', toastSurprise:'🎲 Idioma:',
-            toastPirateOn:'🏴‍☠️ ¡Arrr! ¡Modo Pirata!', toastPirateOff:'🏴‍☠️ Modo desactivado',
-            toastYodaOn:'🧙 Modo Yoda activado, hmm.', toastYodaOff:'🧙 Modo Yoda desactivado.',
-            shortcutHint:'F2 = panel · Ctrl+Shift+T = todo',
-            btnCancel:'⛔ Cancelar', toastCancelled:'⛔ Traducción cancelada',
-            secHotkeys:'Atajos', hotkeyPanel:'Abrir panel', hotkeyAll:'Traducir todo',
-            hotkeyPress:'Presiona una tecla…', hotkeyReset:'↺ Restablecer',
-            secColors:'Colores del tema', colorAcc:'Acento', colorTxt:'Texto', colorBg:'Fondo', colorOk:'Éxito',
-            btnResetColors:'↺ Restablecer colores',
+            title: 'Traductor Reddit', ver: 'v1.0.0',
+            tabSettings: '⚙️ Config', tabHistory: '📖 Historial', tabExtras: '✨ Extras',
+            translateAll: 'TRADUCIR TODO',
+            secUiLang: 'Idioma UI', applyUi: '✨ APLICAR INTERFAZ',
+            secTargetLang: 'Idioma destino', saveLang: '💾 GUARDAR IDIOMA',
+            secEngine: 'Motor', secTone: 'Estilo', secTheme: 'Tema',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Neutral', toneFormal: 'Formal', toneSlang: 'Coloquial',
+            themeDark: 'Oscuro', themeLight: 'Claro', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Modo bilingüe', togTts: 'Texto a voz',
+            togAutoConvert: 'Convertir unidades', togAutoScroll: 'Auto-desplazamiento',
+            togIncognito: 'Incógnito',
+            btnResetPos: '🏠 Resetear', btnClearCache: '🧹 Limpiar caché',
+            btnExport: '📤 Exportar', btnImport: '📥 Importar',
+            btnSurprise: '🎲 Sorpréndeme', btnPirate: '🏴‍☠️ Modo Pirata',
+            btnYoda: '🧙 Modo Yoda', btnHide: '👁 Ocultar', btnShow: '👁 Mostrar',
+            sliderDelay: 'Retraso de solicitud',
+            statTranslations: 'Traducciones', statChars: 'Caracteres', statOnPage: 'En página',
+            histEmpty: 'Sin historial', histClear: '🗑 Borrar',
+            searchLang: 'Buscar idioma…',
+            btnOrig: '↩ Original', btnCopy: '📋 Copiar', btnSpeak: '🔊', btnRetry: '↺ Reintentar',
+            copied: '✅ ¡Copiado!', cacheCleared: '🧹 Caché limpiado',
+            toastAll: '✅ Traducido', toastApply: '✅ Interfaz actualizada',
+            toastSave: '💾 Guardado — recargando…', toastSurprise: '🎲 Idioma:',
+            toastPirateOn: '🏴‍☠️ ¡Arrr! ¡Modo Pirata!', toastPirateOff: '🏴‍☠️ Modo desactivado',
+            toastYodaOn: '🧙 Modo Yoda activado, hmm.', toastYodaOff: '🧙 Modo Yoda desactivado.',
+            shortcutHint: 'F2 = panel · Ctrl+Shift+T = todo',
+            btnCancel: '⛔ Cancelar', toastCancelled: '⛔ Traducción cancelada',
+            secHotkeys: 'Atajos', hotkeyPanel: 'Abrir panel', hotkeyAll: 'Traducir todo',
+            hotkeyPress: 'Presiona una tecla…', hotkeyReset: '↺ Restablecer',
+            secColors: 'Colores del tema', colorAcc: 'Acento', colorTxt: 'Texto', colorBg: 'Fondo', colorOk: 'Éxito',
+            btnResetColors: '↺ Restablecer colores',
         },
         pl: {
-            title:'Tłumacz Reddit', ver:'v1.0.0',
-            tabSettings:'⚙️ Ustawienia', tabHistory:'📖 Historia', tabExtras:'✨ Extras',
-            translateAll:'PRZETŁUMACZ WSZYSTKO',
-            secUiLang:'Język interfejsu', applyUi:'✨ ZASTOSUJ INTERFEJS',
-            secTargetLang:'Język docelowy', saveLang:'💾 ZAPISZ JĘZYK',
-            secEngine:'Silnik', secTone:'Styl', secTheme:'Motyw',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Neutralny', toneFormal:'Formalny', toneSlang:'Potoczny',
-            themeDark:'Ciemny', themeLight:'Jasny', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Tryb dwujęzyczny', togTts:'Mowa syntetyczna',
-            togAutoConvert:'Auto-konwersja', togAutoScroll:'Auto-przewijanie',
-            togIncognito:'Incognito',
-            btnResetPos:'🏠 Resetuj pozycję', btnClearCache:'🧹 Wyczyść cache',
-            btnExport:'📤 Eksport', btnImport:'📥 Import',
-            btnSurprise:'🎲 Losowy język', btnPirate:'🏴‍☠️ Tryb Pirata',
-            btnYoda:'🧙 Tryb Yody', btnHide:'👁 Ukryj', btnShow:'👁 Pokaż',
-            sliderDelay:'Opóźnienie żądania',
-            statTranslations:'Tłumaczenia', statChars:'Znaki', statOnPage:'Na stronie',
-            histEmpty:'Brak historii', histClear:'🗑 Wyczyść',
-            searchLang:'Szukaj języka…',
-            btnOrig:'↩ Oryginał', btnCopy:'📋 Kopiuj', btnSpeak:'🔊', btnRetry:'↺ Ponów',
-            copied:'✅ Skopiowano!', cacheCleared:'🧹 Cache wyczyszczony',
-            toastAll:'✅ Przetłumaczono', toastApply:'✅ Interfejs zaktualizowany',
-            toastSave:'💾 Zapisano — przeładowanie…', toastSurprise:'🎲 Język:',
-            toastPirateOn:'🏴‍☠️ Arrr! Tryb Pirata!', toastPirateOff:'🏴‍☠️ Tryb wyłączony',
-            toastYodaOn:'🧙 Tryb Yody włączony, hmm.', toastYodaOff:'🧙 Tryb wyłączony.',
-            shortcutHint:'F2 = panel · Ctrl+Shift+T = wszystko',
-            btnCancel:'⛔ Anuluj', toastCancelled:'⛔ Tłumaczenie anulowane',
-            secHotkeys:'Skróty klawiszowe', hotkeyPanel:'Otwórz panel', hotkeyAll:'Przetłumacz wszystko',
-            hotkeyPress:'Naciśnij klawisz…', hotkeyReset:'↺ Resetuj',
-            secColors:'Kolory motywu', colorAcc:'Akcent', colorTxt:'Tekst', colorBg:'Tło', colorOk:'Sukces',
-            btnResetColors:'↺ Resetuj kolory',
+            title: 'Tłumacz Reddit', ver: 'v1.0.0',
+            tabSettings: '⚙️ Ustawienia', tabHistory: '📖 Historia', tabExtras: '✨ Extras',
+            translateAll: 'PRZETŁUMACZ WSZYSTKO',
+            secUiLang: 'Język interfejsu', applyUi: '✨ ZASTOSUJ INTERFEJS',
+            secTargetLang: 'Język docelowy', saveLang: '💾 ZAPISZ JĘZYK',
+            secEngine: 'Silnik', secTone: 'Styl', secTheme: 'Motyw',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Neutralny', toneFormal: 'Formalny', toneSlang: 'Potoczny',
+            themeDark: 'Ciemny', themeLight: 'Jasny', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Tryb dwujęzyczny', togTts: 'Mowa syntetyczna',
+            togAutoConvert: 'Auto-konwersja', togAutoScroll: 'Auto-przewijanie',
+            togIncognito: 'Incognito',
+            btnResetPos: '🏠 Resetuj pozycję', btnClearCache: '🧹 Wyczyść cache',
+            btnExport: '📤 Eksport', btnImport: '📥 Import',
+            btnSurprise: '🎲 Losowy język', btnPirate: '🏴‍☠️ Tryb Pirata',
+            btnYoda: '🧙 Tryb Yody', btnHide: '👁 Ukryj', btnShow: '👁 Pokaż',
+            sliderDelay: 'Opóźnienie żądania',
+            statTranslations: 'Tłumaczenia', statChars: 'Znaki', statOnPage: 'Na stronie',
+            histEmpty: 'Brak historii', histClear: '🗑 Wyczyść',
+            searchLang: 'Szukaj języka…',
+            btnOrig: '↩ Oryginał', btnCopy: '📋 Kopiuj', btnSpeak: '🔊', btnRetry: '↺ Ponów',
+            copied: '✅ Skopiowano!', cacheCleared: '🧹 Cache wyczyszczony',
+            toastAll: '✅ Przetłumaczono', toastApply: '✅ Interfejs zaktualizowany',
+            toastSave: '💾 Zapisano — przeładowanie…', toastSurprise: '🎲 Język:',
+            toastPirateOn: '🏴‍☠️ Arrr! Tryb Pirata!', toastPirateOff: '🏴‍☠️ Tryb wyłączony',
+            toastYodaOn: '🧙 Tryb Yody włączony, hmm.', toastYodaOff: '🧙 Tryb wyłączony.',
+            shortcutHint: 'F2 = panel · Ctrl+Shift+T = wszystko',
+            btnCancel: '⛔ Anuluj', toastCancelled: '⛔ Tłumaczenie anulowane',
+            secHotkeys: 'Skróty klawiszowe', hotkeyPanel: 'Otwórz panel', hotkeyAll: 'Przetłumacz wszystko',
+            hotkeyPress: 'Naciśnij klawisz…', hotkeyReset: '↺ Resetuj',
+            secColors: 'Kolory motywu', colorAcc: 'Akcent', colorTxt: 'Tekst', colorBg: 'Tło', colorOk: 'Sukces',
+            btnResetColors: '↺ Resetuj kolory',
         },
         tr: {
-            title:'Reddit Çevirmeni', ver:'v1.0.0',
-            tabSettings:'⚙️ Ayarlar', tabHistory:'📖 Geçmiş', tabExtras:'✨ Ekstra',
-            translateAll:'HEPSİNİ ÇEVİR',
-            secUiLang:'Arayüz dili', applyUi:'✨ ARAYÜZÜ UYGULA',
-            secTargetLang:'Hedef dil', saveLang:'💾 DİLİ KAYDET',
-            secEngine:'Motor', secTone:'Stil', secTheme:'Tema',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'Nötr', toneFormal:'Resmi', toneSlang:'Günlük',
-            themeDark:'Koyu', themeLight:'Açık', themeCyber:'Cyberpunk', themeDracula:'Dracula',
-            togBilingual:'Çift dil modu', togTts:'Metin okuma',
-            togAutoConvert:'Otomatik dönüştürme', togAutoScroll:'Otomatik kaydırma',
-            togIncognito:'Gizli mod',
-            btnResetPos:'🏠 Konumu sıfırla', btnClearCache:'🧹 Önbelleği temizle',
-            btnExport:'📤 Dışa aktar', btnImport:'📥 İçe aktar',
-            btnSurprise:'🎲 Rastgele', btnPirate:'🏴‍☠️ Korsan modu',
-            btnYoda:'🧙 Yoda modu', btnHide:'👁 Gizle', btnShow:'👁 Göster',
-            sliderDelay:'İstek gecikmesi',
-            statTranslations:'Çeviriler', statChars:'Karakterler', statOnPage:'Sayfada',
-            histEmpty:'Geçmiş yok', histClear:'🗑 Temizle',
-            searchLang:'Dil ara…',
-            btnOrig:'↩ Orijinal', btnCopy:'📋 Kopyala', btnSpeak:'🔊', btnRetry:'↺ Tekrar',
-            copied:'✅ Kopyalandı!', cacheCleared:'🧹 Önbellek temizlendi',
-            toastAll:'✅ Çevrildi', toastApply:'✅ Arayüz güncellendi',
-            toastSave:'💾 Kaydedildi — yenileniyor…', toastSurprise:'🎲 Dil:',
-            toastPirateOn:'🏴‍☠️ Arrr! Korsan modu!', toastPirateOff:'🏴‍☠️ Mod kapatıldı',
-            toastYodaOn:'🧙 Yoda modu açık, hmm.', toastYodaOff:'🧙 Yoda modu kapalı.',
-            shortcutHint:'F2 = panel · Ctrl+Shift+T = hepsi',
-            btnCancel:'⛔ İptal', toastCancelled:'⛔ Çeviri iptal edildi',
-            secHotkeys:'Kısayollar', hotkeyPanel:'Paneli aç', hotkeyAll:'Hepsini çevir',
-            hotkeyPress:'Bir tuşa basın…', hotkeyReset:'↺ Sıfırla',
-            secColors:'Tema renkleri', colorAcc:'Vurgu', colorTxt:'Metin', colorBg:'Arka plan', colorOk:'Başarı',
-            btnResetColors:'↺ Renkleri sıfırla',
+            title: 'Reddit Çevirmeni', ver: 'v1.0.0',
+            tabSettings: '⚙️ Ayarlar', tabHistory: '📖 Geçmiş', tabExtras: '✨ Ekstra',
+            translateAll: 'HEPSİNİ ÇEVİR',
+            secUiLang: 'Arayüz dili', applyUi: '✨ ARAYÜZÜ UYGULA',
+            secTargetLang: 'Hedef dil', saveLang: '💾 DİLİ KAYDET',
+            secEngine: 'Motor', secTone: 'Stil', secTheme: 'Tema',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: 'Nötr', toneFormal: 'Resmi', toneSlang: 'Günlük',
+            themeDark: 'Koyu', themeLight: 'Açık', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+            togBilingual: 'Çift dil modu', togTts: 'Metin okuma',
+            togAutoConvert: 'Otomatik dönüştürme', togAutoScroll: 'Otomatik kaydırma',
+            togIncognito: 'Gizli mod',
+            btnResetPos: '🏠 Konumu sıfırla', btnClearCache: '🧹 Önbelleği temizle',
+            btnExport: '📤 Dışa aktar', btnImport: '📥 İçe aktar',
+            btnSurprise: '🎲 Rastgele', btnPirate: '🏴‍☠️ Korsan modu',
+            btnYoda: '🧙 Yoda modu', btnHide: '👁 Gizle', btnShow: '👁 Göster',
+            sliderDelay: 'İstek gecikmesi',
+            statTranslations: 'Çeviriler', statChars: 'Karakterler', statOnPage: 'Sayfada',
+            histEmpty: 'Geçmiş yok', histClear: '🗑 Temizle',
+            searchLang: 'Dil ara…',
+            btnOrig: '↩ Orijinal', btnCopy: '📋 Kopyala', btnSpeak: '🔊', btnRetry: '↺ Tekrar',
+            copied: '✅ Kopyalandı!', cacheCleared: '🧹 Önbellek temizlendi',
+            toastAll: '✅ Çevrildi', toastApply: '✅ Arayüz güncellendi',
+            toastSave: '💾 Kaydedildi — yenileniyor…', toastSurprise: '🎲 Dil:',
+            toastPirateOn: '🏴‍☠️ Arrr! Korsan modu!', toastPirateOff: '🏴‍☠️ Mod kapatıldı',
+            toastYodaOn: '🧙 Yoda modu açık, hmm.', toastYodaOff: '🧙 Yoda modu kapalı.',
+            shortcutHint: 'F2 = panel · Ctrl+Shift+T = hepsi',
+            btnCancel: '⛔ İptal', toastCancelled: '⛔ Çeviri iptal edildi',
+            secHotkeys: 'Kısayollar', hotkeyPanel: 'Paneli aç', hotkeyAll: 'Hepsini çevir',
+            hotkeyPress: 'Bir tuşa basın…', hotkeyReset: '↺ Sıfırla',
+            secColors: 'Tema renkleri', colorAcc: 'Vurgu', colorTxt: 'Metin', colorBg: 'Arka plan', colorOk: 'Başarı',
+            btnResetColors: '↺ Renkleri sıfırla',
         },
         zh: {
-            title:'Reddit翻译器', ver:'v1.0.0',
-            tabSettings:'⚙️ 设置', tabHistory:'📖 历史', tabExtras:'✨ 更多',
-            translateAll:'翻译全部',
-            secUiLang:'界面语言', applyUi:'✨ 应用界面',
-            secTargetLang:'目标语言', saveLang:'💾 保存语言',
-            secEngine:'引擎', secTone:'风格', secTheme:'主题',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'中性', toneFormal:'正式', toneSlang:'口语',
-            themeDark:'深色', themeLight:'浅色', themeCyber:'赛博朋克', themeDracula:'德古拉',
-            togBilingual:'双语模式', togTts:'文字转语音',
-            togAutoConvert:'自动单位转换', togAutoScroll:'自动滚动',
-            togIncognito:'隐身模式',
-            btnResetPos:'🏠 重置位置', btnClearCache:'🧹 清除缓存',
-            btnExport:'📤 导出', btnImport:'📥 导入',
-            btnSurprise:'🎲 随机语言', btnPirate:'🏴‍☠️ 海盗模式',
-            btnYoda:'🧙 尤达模式', btnHide:'👁 隐藏', btnShow:'👁 显示',
-            sliderDelay:'请求延迟',
-            statTranslations:'翻译', statChars:'字符', statOnPage:'页面上',
-            histEmpty:'暂无历史', histClear:'🗑 清除历史',
-            searchLang:'搜索语言…',
-            btnOrig:'↩ 原文', btnCopy:'📋 复制', btnSpeak:'🔊', btnRetry:'↺ 重试',
-            copied:'✅ 已复制！', cacheCleared:'🧹 缓存已清除',
-            toastAll:'✅ 已翻译', toastApply:'✅ 界面已更新',
-            toastSave:'💾 已保存 — 重新加载…', toastSurprise:'🎲 语言:',
-            toastPirateOn:'🏴‍☠️ Arrr! 海盗模式！', toastPirateOff:'🏴‍☠️ 模式关闭',
-            toastYodaOn:'🧙 尤达模式已开启，嗯。', toastYodaOff:'🧙 尤达模式已关闭。',
-            shortcutHint:'F2 = 面板 · Ctrl+Shift+T = 全部',
-            btnCancel:'⛔ 取消', toastCancelled:'⛔ 翻译已取消',
-            secHotkeys:'快捷键', hotkeyPanel:'打开面板', hotkeyAll:'翻译全部',
-            hotkeyPress:'按下一个键…', hotkeyReset:'↺ 重置',
-            secColors:'主题颜色', colorAcc:'强调色', colorTxt:'文字', colorBg:'背景', colorOk:'成功',
-            btnResetColors:'↺ 重置颜色',
+            title: 'Reddit翻译器', ver: 'v1.0.0',
+            tabSettings: '⚙️ 设置', tabHistory: '📖 历史', tabExtras: '✨ 更多',
+            translateAll: '翻译全部',
+            secUiLang: '界面语言', applyUi: '✨ 应用界面',
+            secTargetLang: '目标语言', saveLang: '💾 保存语言',
+            secEngine: '引擎', secTone: '风格', secTheme: '主题',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: '中性', toneFormal: '正式', toneSlang: '口语',
+            themeDark: '深色', themeLight: '浅色', themeCyber: '赛博朋克', themeDracula: '德古拉',
+            togBilingual: '双语模式', togTts: '文字转语音',
+            togAutoConvert: '自动单位转换', togAutoScroll: '自动滚动',
+            togIncognito: '隐身模式',
+            btnResetPos: '🏠 重置位置', btnClearCache: '🧹 清除缓存',
+            btnExport: '📤 导出', btnImport: '📥 导入',
+            btnSurprise: '🎲 随机语言', btnPirate: '🏴‍☠️ 海盗模式',
+            btnYoda: '🧙 尤达模式', btnHide: '👁 隐藏', btnShow: '👁 显示',
+            sliderDelay: '请求延迟',
+            statTranslations: '翻译', statChars: '字符', statOnPage: '页面上',
+            histEmpty: '暂无历史', histClear: '🗑 清除历史',
+            searchLang: '搜索语言…',
+            btnOrig: '↩ 原文', btnCopy: '📋 复制', btnSpeak: '🔊', btnRetry: '↺ 重试',
+            copied: '✅ 已复制！', cacheCleared: '🧹 缓存已清除',
+            toastAll: '✅ 已翻译', toastApply: '✅ 界面已更新',
+            toastSave: '💾 已保存 — 重新加载…', toastSurprise: '🎲 语言:',
+            toastPirateOn: '🏴‍☠️ Arrr! 海盗模式！', toastPirateOff: '🏴‍☠️ 模式关闭',
+            toastYodaOn: '🧙 尤达模式已开启，嗯。', toastYodaOff: '🧙 尤达模式已关闭。',
+            shortcutHint: 'F2 = 面板 · Ctrl+Shift+T = 全部',
+            btnCancel: '⛔ 取消', toastCancelled: '⛔ 翻译已取消',
+            secHotkeys: '快捷键', hotkeyPanel: '打开面板', hotkeyAll: '翻译全部',
+            hotkeyPress: '按下一个键…', hotkeyReset: '↺ 重置',
+            secColors: '主题颜色', colorAcc: '强调色', colorTxt: '文字', colorBg: '背景', colorOk: '成功',
+            btnResetColors: '↺ 重置颜色',
         },
         ja: {
-            title:'Reddit翻訳', ver:'v1.0.0',
-            tabSettings:'⚙️ 設定', tabHistory:'📖 履歴', tabExtras:'✨ その他',
-            translateAll:'すべて翻訳',
-            secUiLang:'UI言語', applyUi:'✨ UIを適用',
-            secTargetLang:'翻訳先言語', saveLang:'💾 言語を保存',
-            secEngine:'エンジン', secTone:'スタイル', secTheme:'テーマ',
-            engGoogle:'Google', engMymemory:'MyMemory',
-            toneNeutral:'標準', toneFormal:'公式', toneSlang:'くだけた',
-            themeDark:'ダーク', themeLight:'ライト', themeCyber:'サイバーパンク', themeDracula:'ドラキュラ',
-            togBilingual:'バイリンガルモード', togTts:'音声合成',
-            togAutoConvert:'単位自動変換', togAutoScroll:'自動スクロール',
-            togIncognito:'シークレット',
-            btnResetPos:'🏠 位置リセット', btnClearCache:'🧹 キャッシュ削除',
-            btnExport:'📤 エクスポート', btnImport:'📥 インポート',
-            btnSurprise:'🎲 ランダム言語', btnPirate:'🏴‍☠️ 海賊モード',
-            btnYoda:'🧙 ヨーダモード', btnHide:'👁 ボタンを隠す', btnShow:'👁 ボタンを表示',
-            sliderDelay:'リクエスト遅延',
-            statTranslations:'翻訳数', statChars:'文字数', statOnPage:'ページ上',
-            histEmpty:'履歴なし', histClear:'🗑 履歴を消去',
-            searchLang:'言語を検索…',
-            btnOrig:'↩ 元テキスト', btnCopy:'📋 コピー', btnSpeak:'🔊', btnRetry:'↺ やり直し',
-            copied:'✅ コピーしました！', cacheCleared:'🧹 キャッシュ削除済み',
-            toastAll:'✅ 翻訳済み', toastApply:'✅ UIを更新しました',
-            toastSave:'💾 保存しました — 再読込中…', toastSurprise:'🎲 言語:',
-            toastPirateOn:'🏴‍☠️ Arrr! 海賊モード！', toastPirateOff:'🏴‍☠️ モードオフ',
-            toastYodaOn:'🧙 ヨーダモードオン、ふむ。', toastYodaOff:'🧙 ヨーダモードオフ。',
-            shortcutHint:'F2 = パネル · Ctrl+Shift+T = すべて',
-            btnCancel:'⛔ キャンセル', toastCancelled:'⛔ 翻訳をキャンセルしました',
-            secHotkeys:'ショートカット', hotkeyPanel:'パネルを開く', hotkeyAll:'すべて翻訳',
-            hotkeyPress:'キーを押してください…', hotkeyReset:'↺ リセット',
-            secColors:'テーマカラー', colorAcc:'アクセント', colorTxt:'テキスト', colorBg:'背景', colorOk:'成功',
-            btnResetColors:'↺ 色をリセット',
+            title: 'Reddit翻訳', ver: 'v1.0.0',
+            tabSettings: '⚙️ 設定', tabHistory: '📖 履歴', tabExtras: '✨ その他',
+            translateAll: 'すべて翻訳',
+            secUiLang: 'UI言語', applyUi: '✨ UIを適用',
+            secTargetLang: '翻訳先言語', saveLang: '💾 言語を保存',
+            secEngine: 'エンジン', secTone: 'スタイル', secTheme: 'テーマ',
+            engGoogle: 'Google', engMymemory: 'MyMemory',
+            toneNeutral: '標準', toneFormal: '公式', toneSlang: 'くだけた',
+            themeDark: 'ダーク', themeLight: 'ライト', themeCyber: 'サイバーパンク', themeDracula: 'ドラキュラ',
+            togBilingual: 'バイリンガルモード', togTts: '音声合成',
+            togAutoConvert: '単位自動変換', togAutoScroll: '自動スクロール',
+            togIncognito: 'シークレット',
+            btnResetPos: '🏠 位置リセット', btnClearCache: '🧹 キャッシュ削除',
+            btnExport: '📤 エクスポート', btnImport: '📥 インポート',
+            btnSurprise: '🎲 ランダム言語', btnPirate: '🏴‍☠️ 海賊モード',
+            btnYoda: '🧙 ヨーダモード', btnHide: '👁 ボタンを隠す', btnShow: '👁 ボタンを表示',
+            sliderDelay: 'リクエスト遅延',
+            statTranslations: '翻訳数', statChars: '文字数', statOnPage: 'ページ上',
+            histEmpty: '履歴なし', histClear: '🗑 履歴を消去',
+            searchLang: '言語を検索…',
+            btnOrig: '↩ 元テキスト', btnCopy: '📋 コピー', btnSpeak: '🔊', btnRetry: '↺ やり直し',
+            copied: '✅ コピーしました！', cacheCleared: '🧹 キャッシュ削除済み',
+            toastAll: '✅ 翻訳済み', toastApply: '✅ UIを更新しました',
+            toastSave: '💾 保存しました — 再読込中…', toastSurprise: '🎲 言語:',
+            toastPirateOn: '🏴‍☠️ Arrr! 海賊モード！', toastPirateOff: '🏴‍☠️ モードオフ',
+            toastYodaOn: '🧙 ヨーダモードオン、ふむ。', toastYodaOff: '🧙 ヨーダモードオフ。',
+            shortcutHint: 'F2 = パネル · Ctrl+Shift+T = すべて',
+            btnCancel: '⛔ キャンセル', toastCancelled: '⛔ 翻訳をキャンセルしました',
+            secHotkeys: 'ショートカット', hotkeyPanel: 'パネルを開く', hotkeyAll: 'すべて翻訳',
+            hotkeyPress: 'キーを押してください…', hotkeyReset: '↺ リセット',
+            secColors: 'テーマカラー', colorAcc: 'アクセント', colorTxt: 'テキスト', colorBg: '背景', colorOk: '成功',
+            btnResetColors: '↺ 色をリセット',
         },
     };
 
@@ -494,13 +494,13 @@
     // § ЯЗЫКИ
     // ═══════════════════════════════════════════════════════════════════════════
     const ALL_LANGS = [
-        'af','sq','am','ar','hy','az','eu','be','bn','bs','bg','ca','ceb','co','hr','cs',
-        'da','nl','en','eo','et','tl','fi','fr','fy','gl','ka','de','el','gu','ht','ha',
-        'haw','he','hi','hmn','hu','is','ig','id','ga','it','ja','jw','kn','kk','km','ko',
-        'ku','ky','lo','la','lv','lt','lb','mk','mg','ms','ml','mt','mi','mr','mn','my',
-        'ne','no','ps','fa','pl','pt','pa','ro','ru','sm','gd','sr','st','sn','sd','si',
-        'sk','sl','so','es','su','sw','sv','tg','ta','te','th','tr','uk','ur','uz','vi',
-        'cy','xh','yi','yo','zu','zh',
+        'af', 'sq', 'am', 'ar', 'hy', 'az', 'eu', 'be', 'bn', 'bs', 'bg', 'ca', 'ceb', 'co', 'hr', 'cs',
+        'da', 'nl', 'en', 'eo', 'et', 'tl', 'fi', 'fr', 'fy', 'gl', 'ka', 'de', 'el', 'gu', 'ht', 'ha',
+        'haw', 'he', 'hi', 'hmn', 'hu', 'is', 'ig', 'id', 'ga', 'it', 'ja', 'jw', 'kn', 'kk', 'km', 'ko',
+        'ku', 'ky', 'lo', 'la', 'lv', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'mt', 'mi', 'mr', 'mn', 'my',
+        'ne', 'no', 'ps', 'fa', 'pl', 'pt', 'pa', 'ro', 'ru', 'sm', 'gd', 'sr', 'st', 'sn', 'sd', 'si',
+        'sk', 'sl', 'so', 'es', 'su', 'sw', 'sv', 'tg', 'ta', 'te', 'th', 'tr', 'uk', 'ur', 'uz', 'vi',
+        'cy', 'xh', 'yi', 'yo', 'zu', 'zh',
     ];
 
     function langName(code, locale) {
@@ -537,10 +537,10 @@
     // § ТЕМЫ
     // ═══════════════════════════════════════════════════════════════════════════
     const THEMES = {
-        dark:     { bg:'rgba(10,10,14,.96)',    surf:'rgba(24,24,32,.9)',   brd:'rgba(255,255,255,.06)', txt:'#e0e0ec', mut:'rgba(255,255,255,.28)', acc:'#ff4500', glow:'rgba(255,69,0,.36)',   dim:'rgba(255,69,0,.11)',   ok:'#60d394', okd:'rgba(96,211,148,.11)'  },
-        light:    { bg:'rgba(246,246,250,.97)',  surf:'rgba(255,255,255,.93)',brd:'rgba(0,0,0,.07)',      txt:'#17171e', mut:'rgba(0,0,0,.36)',       acc:'#ff4500', glow:'rgba(255,69,0,.2)',    dim:'rgba(255,69,0,.09)',   ok:'#1a9e5a', okd:'rgba(26,158,90,.09)'   },
-        cyberpunk:{ bg:'rgba(3,0,16,.97)',       surf:'rgba(10,3,32,.93)',   brd:'rgba(0,255,255,.11)',   txt:'#ddf4ff', mut:'rgba(0,255,255,.36)',   acc:'#00ffff', glow:'rgba(0,255,255,.44)',  dim:'rgba(0,255,255,.09)',  ok:'#ff00aa', okd:'rgba(255,0,170,.1)'    },
-        dracula:  { bg:'rgba(14,14,26,.97)',      surf:'rgba(26,26,46,.91)', brd:'rgba(139,92,246,.16)', txt:'#f8f8f2', mut:'rgba(189,147,249,.5)',  acc:'#bd93f9', glow:'rgba(189,147,249,.42)',dim:'rgba(189,147,249,.1)',  ok:'#50fa7b', okd:'rgba(80,250,123,.1)'   },
+        dark: { bg: 'rgba(10,10,14,.96)', surf: 'rgba(24,24,32,.9)', brd: 'rgba(255,255,255,.06)', txt: '#e0e0ec', mut: 'rgba(255,255,255,.28)', acc: '#ff4500', glow: 'rgba(255,69,0,.36)', dim: 'rgba(255,69,0,.11)', ok: '#60d394', okd: 'rgba(96,211,148,.11)' },
+        light: { bg: 'rgba(246,246,250,.97)', surf: 'rgba(255,255,255,.93)', brd: 'rgba(0,0,0,.07)', txt: '#17171e', mut: 'rgba(0,0,0,.36)', acc: '#ff4500', glow: 'rgba(255,69,0,.2)', dim: 'rgba(255,69,0,.09)', ok: '#1a9e5a', okd: 'rgba(26,158,90,.09)' },
+        cyberpunk: { bg: 'rgba(3,0,16,.97)', surf: 'rgba(10,3,32,.93)', brd: 'rgba(0,255,255,.11)', txt: '#ddf4ff', mut: 'rgba(0,255,255,.36)', acc: '#00ffff', glow: 'rgba(0,255,255,.44)', dim: 'rgba(0,255,255,.09)', ok: '#ff00aa', okd: 'rgba(255,0,170,.1)' },
+        dracula: { bg: 'rgba(14,14,26,.97)', surf: 'rgba(26,26,46,.91)', brd: 'rgba(139,92,246,.16)', txt: '#f8f8f2', mut: 'rgba(189,147,249,.5)', acc: '#bd93f9', glow: 'rgba(189,147,249,.42)', dim: 'rgba(189,147,249,.1)', ok: '#50fa7b', okd: 'rgba(80,250,123,.1)' },
     };
 
     function applyTheme(t) {
@@ -550,7 +550,7 @@
             try {
                 const cc = typeof cfg.customColors === 'string' ? JSON.parse(cfg.customColors) : cfg.customColors;
                 Object.assign(th, cc);
-            } catch {}
+            } catch { }
         }
         const r = document.documentElement;
         Object.entries(th).forEach(([k, v]) => r.style.setProperty(`--rtp-${k}`, v));
@@ -563,9 +563,9 @@
         // rgba/rgb — конвертируем
         const m = color.match(/[\d.]+/g);
         if (!m) return '#888888';
-        const r = (+m[0]).toString(16).padStart(2,'0');
-        const g = (+m[1]).toString(16).padStart(2,'0');
-        const b = (+m[2]).toString(16).padStart(2,'0');
+        const r = (+m[0]).toString(16).padStart(2, '0');
+        const g = (+m[1]).toString(16).padStart(2, '0');
+        const b = (+m[2]).toString(16).padStart(2, '0');
         return `#${r}${g}${b}`;
     }
 
@@ -784,12 +784,12 @@
     // § СЛЭНГ
     // ═══════════════════════════════════════════════════════════════════════════
     const SLANG = {
-        OP:'автор поста','TL;DR':'краткое содержание',TIL:'сегодня узнал',
-        AMA:'задайте любой вопрос',IMO:'по моему мнению',IMHO:'по моему скромному мнению',
-        IRL:'в реальной жизни',ELI5:'объясни как пятилетнему',AFAIK:'насколько я знаю',
-        IIRC:'если я правильно помню',SMH:'качаю головой',FTW:'победа',
-        LMK:'дай знать',NGL:'не буду врать',YMMV:'у каждого по-разному',
-        FWIW:'к вашему сведению',ICYMI:'если вы пропустили',FTFY:'исправил за тебя',
+        OP: 'автор поста', 'TL;DR': 'краткое содержание', TIL: 'сегодня узнал',
+        AMA: 'задайте любой вопрос', IMO: 'по моему мнению', IMHO: 'по моему скромному мнению',
+        IRL: 'в реальной жизни', ELI5: 'объясни как пятилетнему', AFAIK: 'насколько я знаю',
+        IIRC: 'если я правильно помню', SMH: 'качаю головой', FTW: 'победа',
+        LMK: 'дай знать', NGL: 'не буду врать', YMMV: 'у каждого по-разному',
+        FWIW: 'к вашему сведению', ICYMI: 'если вы пропустили', FTFY: 'исправил за тебя',
     };
     const SLANG_RE = new RegExp(`(?<![\\w;])(${Object.keys(SLANG).map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\w;])`, 'gi');
 
@@ -806,32 +806,32 @@
     function convertUnits(text) {
         if (!cfg.autoConvert) return text;
         return text
-            .replace(/(-?\d+(?:[.,]\d+)?)\s*°?F\b/g,             (_, n) => `${n}°F (${((+n.replace(',','.')-32)*5/9).toFixed(1)}°C)`)
-            .replace(/(\d+(?:[.,]\d+)?)\s*miles?\b/gi,            (_, n) => `${n} миль (≈${(+n.replace(',','.')*1.609).toFixed(1)} км)`)
-            .replace(/(\d+(?:[.,]\d+)?)\s*lbs?\b/gi,              (_, n) => `${n} фунт (≈${(+n.replace(',','.')*0.4536).toFixed(1)} кг)`)
-            .replace(/(\d+(?:[.,]\d+)?)\s*(?:inch(?:es)?|")\b/gi, (_, n) => `${n}" (≈${(+n.replace(',','.')*2.54).toFixed(1)} см)`)
-            .replace(/(\d+(?:[.,]\d+)?)\s*(?:foot|feet|ft)\b/gi,  (_, n) => `${n} фут (≈${(+n.replace(',','.')*0.3048).toFixed(2)} м)`)
-            .replace(/(\d+(?:[.,]\d+)?)\s*(?:yard|yd)s?\b/gi,     (_, n) => `${n} ярд (≈${(+n.replace(',','.')*0.9144).toFixed(2)} м)`);
+            .replace(/(-?\d+(?:[.,]\d+)?)\s*°?F\b/g, (_, n) => `${n}°F (${((+n.replace(',', '.') - 32) * 5 / 9).toFixed(1)}°C)`)
+            .replace(/(\d+(?:[.,]\d+)?)\s*miles?\b/gi, (_, n) => `${n} миль (≈${(+n.replace(',', '.') * 1.609).toFixed(1)} км)`)
+            .replace(/(\d+(?:[.,]\d+)?)\s*lbs?\b/gi, (_, n) => `${n} фунт (≈${(+n.replace(',', '.') * 0.4536).toFixed(1)} кг)`)
+            .replace(/(\d+(?:[.,]\d+)?)\s*(?:inch(?:es)?|")\b/gi, (_, n) => `${n}" (≈${(+n.replace(',', '.') * 2.54).toFixed(1)} см)`)
+            .replace(/(\d+(?:[.,]\d+)?)\s*(?:foot|feet|ft)\b/gi, (_, n) => `${n} фут (≈${(+n.replace(',', '.') * 0.3048).toFixed(2)} м)`)
+            .replace(/(\d+(?:[.,]\d+)?)\s*(?:yard|yd)s?\b/gi, (_, n) => `${n} ярд (≈${(+n.replace(',', '.') * 0.9144).toFixed(2)} м)`);
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
     // § ПАСХАЛКИ
     // ═══════════════════════════════════════════════════════════════════════════
     let pirateMode = false;
-    let yodaMode   = false;
+    let yodaMode = false;
 
     function pirateify(t) {
-        return t.replace(/\bthe\b/gi,"th'").replace(/\byou\b/gi,'ye').replace(/\bis\b/gi,'be')
-                .replace(/\bmy\b/gi,'me').replace(/\byes\b/gi,'aye').replace(/\bno\b/gi,'nay')
-                .replace(/\bfriend\b/gi,'matey').replace(/\bhello\b/gi,'ahoy')
-                + ' ⚓ Arrr!';
+        return t.replace(/\bthe\b/gi, "th'").replace(/\byou\b/gi, 'ye').replace(/\bis\b/gi, 'be')
+            .replace(/\bmy\b/gi, 'me').replace(/\byes\b/gi, 'aye').replace(/\bno\b/gi, 'nay')
+            .replace(/\bfriend\b/gi, 'matey').replace(/\bhello\b/gi, 'ahoy')
+            + ' ⚓ Arrr!';
     }
 
     function yodaify(t) {
         const w = t.split(' ');
         if (w.length < 4) return t + ', hmm.';
         const n = Math.ceil(w.length / 3);
-        return [...w.slice(-n), ...w.slice(0,-n)].join(' ') + ', hmm.';
+        return [...w.slice(-n), ...w.slice(0, -n)].join(' ') + ', hmm.';
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -845,7 +845,7 @@
         reqQ = reqQ
             .then(() => new Promise(r => setTimeout(r, cfg.requestDelay)))
             .then(() => gen === reqGen ? fn() : null)
-            .catch(() => {});
+            .catch(() => { });
         return reqQ;
     }
 
@@ -856,7 +856,7 @@
 
     function toneHint() {
         if (cfg.tone === 'formal') return 'Translate formally and professionally: ';
-        if (cfg.tone === 'slang')  return 'Translate casually and colloquially: ';
+        if (cfg.tone === 'slang') return 'Translate casually and colloquially: ';
         return '';
     }
 
@@ -870,23 +870,23 @@
         try {
             if (cfg.engine === 'mymemory') {
                 result = await new Promise(res => GM_xmlhttpRequest({
-                    method:'GET',
-                    url:`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=auto|${cfg.targetLang}`,
+                    method: 'GET',
+                    url: `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=auto|${cfg.targetLang}`,
                     onload: r => { try { res(JSON.parse(r.responseText).responseData.translatedText); } catch { res(text); } },
                     onerror: () => res(text),
                 }));
             } else {
                 result = await new Promise(res => GM_xmlhttpRequest({
-                    method:'GET',
-                    url:`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${cfg.targetLang}&dt=t&q=${encodeURIComponent(q)}`,
+                    method: 'GET',
+                    url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${cfg.targetLang}&dt=t&q=${encodeURIComponent(q)}`,
                     onload: r => { try { res(JSON.parse(r.responseText)[0].map(i => i[0]).join('')); } catch { res(text); } },
                     onerror: () => res(text),
                 }));
             }
-        } catch {}
+        } catch { }
 
         if (pirateMode) result = pirateify(result);
-        if (yodaMode)   result = yodaify(result);
+        if (yodaMode) result = yodaify(result);
         result = convertUnits(result);
 
         cacheSet(key, result);
@@ -928,8 +928,8 @@
         return wrap;
     }
 
-    function fmt(n)  { return Number(n).toLocaleString(); }
-    function fmtK(n) { return n >= 10000 ? (n/1000).toFixed(1)+'K' : fmt(n); }
+    function fmt(n) { return Number(n).toLocaleString(); }
+    function fmtK(n) { return n >= 10000 ? (n / 1000).toFixed(1) + 'K' : fmt(n); }
 
     function updateStats() {
         const map = { 'st-cnt': fmt(cfg.totalCount), 'st-chr': fmtK(cfg.totalChars), 'st-pg': document.querySelectorAll('.rtp-btn').length };
@@ -940,8 +940,8 @@
     // § ИНЖЕКТ КНОПОК
     // ═══════════════════════════════════════════════════════════════════════════
     const SELS = [
-        'shreddit-post [slot="title"]','h1[slot="title"]','a[id^="post-title"]',
-        'div[shreddit-comment-content]','.md:not(.rtp-done)',
+        'shreddit-post [slot="title"]', 'h1[slot="title"]', 'a[id^="post-title"]',
+        'div[shreddit-comment-content]', '.md:not(.rtp-done)',
     ].join(',');
 
     function attachBtn(el) {
@@ -998,7 +998,7 @@
                 t.textContent = label; t.onclick = fn; return t;
             };
             tb.append(
-                mk(S('btnCopy'),  () => navigator.clipboard.writeText(res).then(() => toast(S('copied')))),
+                mk(S('btnCopy'), () => navigator.clipboard.writeText(res).then(() => toast(S('copied')))),
                 mk(S('btnSpeak'), () => speak(res)),
                 mk(S('btnRetry'), async () => {
                     // Очищаем кэш этой записи и делаем чистый повтор
@@ -1030,7 +1030,7 @@
     const ioQueue = new Set();
     const io = new IntersectionObserver((entries) => {
         entries.forEach(e => { if (e.isIntersecting) { attachBtn(e.target); ioQueue.delete(e.target); io.unobserve(e.target); } });
-    }, { rootMargin:'200px' });
+    }, { rootMargin: '200px' });
 
     function injectButtons() {
         document.querySelectorAll(SELS).forEach(el => {
@@ -1106,15 +1106,15 @@
     // ═══════════════════════════════════════════════════════════════════════════
     // § ПАНЕЛЬ
     // ═══════════════════════════════════════════════════════════════════════════
-    let activeTab   = 'settings';
-    let btnsHidden  = false;
+    let activeTab = 'settings';
+    let btnsHidden = false;
 
     function buildPanel() {
         const old = document.getElementById('rtp-panel');
         if (old) { old.remove(); return; }
 
         const panel = document.createElement('div'); panel.id = 'rtp-panel';
-        panel.style.top  = GM_getValue('panelY', '11%');
+        panel.style.top = GM_getValue('panelY', '11%');
         panel.style.left = GM_getValue('panelX', 'calc(50% - 186px)');
 
         panel.innerHTML = `
@@ -1136,13 +1136,13 @@
         </div>
 
         <div id="rtp-tabs">
-            <div class="tab ${activeTab==='settings'?'on':''}" data-tab="settings">${S('tabSettings')}</div>
-            <div class="tab ${activeTab==='history'?'on':''}"  data-tab="history">${S('tabHistory')}</div>
-            <div class="tab ${activeTab==='extras'?'on':''}"   data-tab="extras">${S('tabExtras')}</div>
+            <div class="tab ${activeTab === 'settings' ? 'on' : ''}" data-tab="settings">${S('tabSettings')}</div>
+            <div class="tab ${activeTab === 'history' ? 'on' : ''}"  data-tab="history">${S('tabHistory')}</div>
+            <div class="tab ${activeTab === 'extras' ? 'on' : ''}"   data-tab="extras">${S('tabExtras')}</div>
         </div>
 
         <!-- НАСТРОЙКИ -->
-        <div id="pane-settings" class="pane" style="display:${activeTab==='settings'?'flex':'none'}">
+        <div id="pane-settings" class="pane" style="display:${activeTab === 'settings' ? 'flex' : 'none'}">
 
             <div>
                 <span class="lbl">${S('secUiLang')}</span>
@@ -1169,27 +1169,27 @@
             <div>
                 <span class="lbl">${S('secEngine')}</span>
                 <div class="pills">
-                    <div class="pill ${cfg.engine==='google'?'on':''}" data-eng="google">${S('engGoogle')}</div>
-                    <div class="pill ${cfg.engine==='mymemory'?'on':''}" data-eng="mymemory">${S('engMymemory')}</div>
+                    <div class="pill ${cfg.engine === 'google' ? 'on' : ''}" data-eng="google">${S('engGoogle')}</div>
+                    <div class="pill ${cfg.engine === 'mymemory' ? 'on' : ''}" data-eng="mymemory">${S('engMymemory')}</div>
                 </div>
             </div>
 
             <div>
                 <span class="lbl">${S('secTone')}</span>
                 <div class="pills">
-                    <div class="pill ${cfg.tone==='normal'?'on':''}" data-tone="normal">${S('toneNeutral')}</div>
-                    <div class="pill ${cfg.tone==='formal'?'on':''}" data-tone="formal">${S('toneFormal')}</div>
-                    <div class="pill ${cfg.tone==='slang'?'on':''}"  data-tone="slang">${S('toneSlang')}</div>
+                    <div class="pill ${cfg.tone === 'normal' ? 'on' : ''}" data-tone="normal">${S('toneNeutral')}</div>
+                    <div class="pill ${cfg.tone === 'formal' ? 'on' : ''}" data-tone="formal">${S('toneFormal')}</div>
+                    <div class="pill ${cfg.tone === 'slang' ? 'on' : ''}"  data-tone="slang">${S('toneSlang')}</div>
                 </div>
             </div>
 
             <div>
                 <span class="lbl">${S('secTheme')}</span>
                 <div class="pills">
-                    <div class="pill ${cfg.theme==='dark'?'on':''}"     data-th="dark">${S('themeDark')}</div>
-                    <div class="pill ${cfg.theme==='light'?'on':''}"    data-th="light">${S('themeLight')}</div>
-                    <div class="pill ${cfg.theme==='cyberpunk'?'on':''}" data-th="cyberpunk">${S('themeCyber')}</div>
-                    <div class="pill ${cfg.theme==='dracula'?'on':''}"  data-th="dracula">${S('themeDracula')}</div>
+                    <div class="pill ${cfg.theme === 'dark' ? 'on' : ''}"     data-th="dark">${S('themeDark')}</div>
+                    <div class="pill ${cfg.theme === 'light' ? 'on' : ''}"    data-th="light">${S('themeLight')}</div>
+                    <div class="pill ${cfg.theme === 'cyberpunk' ? 'on' : ''}" data-th="cyberpunk">${S('themeCyber')}</div>
+                    <div class="pill ${cfg.theme === 'dracula' ? 'on' : ''}"  data-th="dracula">${S('themeDracula')}</div>
                 </div>
             </div>
 
@@ -1214,10 +1214,10 @@
         </div>
 
         <!-- ИСТОРИЯ -->
-        <div id="pane-history" class="pane" style="display:${activeTab==='history'?'flex':'none'}"></div>
+        <div id="pane-history" class="pane" style="display:${activeTab === 'history' ? 'flex' : 'none'}"></div>
 
         <!-- ДОПОЛНЕНИЯ -->
-        <div id="pane-extras" class="pane" style="display:${activeTab==='extras'?'flex':'none'}">
+        <div id="pane-extras" class="pane" style="display:${activeTab === 'extras' ? 'flex' : 'none'}">
             <div class="g2">
                 <div class="btn-s" id="btn-surp">${S('btnSurprise')}</div>
                 <div class="btn-s" id="btn-pir" >${S('btnPirate')}</div>
@@ -1266,11 +1266,11 @@
         // UI lang (только поддерживаемые)
         const uiSel = panel.querySelector('#ui-sel');
         const uiSearch = panel.querySelector('#ui-s');
-        const uiOpts = UI_SUPPORTED.map(c => ({ c, n: langName(c, c) })).sort((a,b) => a.n.localeCompare(b.n));
+        const uiOpts = UI_SUPPORTED.map(c => ({ c, n: langName(c, c) })).sort((a, b) => a.n.localeCompare(b.n));
         function renderUi(q) {
             const f = q.toLowerCase();
-            uiSel.innerHTML = uiOpts.filter(({c,n}) => !f || n.toLowerCase().includes(f) || c.includes(f))
-                .map(({c,n}) => `<option value="${c}" ${c===cfg.uiLang?'selected':''}>${n} (${c.toUpperCase()})</option>`).join('');
+            uiSel.innerHTML = uiOpts.filter(({ c, n }) => !f || n.toLowerCase().includes(f) || c.includes(f))
+                .map(({ c, n }) => `<option value="${c}" ${c === cfg.uiLang ? 'selected' : ''}>${n} (${c.toUpperCase()})</option>`).join('');
         }
         renderUi('');
         uiSearch.addEventListener('input', () => renderUi(uiSearch.value));
@@ -1346,12 +1346,12 @@
                 captureHandler = (e) => {
                     e.preventDefault(); e.stopPropagation();
                     // Игнорируем одиночные модификаторы
-                    if (['Control','Alt','Shift','Meta'].includes(e.key)) return;
+                    if (['Control', 'Alt', 'Shift', 'Meta'].includes(e.key)) return;
                     const parts = [];
-                    if (e.ctrlKey)  parts.push('Ctrl');
-                    if (e.altKey)   parts.push('Alt');
+                    if (e.ctrlKey) parts.push('Ctrl');
+                    if (e.altKey) parts.push('Alt');
                     if (e.shiftKey) parts.push('Shift');
-                    if (e.metaKey)  parts.push('Meta');
+                    if (e.metaKey) parts.push('Meta');
                     const k = e.key.length === 1 ? e.key.toUpperCase() : e.key;
                     parts.push(k);
                     const combo = parts.join('+');
@@ -1372,7 +1372,7 @@
             };
         }
         setupHotkeyCapturer('hk-panel', 'hk-panel-r', 'hotkeyPanel', 'F2');
-        setupHotkeyCapturer('hk-all',   'hk-all-r',   'hotkeyAll',   'Ctrl+Shift+T');
+        setupHotkeyCapturer('hk-all', 'hk-all-r', 'hotkeyAll', 'Ctrl+Shift+T');
 
         // ── Цвета темы ────────────────────────────────────────────────────
         (function initColorPickers() {
@@ -1383,8 +1383,8 @@
             const map = [
                 { id: 'clr-acc', key: 'acc' },
                 { id: 'clr-txt', key: 'txt' },
-                { id: 'clr-bg',  key: 'bg'  },
-                { id: 'clr-ok',  key: 'ok'  },
+                { id: 'clr-bg', key: 'bg' },
+                { id: 'clr-ok', key: 'ok' },
             ];
 
             map.forEach(({ id, key }) => {
@@ -1396,18 +1396,18 @@
                     newCC[key] = inp.value;
                     // Для bg/surf — также обновляем прозрачность surf на основе bg
                     if (key === 'bg') {
-                        const r = parseInt(inp.value.slice(1,3),16), g = parseInt(inp.value.slice(3,5),16), b = parseInt(inp.value.slice(5,7),16);
+                        const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
                         newCC.surf = `rgba(${r},${g},${b},.85)`;
                     }
                     // glow и dim автоматически из acc
                     if (key === 'acc') {
-                        const r = parseInt(inp.value.slice(1,3),16), g = parseInt(inp.value.slice(3,5),16), b = parseInt(inp.value.slice(5,7),16);
+                        const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
                         newCC.glow = `rgba(${r},${g},${b},.38)`;
-                        newCC.dim  = `rgba(${r},${g},${b},.11)`;
+                        newCC.dim = `rgba(${r},${g},${b},.11)`;
                     }
                     // okd из ok
                     if (key === 'ok') {
-                        const r = parseInt(inp.value.slice(1,3),16), g = parseInt(inp.value.slice(3,5),16), b = parseInt(inp.value.slice(5,7),16);
+                        const r = parseInt(inp.value.slice(1, 3), 16), g = parseInt(inp.value.slice(3, 5), 16), b = parseInt(inp.value.slice(5, 7), 16);
                         newCC.okd = `rgba(${r},${g},${b},.11)`;
                     }
                     save('customColors', JSON.stringify(newCC));
@@ -1439,7 +1439,7 @@
 
         panel.querySelector('#btn-exp').onclick = () => {
             const a = document.createElement('a');
-            a.href = 'data:text/json,' + encodeURIComponent(JSON.stringify({ v:8, cfg }, null, 2));
+            a.href = 'data:text/json,' + encodeURIComponent(JSON.stringify({ v: 8, cfg }, null, 2));
             a.download = 'rtp-v8-settings.json'; a.click();
         };
 
@@ -1562,20 +1562,20 @@
         if (!combo) return false;
         const parts = combo.split('+');
         const key = parts[parts.length - 1];
-        const needCtrl  = parts.includes('Ctrl');
-        const needAlt   = parts.includes('Alt');
+        const needCtrl = parts.includes('Ctrl');
+        const needAlt = parts.includes('Alt');
         const needShift = parts.includes('Shift');
-        const needMeta  = parts.includes('Meta');
+        const needMeta = parts.includes('Meta');
         return e.key === key &&
-            e.ctrlKey  === needCtrl  &&
-            e.altKey   === needAlt   &&
+            e.ctrlKey === needCtrl &&
+            e.altKey === needAlt &&
             e.shiftKey === needShift &&
-            e.metaKey  === needMeta;
+            e.metaKey === needMeta;
     }
 
     window.addEventListener('keydown', e => {
         if (matchesHotkey(e, cfg.hotkeyPanel)) { e.preventDefault(); buildPanel(); }
-        if (matchesHotkey(e, cfg.hotkeyAll))   { e.preventDefault(); document.getElementById('rtp-fab')?.click(); }
+        if (matchesHotkey(e, cfg.hotkeyAll)) { e.preventDefault(); document.getElementById('rtp-fab')?.click(); }
     });
 
 })();
