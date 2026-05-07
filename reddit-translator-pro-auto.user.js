@@ -1,42 +1,41 @@
 // ==UserScript==
-// @name        🌐Reddit 翻译器 Pro Auto
-// @name:en     🌐Reddit Translator Pro Auto
-// @name:ru     🌐Reddit Переводчик Pro Auto
-// @name:uk     🌐Reddit Перекладач Pro Auto
-// @name:de     🌐Reddit Übersetzer Pro Auto
-// @name:fr     🌐Reddit Traducteur Pro Auto
-// @name:es     🌐Reddit Traductor Pro Auto
-// @name:it     🌐Reddit Traduttore Pro Auto
-// @name:pl     🌐Reddit Tłumacz Pro Auto
-// @name:tr     🌐Reddit Çevirmeni Pro Auto
-// @name:vi     🌐Reddit Biên Dịch Viên Pro Auto
-// @name:ko     🌐Reddit 번역기 Pro Auto
-// @name:ja     🌐Reddit 翻訳者 Pro Auto
-// @name:zh-CN  🌐Reddit 翻译器 Pro Auto
-// @name:zh-HK  🌐Reddit 翻譯器 Pro Auto
-// @name:zh-TW  🌐Reddit 翻譯器 Pro Auto
-// @namespace    https://github.com/Dylan-ZQL
-// @homepageURL  https://github.com/Dylan-ZQL/reddit-translator-auto
-// @supportURL   https://github.com/Dylan-ZQL/reddit-translator-auto/issues
-// @version      1.0.9
-// @description      🏷️业余 Reddit 翻译器 — glassmorphism、100+ 语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
-// @description:zh-CN   🏷️业余Reddit翻译器 — glassmorphism、100多种语言、TTS、Google、MyMemory、DeepL、历史记录、转换器、彩蛋、IntersectionObserver
-// @description:zh-HK   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
-// @description:zh-TW   🏷️業餘Reddit翻譯器 — glassmorphism、100多種語言、TTS、Google、MyMemory、DeepL、歷史記錄、轉換器、彩蛋、IntersectionObserver
-// @description:ru      🏷️Любительский переводчик Reddit — glassmorphism, 100+ языков, TTS, Google, MyMemory, DeepL, история, конвертеры, пасхалки, IntersectionObserver
-// @description:uk      🏷️Любительський перекладач Reddit — glassmorphism, 100+ мов, TTS, Google, MyMemory, DeepL, історія, конвертери, пасхалки, IntersectionObserver
-// @description:en      🏷️Amateur Reddit translator — glassmorphism, 100+ languages, TTS, Google, MyMemory, DeepL, history, converters, easter eggs, IntersectionObserver
-// @description:de      🏷️Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, TTS, Google, MyMemory, DeepL, Verlauf, Konverter, Ostereier, IntersectionObserver
-// @description:it      🏷️Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, TTS, Google, MyMemory, DeepL, cronologia, convertitori, easter egg, IntersectionObserver
-// @description:fr      🏷️Traducteur Reddit amateur — glassmorphism, 100+ langues, TTS, Google, MyMemory, DeepL, historique, convertisseurs, easter eggs, IntersectionObserver
-// @description:es      🏷️Traductor Reddit amateur — glassmorphism, 100+ idiomas, TTS, Google, MyMemory, DeepL, historial, convertidores, easter eggs, IntersectionObserver
-// @description:ko      🏷️아마추어 Reddit 번역기 — glassmorphism、100+ 언어、TTS、Google、MyMemory、DeepL、히스토리、변환기、이스터 에그、IntersectionObserver
-// @description:pl      🏷️Amatorski tłumacz Reddit — glassmorphism, 100+ języków, TTS, Google, MyMemory, DeepL, historia, konwertery, easter eggi, IntersectionObserver
-// @description:tr      🏷️Amatör Reddit çevirmeni — glassmorphism, 100+ dil, TTS, Google, MyMemory, DeepL, geçmiş, dönüştürücüler, sürprizler, IntersectionObserver
-// @description:vi      🏷️Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, TTS, Google, MyMemory, DeepL, lịch sử, bộ chuyển đổi, easter egg, IntersectionObserver
-// @description:ja      🏷️アマチュアReddit翻訳者 — glassmorphism、100以上の言語、TTS、Google、MyMemory、DeepL、履歴、コンバーター、イースターエッグ、IntersectionObserver
+// @name         🌐Reddit Translator Pro
+// @name:en      🌐Reddit Translator Pro
+// @name:ru      🌐Reddit Переводчик Pro
+// @name:uk      🌐Reddit Перекладач Pro
+// @name:de      🌐Reddit Übersetzer Pro
+// @name:fr      🌐Reddit Traducteur Pro
+// @name:es      🌐Reddit Traductor Pro
+// @name:it      🌐Reddit Traduttore Pro
+// @name:pl      🌐Reddit Tłumacz Pro
+// @name:tr      🌐Reddit Çevirmeni Pro
+// @name:vi      🌐Reddit Biên Dịch Viên Pro
+// @name:ko      🌐Reddit 번역기 Pro
+// @name:ja      🌐Reddit 翻訳者 Pro
+// @name:zh-CN   🌐Reddit 翻译器 Pro
+// @name:zh-HK   🌐Reddit 翻譯器 Pro
+// @name:zh-TW   🌐Reddit 翻譯器 Pro
+// @namespace    https://github.com/ebayybe
+// @homepageURL  https://github.com/ebayybe/reddit-translator
+// @supportURL   https://github.com/ebayybe/reddit-translator/issues
+// @version      1.0.10
+// @description:en      🏷️ Amateur Reddit translator — glassmorphism, 100+ languages, Google, MyMemory, DeepL, history, unit converter, easter eggs
+// @description:ru      🏷️ Любительский переводчик Reddit — glassmorphism, 100+ языков, Google, MyMemory, DeepL, история, конвертер единиц, пасхалки
+// @description:uk      🏷️ Любительський перекладач Reddit — glassmorphism, 100+ мов, Google, MyMemory, DeepL, історія, конвертер одиниць, пасхалки
+// @description:de      🏷️ Amateur-Reddit-Übersetzer — Glassmorphism, 100+ Sprachen, Google, MyMemory, DeepL, Verlauf, Einheitenumrechner, Ostereier
+// @description:it      🏷️ Traduttore Reddit amatoriale — glassmorphism, 100+ lingue, Google, MyMemory, DeepL, cronologia, convertitore di unità, easter egg
+// @description:fr      🏷️ Traducteur Reddit amateur — glassmorphism, 100+ langues, Google, MyMemory, DeepL, historique, convertisseur d'unités, easter eggs
+// @description:es      🏷️ Traductor Reddit amateur — glassmorphism, 100+ idiomas, Google, MyMemory, DeepL, historial, convertidor de unidades, easter eggs
+// @description:ko      🏷️ 아마추어 Reddit 번역기 — glassmorphism, 100+ 언어, Google, MyMemory, DeepL, 히스토리, 단위 변환기, 이스터 에그
+// @description:pl      🏷️ Amatorski tłumacz Reddit — glassmorphism, 100+ języków, Google, MyMemory, DeepL, historia, konwerter jednostek, easter eggi
+// @description:tr      🏷️ Amatör Reddit çevirmeni — glassmorphism, 100+ dil, Google, MyMemory, DeepL, geçmiş, birim dönüştürücü, sürprizler
+// @description:vi      🏷️ Trình dịch Reddit nghiệp dư — glassmorphism, 100+ ngôn ngữ, Google, MyMemory, DeepL, lịch sử, bộ chuyển đổi đơn vị, easter egg
+// @description:ja      🏷️ アマチュアReddit翻訳者 — glassmorphism, 100以上の言語, Google, MyMemory, DeepL, 履歴, 単位変換器, イースターエッグ
+// @description:zh-CN   🏷️ 业余Reddit翻译器 — glassmorphism, 100多种语言, Google, MyMemory, DeepL, 历史记录, 单位转换器, 彩蛋
+// @description:zh-HK   🏷️ 業餘Reddit翻譯器 — glassmorphism, 100多種語言, Google, MyMemory, DeepL, 歷史記錄, 單位轉換器, 彩蛋
+// @description:zh-TW   🏷️ 業餘Reddit翻譯器 — glassmorphism, 100多種語言, Google, MyMemory, DeepL, 歷史記錄, 單位轉換器, 彩蛋
 // @icon         data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjZmY0NTAwIi8+CiAgPHRleHQgeD0iNjQiIHk9IjkwIiBmb250LXNpemU9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iU2Vnb2UgVUkgRW1vamksQXBwbGUgQ29sb3IgRW1vamksc2Fucy1zZXJpZiI+8J+MkDwvdGV4dD4KPC9zdmc+
-// @author       Dylan-ZQL
+// @author       ebayybe
 // @license      MIT
 // @match        https://www.reddit.com/*
 // @grant        GM_xmlhttpRequest
@@ -47,8 +46,8 @@
 // @connect      api.mymemory.translated.net
 // @connect      api.deepl.com
 // @connect      api-free.deepl.com
-// @downloadURL https://raw.githubusercontent.com/Dylan-ZQL/reddit-translator-auto/main/reddit-translator-pro-auto.user.js
-// @updateURL https://raw.githubusercontent.com/Dylan-ZQL/reddit-translator-auto/main/reddit-translator-pro-auto.user.js
+// @downloadURL 
+// @updateURL 
 // ==/UserScript==
 
 (function () {
@@ -60,14 +59,25 @@
   // ═══════════════════════════════════════════════════════════════════════════
   // § КОНФИГУРАЦИЯ
   // ═══════════════════════════════════════════════════════════════════════════
+  // Auto-detect UI language from browser/system language
+  const UI_SUPPORTED_LIST = ['ru', 'uk', 'en', 'de', 'fr', 'es', 'pl', 'tr', 'zh', 'ja', 'it', 'pt', 'ko', 'vi', 'ar'];
+  function detectUiLang() {
+    const langs = navigator.languages || [navigator.language || 'en'];
+    for (const lang of langs) {
+      const base = lang.split('-')[0].toLowerCase();
+      if (UI_SUPPORTED_LIST.includes(base)) return base;
+    }
+    return 'en';
+  }
+  const AUTO_UI_LANG = detectUiLang();
+
   const DEF = {
-    targetLang: 'zh',
-    uiLang: 'zh',
+    targetLang: AUTO_UI_LANG,
+    uiLang: AUTO_UI_LANG,
     engine: 'google',
     tone: 'normal',
-    theme: 'light',
+    theme: 'dark',
     bilingualMode: true,
-    ttsEnabled: true,
     autoConvert: true,
     autoScroll: false,
     incognito: false,
@@ -157,16 +167,28 @@
   // ═══════════════════════════════════════════════════════════════════════════
   // § UI — МУЛЬТИЯЗЫЧНОСТЬ ИНТЕРФЕЙСА
   // ═══════════════════════════════════════════════════════════════════════════
-  const UI_SUPPORTED = ['ru', 'uk', 'en', 'de', 'fr', 'es', 'pl', 'tr', 'zh', 'ja'];
+  const UI_SUPPORTED = UI_SUPPORTED_LIST;
 
   const STRINGS = {
     ru: {
-      title: 'Reddit Переводчик', ver: 'v1.0.0',
+      title: 'Reddit Переводчик', ver: 'v1.0.10',
       tabSettings: '⚙️ Настройки', tabHistory: '📖 История', tabExtras: '✨ Дополнения',
       secUiLang: 'Язык интерфейса', applyUi: '✨ ПРИМЕНИТЬ ИНТЕРФЕЙС',
       secTargetLang: 'Язык перевода', saveLang: '💾 СОХРАНИТЬ ЯЗЫК',
       secEngine: 'Движок', secTone: 'Стиль перевода', secTheme: 'Тема',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Ключи DeepL API', saveDeepLApi: '🔑 СОХРАНИТЬ КЛЮЧИ',
+      btnTestDeepL: '🧪 ПРОВЕРИТЬ',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Вставьте один или несколько ключей DeepL API, разделённых запятыми',
+      deeplApiHelp: 'Поддерживаются Pro и Free ключи. Ключи, оканчивающиеся на :fx, автоматически используют deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Ключи DeepL сохранены',
+      toastDeepLKeysMissing: '⚠️ Сначала добавьте хотя бы один ключ DeepL API',
+      toastDeepLUnsupported: '⚠️ DeepL не поддерживает этот язык перевода:',
+      toastDeepLTesting: '🧪 Проверка DeepL API...',
+      toastDeepLOk: '✅ DeepL API доступен',
+      toastDeepLFail: '❌ DeepL API недоступен',
       toneNeutral: 'Нейтральный', toneFormal: 'Официальный', toneSlang: 'Разговорный',
       themeDark: 'Тёмная', themeLight: 'Светлая', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Двуязычный режим', togTts: 'Озвучка (TTS)',
@@ -177,7 +199,7 @@
       btnExport: '📤 Экспорт', btnImport: '📥 Импорт',
       btnSurprise: '🎲 Случайный язык', btnPirate: '🏴‍☠️ Пиратский',
       btnYoda: '🧙 Режим Йоды', btnHide: '👁 Скрыть кнопки', btnShow: '👁 Показать кнопки',
-      sliderDelay: 'Задержка запросов',
+      sliderDelay: 'Задержка запросов', unitMs: 'мс',
       statTranslations: 'Переводов', statChars: 'Символов', statOnPage: 'На странице',
       histEmpty: 'История пуста', histClear: '🗑 Очистить историю',
       searchLang: 'Поиск языка…',
@@ -193,14 +215,35 @@
       hotkeyPress: 'Нажмите клавишу…', hotkeyReset: '↺ Сброс',
       secColors: 'Цвета темы', colorAcc: 'Акцент', colorTxt: 'Текст', colorBg: 'Фон', colorOk: 'Успех',
       btnResetColors: '↺ Сброс цветов',
+      secRequestLimits: 'Ограничения запросов',
+      maxConcurrentRequests: 'Макс. одновременных запросов',
+      maxRequestsPerSecond: 'Макс. запросов / сек',
+      maxTextLengthPerRequest: 'Макс. символов / запрос',
+      maxParagraphsPerRequest: 'Макс. абзацев / запрос',
+      btnShowOriginals: '📄 ПОКАЗАТЬ ОРИГИНАЛ',
+      btnShowTranslations: '🌐 ПОКАЗАТЬ ПЕРЕВОД',
+      toastShowingOriginals: '📄 Показан оригинальный текст',
+      toastShowingTranslations: '🌐 Показан переведённый текст',
     },
     uk: {
-      title: 'Reddit Перекладач', ver: 'v1.0.0',
+      title: 'Reddit Перекладач', ver: 'v1.0.10',
       tabSettings: '⚙️ Налаштування', tabHistory: '📖 Історія', tabExtras: '✨ Додатково',
       secUiLang: 'Мова інтерфейсу', applyUi: '✨ ЗАСТОСУВАТИ ІНТЕРФЕЙС',
       secTargetLang: 'Мова перекладу', saveLang: '💾 ЗБЕРЕГТИ МОВУ',
       secEngine: 'Рушій', secTone: 'Стиль', secTheme: 'Тема',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Ключі DeepL API', saveDeepLApi: '🔑 ЗБЕРЕГТИ КЛЮЧІ',
+      btnTestDeepL: '🧪 ПЕРЕВІРИТИ',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Вставте один або кілька ключів DeepL API, розділених комами',
+      deeplApiHelp: 'Підтримуються Pro і Free ключі. Ключі, що закінчуються на :fx, автоматично використовують deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Ключі DeepL збережено',
+      toastDeepLKeysMissing: '⚠️ Спочатку додайте хоча б один ключ DeepL API',
+      toastDeepLUnsupported: '⚠️ DeepL не підтримує цю мову перекладу:',
+      toastDeepLTesting: '🧪 Перевірка DeepL API...',
+      toastDeepLOk: '✅ DeepL API доступний',
+      toastDeepLFail: '❌ DeepL API недоступний',
       toneNeutral: 'Нейтральний', toneFormal: 'Офіційний', toneSlang: 'Розмовний',
       themeDark: 'Темна', themeLight: 'Світла', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Двомовний режим', togTts: 'Озвучка (TTS)',
@@ -211,7 +254,7 @@
       btnExport: '📤 Експорт', btnImport: '📥 Імпорт',
       btnSurprise: '🎲 Випадкова мова', btnPirate: '🏴‍☠️ Піратський',
       btnYoda: '🧙 Режим Йоди', btnHide: '👁 Сховати', btnShow: '👁 Показати',
-      sliderDelay: 'Затримка запитів',
+      sliderDelay: 'Затримка запитів', unitMs: 'мс',
       statTranslations: 'Перекладів', statChars: 'Символів', statOnPage: 'На сторінці',
       histEmpty: 'Історія порожня', histClear: '🗑 Очистити',
       searchLang: 'Пошук мови…',
@@ -227,9 +270,18 @@
       hotkeyPress: 'Натисніть клавішу…', hotkeyReset: '↺ Скинути',
       secColors: 'Кольори теми', colorAcc: 'Акцент', colorTxt: 'Текст', colorBg: 'Фон', colorOk: 'Успіх',
       btnResetColors: '↺ Скинути кольори',
+      secRequestLimits: 'Обмеження запитів',
+      maxConcurrentRequests: 'Макс. одночасних запитів',
+      maxRequestsPerSecond: 'Макс. запитів / сек',
+      maxTextLengthPerRequest: 'Макс. символів / запит',
+      maxParagraphsPerRequest: 'Макс. абзаців / запит',
+      btnShowOriginals: '📄 ПОКАЗАТИ ОРИГІНАЛ',
+      btnShowTranslations: '🌐 ПОКАЗАТИ ПЕРЕКЛАД',
+      toastShowingOriginals: '📄 Показано оригінальний текст',
+      toastShowingTranslations: '🌐 Показано перекладений текст',
     },
     en: {
-      title: 'Reddit Translator', ver: 'v1.0.0',
+      title: 'Reddit Translator', ver: 'v1.0.10',
       tabSettings: '⚙️ Settings', tabHistory: '📖 History', tabExtras: '✨ Extras',
       secUiLang: 'UI Language', applyUi: '✨ APPLY INTERFACE',
       secTargetLang: 'Target language', saveLang: '💾 SAVE LANGUAGE',
@@ -240,7 +292,7 @@
       btnToggleSecretsShow: '👁',
       btnToggleSecretsHide: '🙈',
       deeplApiPlaceholder: 'Paste one or more DeepL API keys, separated by commas',
-      deeplApiHelp: 'Supports both Pro and Free keys. Keys ending with :fx use api-free.deepl.com automatically.',
+      deeplApiHelp: 'Supports both Pro and Free keys. Keys ending with :fx use deepl.com/pro-api automatically.',
       toastDeepLKeysSaved: '🔑 DeepL keys saved',
       toastDeepLKeysMissing: '⚠️ Add at least one DeepL API key first',
       toastDeepLUnsupported: '⚠️ DeepL does not support this target language:',
@@ -257,7 +309,7 @@
       btnExport: '📤 Export', btnImport: '📥 Import',
       btnSurprise: '🎲 Surprise me', btnPirate: '🏴‍☠️ Pirate mode',
       btnYoda: '🧙 Yoda mode', btnHide: '👁 Hide buttons', btnShow: '👁 Show buttons',
-      sliderDelay: 'Request delay',
+      sliderDelay: 'Request delay', unitMs: 'ms',
       statTranslations: 'Translations', statChars: 'Characters', statOnPage: 'On page',
       histEmpty: 'No history yet', histClear: '🗑 Clear history',
       searchLang: 'Search language…',
@@ -284,12 +336,24 @@
       toastShowingTranslations: '🌐 Showing translated text',
     },
     de: {
-      title: 'Reddit Übersetzer', ver: 'v1.0.0',
+      title: 'Reddit Übersetzer', ver: 'v1.0.10',
       tabSettings: '⚙️ Einstellungen', tabHistory: '📖 Verlauf', tabExtras: '✨ Extras',
       secUiLang: 'UI-Sprache', applyUi: '✨ INTERFACE ANWENDEN',
       secTargetLang: 'Zielsprache', saveLang: '💾 SPRACHE SPEICHERN',
       secEngine: 'Motor', secTone: 'Übersetzungsstil', secTheme: 'Thema',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'DeepL API-Schlüssel', saveDeepLApi: '🔑 DEEPL SPEICHERN',
+      btnTestDeepL: '🧪 DEEPL TESTEN',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Einen oder mehrere DeepL API-Schlüssel einfügen, durch Kommas getrennt',
+      deeplApiHelp: 'Unterstützt Pro- und Free-Schlüssel. Schlüssel, die auf :fx enden, verwenden automatisch deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 DeepL-Schlüssel gespeichert',
+      toastDeepLKeysMissing: '⚠️ Bitte zuerst mindestens einen DeepL API-Schlüssel hinzufügen',
+      toastDeepLUnsupported: '⚠️ DeepL unterstützt diese Zielsprache nicht:',
+      toastDeepLTesting: '🧪 DeepL API wird getestet...',
+      toastDeepLOk: '✅ DeepL API ist verfügbar',
+      toastDeepLFail: '❌ DeepL API ist nicht verfügbar',
       toneNeutral: 'Neutral', toneFormal: 'Formell', toneSlang: 'Umgangssprachlich',
       themeDark: 'Dunkel', themeLight: 'Hell', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Zweisprachig', togTts: 'Sprachausgabe',
@@ -300,7 +364,7 @@
       btnExport: '📤 Exportieren', btnImport: '📥 Importieren',
       btnSurprise: '🎲 Überrasch mich', btnPirate: '🏴‍☠️ Piraten-Modus',
       btnYoda: '🧙 Yoda-Modus', btnHide: '👁 Ausblenden', btnShow: '👁 Anzeigen',
-      sliderDelay: 'Anfrageverzögerung',
+      sliderDelay: 'Anfrageverzögerung', unitMs: 'ms',
       statTranslations: 'Übersetzungen', statChars: 'Zeichen', statOnPage: 'Auf Seite',
       histEmpty: 'Kein Verlauf', histClear: '🗑 Verlauf löschen',
       searchLang: 'Sprache suchen…',
@@ -316,14 +380,35 @@
       hotkeyPress: 'Taste drücken…', hotkeyReset: '↺ Zurücksetzen',
       secColors: 'Themenfarben', colorAcc: 'Akzent', colorTxt: 'Text', colorBg: 'Hintergrund', colorOk: 'Erfolg',
       btnResetColors: '↺ Farben zurücksetzen',
+      secRequestLimits: 'Anfragelimits',
+      maxConcurrentRequests: 'Max. gleichzeitige Anfragen',
+      maxRequestsPerSecond: 'Max. Anfragen / Sek.',
+      maxTextLengthPerRequest: 'Max. Zeichen / Anfrage',
+      maxParagraphsPerRequest: 'Max. Absätze / Anfrage',
+      btnShowOriginals: '📄 ORIGINAL ANZEIGEN',
+      btnShowTranslations: '🌐 ÜBERSETZUNG ANZEIGEN',
+      toastShowingOriginals: '📄 Originaltext wird angezeigt',
+      toastShowingTranslations: '🌐 Übersetzung wird angezeigt',
     },
     fr: {
-      title: 'Traducteur Reddit', ver: 'v1.0.0',
+      title: 'Traducteur Reddit', ver: 'v1.0.10',
       tabSettings: '⚙️ Paramètres', tabHistory: '📖 Historique', tabExtras: '✨ Extras',
       secUiLang: 'Langue UI', applyUi: '✨ APPLIQUER INTERFACE',
       secTargetLang: 'Langue cible', saveLang: '💾 ENREGISTRER',
       secEngine: 'Moteur', secTone: 'Style', secTheme: 'Thème',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Clés API DeepL', saveDeepLApi: '🔑 ENREGISTRER DEEPL',
+      btnTestDeepL: '🧪 TESTER DEEPL',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Collez une ou plusieurs clés API DeepL, séparées par des virgules',
+      deeplApiHelp: 'Prend en charge les clés Pro et Free. Les clés se terminant par :fx utilisent automatiquement deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Clés DeepL enregistrées',
+      toastDeepLKeysMissing: '⚠️ Ajoutez d\'abord au moins une clé API DeepL',
+      toastDeepLUnsupported: '⚠️ DeepL ne prend pas en charge cette langue cible :',
+      toastDeepLTesting: '🧪 Test de l\'API DeepL...',
+      toastDeepLOk: '✅ API DeepL disponible',
+      toastDeepLFail: '❌ API DeepL indisponible',
       toneNeutral: 'Neutre', toneFormal: 'Formel', toneSlang: 'Familier',
       themeDark: 'Sombre', themeLight: 'Clair', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Mode bilingue', togTts: 'Synthèse vocale',
@@ -334,7 +419,7 @@
       btnExport: '📤 Exporter', btnImport: '📥 Importer',
       btnSurprise: '🎲 Surprends-moi', btnPirate: '🏴‍☠️ Mode Pirate',
       btnYoda: '🧙 Mode Yoda', btnHide: '👁 Masquer', btnShow: '👁 Afficher',
-      sliderDelay: 'Délai de requête',
+      sliderDelay: 'Délai de requête', unitMs: 'ms',
       statTranslations: 'Traductions', statChars: 'Caractères', statOnPage: 'Sur page',
       histEmpty: 'Historique vide', histClear: '🗑 Effacer',
       searchLang: 'Chercher langue…',
@@ -350,14 +435,35 @@
       hotkeyPress: 'Appuyez sur une touche…', hotkeyReset: '↺ Réinitialiser',
       secColors: 'Couleurs du thème', colorAcc: 'Accent', colorTxt: 'Texte', colorBg: 'Fond', colorOk: 'Succès',
       btnResetColors: '↺ Réinitialiser couleurs',
+      secRequestLimits: 'Limites de requêtes',
+      maxConcurrentRequests: 'Max. requêtes simultanées',
+      maxRequestsPerSecond: 'Max. requêtes / sec',
+      maxTextLengthPerRequest: 'Max. caractères / requête',
+      maxParagraphsPerRequest: 'Max. paragraphes / requête',
+      btnShowOriginals: '📄 AFFICHER L\'ORIGINAL',
+      btnShowTranslations: '🌐 AFFICHER LA TRADUCTION',
+      toastShowingOriginals: '📄 Texte original affiché',
+      toastShowingTranslations: '🌐 Traduction affichée',
     },
     es: {
-      title: 'Traductor Reddit', ver: 'v1.0.0',
+      title: 'Traductor Reddit', ver: 'v1.0.10',
       tabSettings: '⚙️ Config', tabHistory: '📖 Historial', tabExtras: '✨ Extras',
       secUiLang: 'Idioma UI', applyUi: '✨ APLICAR INTERFAZ',
       secTargetLang: 'Idioma destino', saveLang: '💾 GUARDAR IDIOMA',
       secEngine: 'Motor', secTone: 'Estilo', secTheme: 'Tema',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Claves API de DeepL', saveDeepLApi: '🔑 GUARDAR DEEPL',
+      btnTestDeepL: '🧪 PROBAR DEEPL',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Pegue una o más claves API de DeepL, separadas por comas',
+      deeplApiHelp: 'Compatible con claves Pro y Free. Las claves que terminan en :fx usan automáticamente deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Claves DeepL guardadas',
+      toastDeepLKeysMissing: '⚠️ Primero añada al menos una clave API de DeepL',
+      toastDeepLUnsupported: '⚠️ DeepL no admite este idioma de destino:',
+      toastDeepLTesting: '🧪 Probando API de DeepL...',
+      toastDeepLOk: '✅ API de DeepL disponible',
+      toastDeepLFail: '❌ API de DeepL no disponible',
       toneNeutral: 'Neutral', toneFormal: 'Formal', toneSlang: 'Coloquial',
       themeDark: 'Oscuro', themeLight: 'Claro', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Modo bilingüe', togTts: 'Texto a voz',
@@ -368,7 +474,7 @@
       btnExport: '📤 Exportar', btnImport: '📥 Importar',
       btnSurprise: '🎲 Sorpréndeme', btnPirate: '🏴‍☠️ Modo Pirata',
       btnYoda: '🧙 Modo Yoda', btnHide: '👁 Ocultar', btnShow: '👁 Mostrar',
-      sliderDelay: 'Retraso de solicitud',
+      sliderDelay: 'Retraso de solicitud', unitMs: 'ms',
       statTranslations: 'Traducciones', statChars: 'Caracteres', statOnPage: 'En página',
       histEmpty: 'Sin historial', histClear: '🗑 Borrar',
       searchLang: 'Buscar idioma…',
@@ -384,14 +490,35 @@
       hotkeyPress: 'Presiona una tecla…', hotkeyReset: '↺ Restablecer',
       secColors: 'Colores del tema', colorAcc: 'Acento', colorTxt: 'Texto', colorBg: 'Fondo', colorOk: 'Éxito',
       btnResetColors: '↺ Restablecer colores',
+      secRequestLimits: 'Límites de solicitudes',
+      maxConcurrentRequests: 'Máx. solicitudes simultáneas',
+      maxRequestsPerSecond: 'Máx. solicitudes / seg',
+      maxTextLengthPerRequest: 'Máx. caracteres / solicitud',
+      maxParagraphsPerRequest: 'Máx. párrafos / solicitud',
+      btnShowOriginals: '📄 MOSTRAR ORIGINAL',
+      btnShowTranslations: '🌐 MOSTRAR TRADUCCIÓN',
+      toastShowingOriginals: '📄 Mostrando texto original',
+      toastShowingTranslations: '🌐 Mostrando traducción',
     },
     pl: {
-      title: 'Tłumacz Reddit', ver: 'v1.0.0',
+      title: 'Tłumacz Reddit', ver: 'v1.0.10',
       tabSettings: '⚙️ Ustawienia', tabHistory: '📖 Historia', tabExtras: '✨ Extras',
       secUiLang: 'Język interfejsu', applyUi: '✨ ZASTOSUJ INTERFEJS',
       secTargetLang: 'Język docelowy', saveLang: '💾 ZAPISZ JĘZYK',
       secEngine: 'Silnik', secTone: 'Styl', secTheme: 'Motyw',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Klucze API DeepL', saveDeepLApi: '🔑 ZAPISZ KLUCZE DEEPL',
+      btnTestDeepL: '🧪 TESTUJ DEEPL',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Wklej jeden lub więcej kluczy API DeepL, oddzielonych przecinkami',
+      deeplApiHelp: 'Obsługuje klucze Pro i Free. Klucze kończące się na :fx automatycznie używają deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Klucze DeepL zapisane',
+      toastDeepLKeysMissing: '⚠️ Najpierw dodaj co najmniej jeden klucz API DeepL',
+      toastDeepLUnsupported: '⚠️ DeepL nie obsługuje tego języka docelowego:',
+      toastDeepLTesting: '🧪 Testowanie API DeepL...',
+      toastDeepLOk: '✅ API DeepL dostępne',
+      toastDeepLFail: '❌ API DeepL niedostępne',
       toneNeutral: 'Neutralny', toneFormal: 'Formalny', toneSlang: 'Potoczny',
       themeDark: 'Ciemny', themeLight: 'Jasny', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Tryb dwujęzyczny', togTts: 'Mowa syntetyczna',
@@ -402,7 +529,7 @@
       btnExport: '📤 Eksport', btnImport: '📥 Import',
       btnSurprise: '🎲 Losowy język', btnPirate: '🏴‍☠️ Tryb Pirata',
       btnYoda: '🧙 Tryb Yody', btnHide: '👁 Ukryj', btnShow: '👁 Pokaż',
-      sliderDelay: 'Opóźnienie żądania',
+      sliderDelay: 'Opóźnienie żądania', unitMs: 'ms',
       statTranslations: 'Tłumaczenia', statChars: 'Znaki', statOnPage: 'Na stronie',
       histEmpty: 'Brak historii', histClear: '🗑 Wyczyść',
       searchLang: 'Szukaj języka…',
@@ -418,14 +545,35 @@
       hotkeyPress: 'Naciśnij klawisz…', hotkeyReset: '↺ Resetuj',
       secColors: 'Kolory motywu', colorAcc: 'Akcent', colorTxt: 'Tekst', colorBg: 'Tło', colorOk: 'Sukces',
       btnResetColors: '↺ Resetuj kolory',
+      secRequestLimits: 'Limity żądań',
+      maxConcurrentRequests: 'Maks. równoległych żądań',
+      maxRequestsPerSecond: 'Maks. żądań / sek',
+      maxTextLengthPerRequest: 'Maks. znaków / żądanie',
+      maxParagraphsPerRequest: 'Maks. akapitów / żądanie',
+      btnShowOriginals: '📄 POKAŻ ORYGINAŁ',
+      btnShowTranslations: '🌐 POKAŻ TŁUMACZENIE',
+      toastShowingOriginals: '📄 Wyświetlany tekst oryginalny',
+      toastShowingTranslations: '🌐 Wyświetlane tłumaczenie',
     },
     tr: {
-      title: 'Reddit Çevirmeni', ver: 'v1.0.0',
+      title: 'Reddit Çevirmeni', ver: 'v1.0.10',
       tabSettings: '⚙️ Ayarlar', tabHistory: '📖 Geçmiş', tabExtras: '✨ Ekstra',
       secUiLang: 'Arayüz dili', applyUi: '✨ ARAYÜZÜ UYGULA',
       secTargetLang: 'Hedef dil', saveLang: '💾 DİLİ KAYDET',
       secEngine: 'Motor', secTone: 'Stil', secTheme: 'Tema',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'DeepL API Anahtarları', saveDeepLApi: '🔑 DEEPL KAYDET',
+      btnTestDeepL: '🧪 DEEPL TEST ET',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Virgülle ayrılmış bir veya daha fazla DeepL API anahtarı yapıştırın',
+      deeplApiHelp: 'Pro ve Free anahtarları destekler. :fx ile biten anahtarlar otomatik olarak deepl.com/pro-api kullanır.',
+      toastDeepLKeysSaved: '🔑 DeepL anahtarları kaydedildi',
+      toastDeepLKeysMissing: '⚠️ Önce en az bir DeepL API anahtarı ekleyin',
+      toastDeepLUnsupported: '⚠️ DeepL bu hedef dili desteklemiyor:',
+      toastDeepLTesting: '🧪 DeepL API test ediliyor...',
+      toastDeepLOk: '✅ DeepL API kullanılabilir',
+      toastDeepLFail: '❌ DeepL API kullanılamıyor',
       toneNeutral: 'Nötr', toneFormal: 'Resmi', toneSlang: 'Günlük',
       themeDark: 'Koyu', themeLight: 'Açık', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
       togBilingual: 'Çift dil modu', togTts: 'Metin okuma',
@@ -436,7 +584,7 @@
       btnExport: '📤 Dışa aktar', btnImport: '📥 İçe aktar',
       btnSurprise: '🎲 Rastgele', btnPirate: '🏴‍☠️ Korsan modu',
       btnYoda: '🧙 Yoda modu', btnHide: '👁 Gizle', btnShow: '👁 Göster',
-      sliderDelay: 'İstek gecikmesi',
+      sliderDelay: 'İstek gecikmesi', unitMs: 'ms',
       statTranslations: 'Çeviriler', statChars: 'Karakterler', statOnPage: 'Sayfada',
       histEmpty: 'Geçmiş yok', histClear: '🗑 Temizle',
       searchLang: 'Dil ara…',
@@ -452,9 +600,18 @@
       hotkeyPress: 'Bir tuşa basın…', hotkeyReset: '↺ Sıfırla',
       secColors: 'Tema renkleri', colorAcc: 'Vurgu', colorTxt: 'Metin', colorBg: 'Arka plan', colorOk: 'Başarı',
       btnResetColors: '↺ Renkleri sıfırla',
+      secRequestLimits: 'İstek limitleri',
+      maxConcurrentRequests: 'Maks. eşzamanlı istek',
+      maxRequestsPerSecond: 'Maks. istek / sn',
+      maxTextLengthPerRequest: 'Maks. karakter / istek',
+      maxParagraphsPerRequest: 'Maks. paragraf / istek',
+      btnShowOriginals: '📄 ORİJİNALİ GÖSTER',
+      btnShowTranslations: '🌐 ÇEVİRİYİ GÖSTER',
+      toastShowingOriginals: '📄 Orijinal metin gösteriliyor',
+      toastShowingTranslations: '🌐 Çeviri gösteriliyor',
     },
     zh: {
-      title: 'Reddit翻译器', ver: 'v1.0.0',
+      title: 'Reddit翻译器', ver: 'v1.0.10',
       tabSettings: '⚙️ 设置', tabHistory: '📖 历史', tabExtras: '✨ 更多',
       secUiLang: '界面语言', applyUi: '✨ 应用界面',
       secTargetLang: '目标语言', saveLang: '💾 保存语言',
@@ -465,7 +622,7 @@
       btnToggleSecretsShow: '👁',
       btnToggleSecretsHide: '🙈',
       deeplApiPlaceholder: '粘贴一个或多个 DeepL API 密钥，使用英文逗号分隔',
-      deeplApiHelp: '同时支持 Pro 和 Free 密钥。以 :fx 结尾的密钥会自动使用 api-free.deepl.com。',
+      deeplApiHelp: '同时支持 Pro 和 Free 密钥。以 :fx 结尾的密钥会自动使用 deepl.com/pro-api。',
       toastDeepLKeysSaved: '🔑 DeepL 密钥已保存',
       toastDeepLKeysMissing: '⚠️ 请先添加至少一个 DeepL API 密钥',
       toastDeepLUnsupported: '⚠️ DeepL 暂不支持该目标语言：',
@@ -482,7 +639,7 @@
       btnExport: '📤 导出', btnImport: '📥 导入',
       btnSurprise: '🎲 随机语言', btnPirate: '🏴‍☠️ 海盗模式',
       btnYoda: '🧙 尤达模式', btnHide: '👁 隐藏', btnShow: '👁 显示',
-      sliderDelay: '请求延迟',
+      sliderDelay: '请求延迟', unitMs: '毫秒',
       statTranslations: '翻译', statChars: '字符', statOnPage: '页面上',
       histEmpty: '暂无历史', histClear: '🗑 清除历史',
       searchLang: '搜索语言…',
@@ -509,12 +666,24 @@
       toastShowingTranslations: '🌐 当前显示译文',
     },
     ja: {
-      title: 'Reddit翻訳', ver: 'v1.0.0',
+      title: 'Reddit翻訳', ver: 'v1.0.10',
       tabSettings: '⚙️ 設定', tabHistory: '📖 履歴', tabExtras: '✨ その他',
       secUiLang: 'UI言語', applyUi: '✨ UIを適用',
       secTargetLang: '翻訳先言語', saveLang: '💾 言語を保存',
       secEngine: 'エンジン', secTone: 'スタイル', secTheme: 'テーマ',
-      engGoogle: 'Google', engMymemory: 'MyMemory',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'DeepL APIキー', saveDeepLApi: '🔑 DEEPL キーを保存',
+      btnTestDeepL: '🧪 DEEPL テスト',
+      btnToggleSecretsShow: '👁',
+      btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'DeepL APIキーをカンマ区切りで1つ以上貼り付けてください',
+      deeplApiHelp: 'ProおよびFreeキーに対応。:fx で終わるキーは自動的に deepl.com/pro-api を使用します。',
+      toastDeepLKeysSaved: '🔑 DeepLキーを保存しました',
+      toastDeepLKeysMissing: '⚠️ まずDeepL APIキーを1つ以上追加してください',
+      toastDeepLUnsupported: '⚠️ DeepLはこのターゲット言語に対応していません:',
+      toastDeepLTesting: '🧪 DeepL APIをテスト中...',
+      toastDeepLOk: '✅ DeepL APIは利用可能です',
+      toastDeepLFail: '❌ DeepL APIは利用できません',
       toneNeutral: '標準', toneFormal: '公式', toneSlang: 'くだけた',
       themeDark: 'ダーク', themeLight: 'ライト', themeCyber: 'サイバーパンク', themeDracula: 'ドラキュラ',
       togBilingual: 'バイリンガルモード', togTts: '音声合成',
@@ -525,7 +694,7 @@
       btnExport: '📤 エクスポート', btnImport: '📥 インポート',
       btnSurprise: '🎲 ランダム言語', btnPirate: '🏴‍☠️ 海賊モード',
       btnYoda: '🧙 ヨーダモード', btnHide: '👁 ボタンを隠す', btnShow: '👁 ボタンを表示',
-      sliderDelay: 'リクエスト遅延',
+      sliderDelay: 'リクエスト遅延', unitMs: 'ms',
       statTranslations: '翻訳数', statChars: '文字数', statOnPage: 'ページ上',
       histEmpty: '履歴なし', histClear: '🗑 履歴を消去',
       searchLang: '言語を検索…',
@@ -541,6 +710,275 @@
       hotkeyPress: 'キーを押してください…', hotkeyReset: '↺ リセット',
       secColors: 'テーマカラー', colorAcc: 'アクセント', colorTxt: 'テキスト', colorBg: '背景', colorOk: '成功',
       btnResetColors: '↺ 色をリセット',
+      secRequestLimits: 'リクエスト制限',
+      maxConcurrentRequests: '最大同時リクエスト数',
+      maxRequestsPerSecond: '最大リクエスト数 / 秒',
+      maxTextLengthPerRequest: '最大文字数 / リクエスト',
+      maxParagraphsPerRequest: '最大段落数 / リクエスト',
+      btnShowOriginals: '📄 原文を表示',
+      btnShowTranslations: '🌐 翻訳を表示',
+      toastShowingOriginals: '🌐 翻訳を表示中',
+      toastShowingTranslations: '🌐 翻訳を表示中',
+    },
+    it: {
+      title: 'Reddit Traduttore', ver: 'v1.0.10',
+      tabSettings: '⚙️ Impostazioni', tabHistory: '📖 Cronologia', tabExtras: '✨ Extra',
+      secUiLang: 'Lingua interfaccia', applyUi: '✨ APPLICA INTERFACCIA',
+      secTargetLang: 'Lingua di destinazione', saveLang: '💾 SALVA LINGUA',
+      secEngine: 'Motore', secTone: 'Tono di traduzione', secTheme: 'Tema',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Chiavi API DeepL', saveDeepLApi: '🔑 SALVA CHIAVI DEEPL',
+      btnTestDeepL: '🧪 TESTA DEEPL',
+      btnToggleSecretsShow: '👁', btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Incolla una o più chiavi API DeepL, separate da virgole',
+      deeplApiHelp: 'Supporta chiavi Pro e Free. Le chiavi che terminano con :fx usano automaticamente deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Chiavi DeepL salvate',
+      toastDeepLKeysMissing: '⚠️ Aggiungi prima almeno una chiave API DeepL',
+      toastDeepLUnsupported: '⚠️ DeepL non supporta questa lingua di destinazione:',
+      toastDeepLTesting: '🧪 Test API DeepL in corso...', toastDeepLOk: '✅ API DeepL disponibile', toastDeepLFail: '❌ API DeepL non disponibile',
+      toneNeutral: 'Neutro', toneFormal: 'Formale', toneSlang: 'Colloquiale',
+      themeDark: 'Scuro', themeLight: 'Chiaro', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+      togBilingual: 'Modalità bilingue', togTts: 'Sintesi vocale',
+      togAutoConvert: 'Conversione unità automatica', togAutoScroll: 'Scorri automaticamente',
+      togIncognito: 'Incognito (nessuna cronologia)',
+      togAutoTranslateOnScroll: 'Traduci automaticamente allo scroll',
+      btnResetPos: '🏠 Ripristina posizione', btnClearCache: '🧹 Svuota cache',
+      btnExport: '📤 Esporta', btnImport: '📥 Importa',
+      btnSurprise: '🎲 Sorprendimi', btnPirate: '🏴‍☠️ Modalità pirata',
+      btnYoda: '🧙 Modalità Yoda', btnHide: '👁 Nascondi pulsanti', btnShow: '👁 Mostra pulsanti',
+      sliderDelay: 'Ritardo richieste', unitMs: 'ms',
+      statTranslations: 'Traduzioni', statChars: 'Caratteri', statOnPage: 'In pagina',
+      histEmpty: 'Nessuna cronologia', histClear: '🗑 Cancella cronologia',
+      searchLang: 'Cerca lingua…',
+      btnOrig: '↩ Originale', btnCopy: '📋 Copia', btnSpeak: '🔊', btnRetry: '↺ Riprova',
+      copied: '✅ Copiato!', cacheCleared: '🧹 Cache svuotata',
+      toastApply: '✅ Interfaccia aggiornata',
+      toastSave: '💾 Salvato — ricaricamento…', toastSurprise: '🎲 Lingua:',
+      toastPirateOn: '🏴‍☠️ Arrr! Modalità pirata attiva!', toastPirateOff: '🏴‍☠️ Modalità pirata disattivata',
+      toastYodaOn: '🧙 Modalità Yoda attiva, hmm.', toastYodaOff: '🧙 Modalità Yoda disattivata.',
+      toastAutoScrollOn: '✅ Traduzione automatica allo scroll attiva', toastAutoScrollOff: '⭕ Traduzione automatica allo scroll disattivata',
+      shortcutHint: 'F2 = pannello',
+      secHotkeys: 'Tasti rapidi', hotkeyPanel: 'Apri pannello',
+      hotkeyPress: 'Premi un tasto…', hotkeyReset: '↺ Reimposta',
+      secColors: 'Colori tema', colorAcc: 'Accento', colorTxt: 'Testo', colorBg: 'Sfondo', colorOk: 'Successo',
+      btnResetColors: '↺ Reimposta colori',
+      secRequestLimits: 'Limiti richieste',
+      maxConcurrentRequests: 'Max richieste simultanee',
+      maxRequestsPerSecond: 'Max richieste / sec',
+      maxTextLengthPerRequest: 'Max caratteri / richiesta',
+      maxParagraphsPerRequest: 'Max paragrafi / richiesta',
+      btnShowOriginals: '📄 MOSTRA ORIGINALE',
+      btnShowTranslations: '🌐 MOSTRA TRADUZIONE',
+      toastShowingOriginals: '📄 Testo originale visualizzato',
+      toastShowingTranslations: '🌐 Traduzione visualizzata',
+    },
+    pt: {
+      title: 'Reddit Tradutor', ver: 'v1.0.10',
+      tabSettings: '⚙️ Configurações', tabHistory: '📖 Histórico', tabExtras: '✨ Extras',
+      secUiLang: 'Idioma da interface', applyUi: '✨ APLICAR INTERFACE',
+      secTargetLang: 'Idioma de destino', saveLang: '💾 SALVAR IDIOMA',
+      secEngine: 'Motor', secTone: 'Tom de tradução', secTheme: 'Tema',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Chaves API DeepL', saveDeepLApi: '🔑 SALVAR CHAVES DEEPL',
+      btnTestDeepL: '🧪 TESTAR DEEPL',
+      btnToggleSecretsShow: '👁', btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Cole uma ou mais chaves API DeepL, separadas por vírgulas',
+      deeplApiHelp: 'Suporta chaves Pro e Free. Chaves terminadas em :fx usam automaticamente deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Chaves DeepL salvas',
+      toastDeepLKeysMissing: '⚠️ Adicione pelo menos uma chave API DeepL primeiro',
+      toastDeepLUnsupported: '⚠️ DeepL não suporta este idioma de destino:',
+      toastDeepLTesting: '🧪 Testando API DeepL...', toastDeepLOk: '✅ API DeepL disponível', toastDeepLFail: '❌ API DeepL indisponível',
+      toneNeutral: 'Neutro', toneFormal: 'Formal', toneSlang: 'Informal',
+      themeDark: 'Escuro', themeLight: 'Claro', themeCyber: 'Cyberpunk', themeDracula: 'Drácula',
+      togBilingual: 'Modo bilíngue', togTts: 'Texto para fala',
+      togAutoConvert: 'Converter unidades automaticamente', togAutoScroll: 'Rolar automaticamente',
+      togIncognito: 'Incógnito (sem histórico)',
+      togAutoTranslateOnScroll: 'Traduzir automaticamente ao rolar',
+      btnResetPos: '🏠 Redefinir posição', btnClearCache: '🧹 Limpar cache',
+      btnExport: '📤 Exportar', btnImport: '📥 Importar',
+      btnSurprise: '🎲 Surpreenda-me', btnPirate: '🏴‍☠️ Modo pirata',
+      btnYoda: '🧙 Modo Yoda', btnHide: '👁 Ocultar botões', btnShow: '👁 Mostrar botões',
+      sliderDelay: 'Atraso de solicitação', unitMs: 'ms',
+      statTranslations: 'Traduções', statChars: 'Caracteres', statOnPage: 'Na página',
+      histEmpty: 'Sem histórico', histClear: '🗑 Limpar histórico',
+      searchLang: 'Pesquisar idioma…',
+      btnOrig: '↩ Original', btnCopy: '📋 Copiar', btnSpeak: '🔊', btnRetry: '↺ Tentar novamente',
+      copied: '✅ Copiado!', cacheCleared: '🧹 Cache limpo',
+      toastApply: '✅ Interface atualizada',
+      toastSave: '💾 Salvo — recarregando…', toastSurprise: '🎲 Idioma:',
+      toastPirateOn: '🏴‍☠️ Arrr! Modo pirata ativado!', toastPirateOff: '🏴‍☠️ Modo pirata desativado',
+      toastYodaOn: '🧙 Modo Yoda ativado, hmm.', toastYodaOff: '🧙 Modo Yoda desativado.',
+      toastAutoScrollOn: '✅ Tradução automática ao rolar ativada', toastAutoScrollOff: '⭕ Tradução automática ao rolar desativada',
+      shortcutHint: 'F2 = painel',
+      secHotkeys: 'Atalhos', hotkeyPanel: 'Abrir painel',
+      hotkeyPress: 'Pressione uma tecla…', hotkeyReset: '↺ Redefinir',
+      secColors: 'Cores do tema', colorAcc: 'Destaque', colorTxt: 'Texto', colorBg: 'Fundo', colorOk: 'Sucesso',
+      btnResetColors: '↺ Redefinir cores',
+      secRequestLimits: 'Limites de solicitações',
+      maxConcurrentRequests: 'Máx. solicitações simultâneas',
+      maxRequestsPerSecond: 'Máx. solicitações / seg',
+      maxTextLengthPerRequest: 'Máx. caracteres / solicitação',
+      maxParagraphsPerRequest: 'Máx. parágrafos / solicitação',
+      btnShowOriginals: '📄 MOSTRAR ORIGINAL',
+      btnShowTranslations: '🌐 MOSTRAR TRADUÇÃO',
+      toastShowingOriginals: '📄 Mostrando texto original',
+      toastShowingTranslations: '🌐 Mostrando tradução',
+    },
+    ko: {
+      title: 'Reddit 번역기', ver: 'v1.0.10',
+      tabSettings: '⚙️ 설정', tabHistory: '📖 기록', tabExtras: '✨ 기타',
+      secUiLang: 'UI 언어', applyUi: '✨ 인터페이스 적용',
+      secTargetLang: '번역 대상 언어', saveLang: '💾 언어 저장',
+      secEngine: '엔진', secTone: '번역 어조', secTheme: '테마',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'DeepL API 키', saveDeepLApi: '🔑 DEEPL 키 저장',
+      btnTestDeepL: '🧪 DEEPL 테스트',
+      btnToggleSecretsShow: '👁', btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'DeepL API 키를 쉼표로 구분하여 하나 이상 붙여넣으세요',
+      deeplApiHelp: 'Pro 및 Free 키를 지원합니다. :fx로 끝나는 키는 자동으로 deepl.com/pro-api를 사용합니다.',
+      toastDeepLKeysSaved: '🔑 DeepL 키 저장됨',
+      toastDeepLKeysMissing: '⚠️ DeepL API 키를 먼저 하나 이상 추가하세요',
+      toastDeepLUnsupported: '⚠️ DeepL이 이 대상 언어를 지원하지 않습니다:',
+      toastDeepLTesting: '🧪 DeepL API 테스트 중...', toastDeepLOk: '✅ DeepL API 사용 가능', toastDeepLFail: '❌ DeepL API 사용 불가',
+      toneNeutral: '보통', toneFormal: '격식체', toneSlang: '구어체',
+      themeDark: '다크', themeLight: '라이트', themeCyber: '사이버펑크', themeDracula: '드라큘라',
+      togBilingual: '이중 언어 모드', togTts: '텍스트 음성 변환',
+      togAutoConvert: '단위 자동 변환', togAutoScroll: '자동 스크롤',
+      togIncognito: '시크릿 (기록 없음)',
+      togAutoTranslateOnScroll: '스크롤 시 자동 번역',
+      btnResetPos: '🏠 위치 초기화', btnClearCache: '🧹 캐시 지우기',
+      btnExport: '📤 내보내기', btnImport: '📥 가져오기',
+      btnSurprise: '🎲 랜덤 언어', btnPirate: '🏴‍☠️ 해적 모드',
+      btnYoda: '🧙 요다 모드', btnHide: '👁 버튼 숨기기', btnShow: '👁 버튼 표시',
+      sliderDelay: '요청 지연', unitMs: 'ms',
+      statTranslations: '번역 수', statChars: '문자 수', statOnPage: '페이지 내',
+      histEmpty: '기록 없음', histClear: '🗑 기록 지우기',
+      searchLang: '언어 검색…',
+      btnOrig: '↩ 원문', btnCopy: '📋 복사', btnSpeak: '🔊', btnRetry: '↺ 다시 시도',
+      copied: '✅ 복사됨!', cacheCleared: '🧹 캐시 삭제됨',
+      toastApply: '✅ 인터페이스 업데이트됨',
+      toastSave: '💾 저장됨 — 새로고침 중…', toastSurprise: '🎲 언어:',
+      toastPirateOn: '🏴‍☠️ Arrr! 해적 모드 켜짐!', toastPirateOff: '🏴‍☠️ 해적 모드 꺼짐',
+      toastYodaOn: '🧙 요다 모드 켜짐, 흠.', toastYodaOff: '🧙 요다 모드 꺼짐.',
+      toastAutoScrollOn: '✅ 스크롤 시 자동 번역 켜짐', toastAutoScrollOff: '⭕ 스크롤 시 자동 번역 꺼짐',
+      shortcutHint: 'F2 = 패널',
+      secHotkeys: '단축키', hotkeyPanel: '패널 열기',
+      hotkeyPress: '키를 누르세요…', hotkeyReset: '↺ 초기화',
+      secColors: '테마 색상', colorAcc: '강조', colorTxt: '텍스트', colorBg: '배경', colorOk: '성공',
+      btnResetColors: '↺ 색상 초기화',
+      secRequestLimits: '요청 제한',
+      maxConcurrentRequests: '최대 동시 요청 수',
+      maxRequestsPerSecond: '최대 요청 수 / 초',
+      maxTextLengthPerRequest: '최대 문자 수 / 요청',
+      maxParagraphsPerRequest: '최대 단락 수 / 요청',
+      btnShowOriginals: '📄 원문 보기',
+      btnShowTranslations: '🌐 번역 보기',
+      toastShowingOriginals: '📄 원문 표시 중',
+      toastShowingTranslations: '🌐 번역 표시 중',
+    },
+    vi: {
+      title: 'Reddit Dịch thuật', ver: 'v1.0.10',
+      tabSettings: '⚙️ Cài đặt', tabHistory: '📖 Lịch sử', tabExtras: '✨ Thêm',
+      secUiLang: 'Ngôn ngữ giao diện', applyUi: '✨ ÁP DỤNG GIAO DIỆN',
+      secTargetLang: 'Ngôn ngữ đích', saveLang: '💾 LƯU NGÔN NGỮ',
+      secEngine: 'Công cụ', secTone: 'Giọng dịch', secTheme: 'Chủ đề',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'Khóa API DeepL', saveDeepLApi: '🔑 LƯU KHÓA DEEPL',
+      btnTestDeepL: '🧪 KIỂM TRA DEEPL',
+      btnToggleSecretsShow: '👁', btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'Dán một hoặc nhiều khóa API DeepL, phân cách bằng dấu phẩy',
+      deeplApiHelp: 'Hỗ trợ khóa Pro và Free. Khóa kết thúc bằng :fx tự động dùng deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 Đã lưu khóa DeepL',
+      toastDeepLKeysMissing: '⚠️ Vui lòng thêm ít nhất một khóa API DeepL trước',
+      toastDeepLUnsupported: '⚠️ DeepL không hỗ trợ ngôn ngữ đích này:',
+      toastDeepLTesting: '🧪 Đang kiểm tra API DeepL...', toastDeepLOk: '✅ API DeepL khả dụng', toastDeepLFail: '❌ API DeepL không khả dụng',
+      toneNeutral: 'Trung lập', toneFormal: 'Trang trọng', toneSlang: 'Thông thường',
+      themeDark: 'Tối', themeLight: 'Sáng', themeCyber: 'Cyberpunk', themeDracula: 'Dracula',
+      togBilingual: 'Chế độ song ngữ', togTts: 'Chuyển văn bản thành giọng nói',
+      togAutoConvert: 'Tự động chuyển đổi đơn vị', togAutoScroll: 'Tự động cuộn',
+      togIncognito: 'Ẩn danh (không lưu lịch sử)',
+      togAutoTranslateOnScroll: 'Tự động dịch khi cuộn',
+      btnResetPos: '🏠 Đặt lại vị trí', btnClearCache: '🧹 Xóa bộ nhớ đệm',
+      btnExport: '📤 Xuất', btnImport: '📥 Nhập',
+      btnSurprise: '🎲 Ngẫu nhiên', btnPirate: '🏴‍☠️ Chế độ cướp biển',
+      btnYoda: '🧙 Chế độ Yoda', btnHide: '👁 Ẩn nút', btnShow: '👁 Hiện nút',
+      sliderDelay: 'Độ trễ yêu cầu', unitMs: 'ms',
+      statTranslations: 'Bản dịch', statChars: 'Ký tự', statOnPage: 'Trên trang',
+      histEmpty: 'Chưa có lịch sử', histClear: '🗑 Xóa lịch sử',
+      searchLang: 'Tìm ngôn ngữ…',
+      btnOrig: '↩ Gốc', btnCopy: '📋 Sao chép', btnSpeak: '🔊', btnRetry: '↺ Thử lại',
+      copied: '✅ Đã sao chép!', cacheCleared: '🧹 Đã xóa bộ nhớ đệm',
+      toastApply: '✅ Giao diện đã cập nhật',
+      toastSave: '💾 Đã lưu — đang tải lại…', toastSurprise: '🎲 Ngôn ngữ:',
+      toastPirateOn: '🏴‍☠️ Arrr! Chế độ cướp biển bật!', toastPirateOff: '🏴‍☠️ Chế độ cướp biển tắt',
+      toastYodaOn: '🧙 Chế độ Yoda bật, hmm.', toastYodaOff: '🧙 Chế độ Yoda tắt.',
+      toastAutoScrollOn: '✅ Tự động dịch khi cuộn đã bật', toastAutoScrollOff: '⭕ Tự động dịch khi cuộn đã tắt',
+      shortcutHint: 'F2 = bảng điều khiển',
+      secHotkeys: 'Phím tắt', hotkeyPanel: 'Mở bảng điều khiển',
+      hotkeyPress: 'Nhấn một phím…', hotkeyReset: '↺ Đặt lại',
+      secColors: 'Màu chủ đề', colorAcc: 'Nhấn mạnh', colorTxt: 'Văn bản', colorBg: 'Nền', colorOk: 'Thành công',
+      btnResetColors: '↺ Đặt lại màu',
+      secRequestLimits: 'Giới hạn yêu cầu',
+      maxConcurrentRequests: 'Tối đa yêu cầu đồng thời',
+      maxRequestsPerSecond: 'Tối đa yêu cầu / giây',
+      maxTextLengthPerRequest: 'Tối đa ký tự / yêu cầu',
+      maxParagraphsPerRequest: 'Tối đa đoạn / yêu cầu',
+      btnShowOriginals: '📄 HIỂN THỊ BẢN GỐC',
+      btnShowTranslations: '🌐 HIỂN THỊ BẢN DỊCH',
+      toastShowingOriginals: '📄 Đang hiển thị văn bản gốc',
+      toastShowingTranslations: '🌐 Đang hiển thị bản dịch',
+    },
+    ar: {
+      title: 'Reddit مترجم', ver: 'v1.0.10',
+      tabSettings: '⚙️ الإعدادات', tabHistory: '📖 السجل', tabExtras: '✨ إضافات',
+      secUiLang: 'لغة الواجهة', applyUi: '✨ تطبيق الواجهة',
+      secTargetLang: 'لغة الهدف', saveLang: '💾 حفظ اللغة',
+      secEngine: 'المحرك', secTone: 'أسلوب الترجمة', secTheme: 'المظهر',
+      engGoogle: 'Google', engMymemory: 'MyMemory', engDeepL: 'DeepL',
+      secDeepLApi: 'مفاتيح DeepL API', saveDeepLApi: '🔑 حفظ مفاتيح DEEPL',
+      btnTestDeepL: '🧪 اختبار DEEPL',
+      btnToggleSecretsShow: '👁', btnToggleSecretsHide: '🙈',
+      deeplApiPlaceholder: 'الصق مفتاحاً أو أكثر من مفاتيح DeepL API، مفصولة بفواصل',
+      deeplApiHelp: 'يدعم مفاتيح Pro و Free. المفاتيح التي تنتهي بـ :fx تستخدم تلقائياً deepl.com/pro-api.',
+      toastDeepLKeysSaved: '🔑 تم حفظ مفاتيح DeepL',
+      toastDeepLKeysMissing: '⚠️ أضف مفتاح DeepL API واحداً على الأقل أولاً',
+      toastDeepLUnsupported: '⚠️ DeepL لا يدعم لغة الهدف هذه:',
+      toastDeepLTesting: '🧪 جارٍ اختبار DeepL API...', toastDeepLOk: '✅ DeepL API متاح', toastDeepLFail: '❌ DeepL API غير متاح',
+      toneNeutral: 'محايد', toneFormal: 'رسمي', toneSlang: 'عامي',
+      themeDark: 'داكن', themeLight: 'فاتح', themeCyber: 'سايبربانك', themeDracula: 'دراكولا',
+      togBilingual: 'وضع ثنائي اللغة', togTts: 'تحويل النص إلى كلام',
+      togAutoConvert: 'تحويل الوحدات تلقائياً', togAutoScroll: 'التمرير التلقائي',
+      togIncognito: 'التصفح الخاص (بدون سجل)',
+      togAutoTranslateOnScroll: 'ترجمة تلقائية عند التمرير',
+      btnResetPos: '🏠 إعادة تعيين الموضع', btnClearCache: '🧹 مسح ذاكرة التخزين المؤقت',
+      btnExport: '📤 تصدير', btnImport: '📥 استيراد',
+      btnSurprise: '🎲 لغة عشوائية', btnPirate: '🏴‍☠️ وضع القراصنة',
+      btnYoda: '🧙 وضع يودا', btnHide: '👁 إخفاء الأزرار', btnShow: '👁 إظهار الأزرار',
+      sliderDelay: 'تأخير الطلب', unitMs: 'ms',
+      statTranslations: 'الترجمات', statChars: 'الأحرف', statOnPage: 'في الصفحة',
+      histEmpty: 'لا يوجد سجل', histClear: '🗑 مسح السجل',
+      searchLang: 'البحث عن لغة…',
+      btnOrig: '↩ الأصل', btnCopy: '📋 نسخ', btnSpeak: '🔊', btnRetry: '↺ إعادة المحاولة',
+      copied: '✅ تم النسخ!', cacheCleared: '🧹 تم مسح ذاكرة التخزين المؤقت',
+      toastApply: '✅ تم تحديث الواجهة',
+      toastSave: '💾 تم الحفظ — جارٍ إعادة التحميل…', toastSurprise: '🎲 اللغة:',
+      toastPirateOn: '🏴‍☠️ Arrr! وضع القراصنة مفعّل!', toastPirateOff: '🏴‍☠️ وضع القراصنة معطّل',
+      toastYodaOn: '🧙 وضع يودا مفعّل، همم.', toastYodaOff: '🧙 وضع يودا معطّل.',
+      toastAutoScrollOn: '✅ الترجمة التلقائية عند التمرير مفعّلة', toastAutoScrollOff: '⭕ الترجمة التلقائية عند التمرير معطّلة',
+      shortcutHint: 'F2 = اللوحة',
+      secHotkeys: 'الاختصارات', hotkeyPanel: 'فتح اللوحة',
+      hotkeyPress: 'اضغط مفتاحاً…', hotkeyReset: '↺ إعادة تعيين',
+      secColors: 'ألوان المظهر', colorAcc: 'لون مميز', colorTxt: 'نص', colorBg: 'خلفية', colorOk: 'نجاح',
+      btnResetColors: '↺ إعادة تعيين الألوان',
+      secRequestLimits: 'حدود الطلبات',
+      maxConcurrentRequests: 'أقصى طلبات متزامنة',
+      maxRequestsPerSecond: 'أقصى طلبات / ثانية',
+      maxTextLengthPerRequest: 'أقصى أحرف / طلب',
+      maxParagraphsPerRequest: 'أقصى فقرات / طلب',
+      btnShowOriginals: '📄 إظهار الأصل',
+      btnShowTranslations: '🌐 إظهار الترجمة',
+      toastShowingOriginals: '📄 يتم عرض النص الأصلي',
+      toastShowingTranslations: '🌐 يتم عرض الترجمة',
     },
   };
 
@@ -1483,63 +1921,6 @@
   // ═══════════════════════════════════════════════════════════════════════════
   // § TTS
   // ═══════════════════════════════════════════════════════════════════════════
-  let activeSpeechUtterance = null;
-  let activeSpeechText = '';
-  let activeSpeechButton = null;
-
-  function setSpeakButtonActive(btn, active) {
-    if (!btn) return;
-    btn.classList.toggle('active', !!active);
-  }
-
-  function clearActiveSpeechState() {
-    setSpeakButtonActive(activeSpeechButton, false);
-    activeSpeechUtterance = null;
-    activeSpeechText = '';
-    activeSpeechButton = null;
-  }
-
-  function stopSpeaking() {
-    if (!window.speechSynthesis) return;
-    speechSynthesis.cancel();
-    clearActiveSpeechState();
-  }
-
-  function speak(text, btn) {
-    if (!cfg.ttsEnabled || !window.speechSynthesis) return;
-
-    const nextText = String(text || '').trim();
-    if (!nextText) return;
-
-    const isBusy = speechSynthesis.speaking || speechSynthesis.pending;
-    const isSameTarget = isBusy && activeSpeechText === nextText && activeSpeechButton === btn;
-
-    if (isSameTarget) {
-      stopSpeaking();
-      return;
-    }
-
-    stopSpeaking();
-
-    const u = new SpeechSynthesisUtterance(nextText);
-    u.lang = cfg.targetLang;
-    u.rate = 0.95;
-
-    activeSpeechUtterance = u;
-    activeSpeechText = nextText;
-    activeSpeechButton = btn || null;
-    setSpeakButtonActive(activeSpeechButton, true);
-
-    u.onend = () => {
-      if (activeSpeechUtterance === u) clearActiveSpeechState();
-    };
-    u.onerror = () => {
-      if (activeSpeechUtterance === u) clearActiveSpeechState();
-    };
-
-    speechSynthesis.speak(u);
-  }
-
   // ═══════════════════════════════════════════════════════════════════════════
   // § УТИЛИТЫ
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1737,7 +2118,6 @@
     };
 
     addAction(S('btnCopy'), () => navigator.clipboard.writeText(res).then(() => toast(S('copied'))));
-    addAction(S('btnSpeak'), () => speak(res, tb.lastChild));
     addAction(S('btnRetry'), async () => {
       delete cache[getTranslationCacheKey(src)];
       flushCache();
@@ -2065,12 +2445,21 @@
     setExclusivePills(panel, 'data-tone', (tone) => save('tone', tone));
     setExclusivePills(panel, 'data-th', (theme) => {
       save('theme', theme);
+      save('customColors', null);
+      cfg.customColors = null;
+      // Сбрасываем пикеры к значениям новой темы
+      const base = THEMES[theme] || THEMES.dark;
+      ['clr-acc', 'clr-bg', 'clr-ok'].forEach((id, i) => {
+        const key = ['acc', 'bg', 'ok'][i];
+        const inp = panel.querySelector(`#${id}`);
+        if (inp) inp.value = colorToHex(base[key] || '#888888');
+      });
       applyTheme(theme);
     });
   }
 
   function setupPanelToggles(panel) {
-    const toggleKeys = ['bilingualMode', 'ttsEnabled', 'autoConvert', 'autoScroll', 'incognito', 'autoTranslateOnScroll'];
+    const toggleKeys = ['bilingualMode', 'autoConvert', 'autoScroll', 'incognito', 'autoTranslateOnScroll'];
     panel.querySelectorAll('.tog-row').forEach((row, i) => {
       const key = toggleKeys[i];
       if (!key) return;
@@ -2088,7 +2477,7 @@
     const sl = panel.querySelector('#sl-delay');
     sl.oninput = () => {
       save('requestDelay', +sl.value);
-      panel.querySelector('#sl-val').textContent = sl.value + ' мс';
+      panel.querySelector('#sl-val').textContent = sl.value + ' ' + S('unitMs');
     };
 
     [
@@ -2166,9 +2555,8 @@
     const merged = Object.assign({}, base, getCustomColors());
     const colorInputs = [
       { id: 'clr-acc', key: 'acc' },
-      { id: 'clr-txt', key: 'txt' },
-      { id: 'clr-bg', key: 'bg' },
-      { id: 'clr-ok', key: 'ok' },
+      { id: 'clr-bg',  key: 'bg'  },
+      { id: 'clr-ok',  key: 'ok'  },
     ];
 
     colorInputs.forEach(({ id, key }) => {
@@ -2419,20 +2807,20 @@
                 </div>
             </div>
 
+            <div class="div"></div>
+
             <div>
                 <span class="lbl">${S('secTheme')}</span>
                 <div class="pills">
-                    <div class="pill ${cfg.theme === 'dark' ? 'on' : ''}"     data-th="dark">${S('themeDark')}</div>
-                    <div class="pill ${cfg.theme === 'light' ? 'on' : ''}"    data-th="light">${S('themeLight')}</div>
+                    <div class="pill ${cfg.theme === 'dark' ? 'on' : ''}"      data-th="dark">${S('themeDark')}</div>
                     <div class="pill ${cfg.theme === 'cyberpunk' ? 'on' : ''}" data-th="cyberpunk">${S('themeCyber')}</div>
-                    <div class="pill ${cfg.theme === 'dracula' ? 'on' : ''}"  data-th="dracula">${S('themeDracula')}</div>
+                    <div class="pill ${cfg.theme === 'dracula' ? 'on' : ''}"   data-th="dracula">${S('themeDracula')}</div>
                 </div>
             </div>
 
             <div class="div"></div>
 
             <div class="tog-row"><span class="tog-lbl">${S('togBilingual')}</span></div>
-            <div class="tog-row"><span class="tog-lbl">${S('togTts')}</span></div>
             <div class="tog-row"><span class="tog-lbl">${S('togAutoConvert')}</span></div>
             <div class="tog-row"><span class="tog-lbl">${S('togAutoScroll')}</span></div>
             <div class="tog-row"><span class="tog-lbl">${S('togIncognito')}</span></div>
@@ -2467,7 +2855,7 @@
             <div>
                 <span class="lbl">${S('sliderDelay')}</span>
                 <input type="range" class="slider" id="sl-delay" min="50" max="600" value="${cfg.requestDelay}">
-                <div class="slider-v" id="sl-val">${cfg.requestDelay} мс</div>
+                <div class="slider-v" id="sl-val">${cfg.requestDelay} ${S('unitMs')}</div>
             </div>
             <div>
                 <span class="lbl">${S('secRequestLimits')}</span>
@@ -2504,7 +2892,6 @@
                 <span class="lbl">🎨 ${S('secColors')}</span>
                 <div class="clr-grid">
                     <div class="clr-row"><span class="clr-lbl">${S('colorAcc')}</span><input type="color" class="clr-inp" id="clr-acc"></div>
-                    <div class="clr-row"><span class="clr-lbl">${S('colorTxt')}</span><input type="color" class="clr-inp" id="clr-txt"></div>
                     <div class="clr-row"><span class="clr-lbl">${S('colorBg')}</span><input type="color" class="clr-inp" id="clr-bg"></div>
                     <div class="clr-row"><span class="clr-lbl">${S('colorOk')}</span><input type="color" class="clr-inp" id="clr-ok"></div>
                 </div>
@@ -2558,6 +2945,7 @@
   // ═══════════════════════════════════════════════════════════════════════════
   // § ЗАПУСК
   // ═══════════════════════════════════════════════════════════════════════════
+  if (cfg.theme === 'light') { save('theme', 'dark'); cfg.theme = 'dark'; }
   applyTheme(cfg.theme);
   createTranslateFab();
   createViewToggle();
