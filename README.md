@@ -1,123 +1,367 @@
-# Reddit Translator Pro Auto
+<div align="center">
 
-`Reddit Translator Pro Auto` 是一个面向 `Reddit` 页面使用的用户脚本，适用于 `Tampermonkey` 和 `Violentmonkey`。它用于翻译帖子正文、评论内容和滚动浏览中的可见文本，并提供多引擎、双语阅读、历史记录、快捷键、缓存和自动翻译控制能力。
+<img src="https://img.shields.io/badge/version-v1.0.10-ff4500?style=for-the-badge&logo=reddit&logoColor=white"/>
+<img src="https://img.shields.io/badge/license-MIT-60d394?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/languages-100%2B-bd93f9?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Tampermonkey-ready-ff4500?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Violentmonkey-ready-ff4500?style=for-the-badge"/>
 
-## 当前状态
+# 🌐 Reddit Translator Pro Auto
 
-- 当前开发源：`Reddit 翻译器 Pro 修7.js`
-- 当前正式发布文件：`reddit-translator-pro-auto.user.js`
-- 当前正式发布版本：`v1.0.9`
+**An amateur userscript that brings seamless, inline translation to Reddit — right where you read.**  
 
-仓库中的开发、发布和历史文件现在按职责分开维护：
+[**📥 Install**](https://github.com/ebayybe/reddit-translator#-installation) · [**⚙️ Features**](https://github.com/ebayybe/reddit-translator#%EF%B8%8F-features) · [**🌍 Supported UI Languages**](https://github.com/ebayybe/reddit-translator#-supported-ui-languages) · [**📋 Changelog**](https://github.com/ebayybe/reddit-translator#-changelog)
 
-- `Reddit 翻译器 Pro 修7.js` 用于继续开发、调试和功能迭代
-- `reddit-translator-pro-auto.user.js` 用于安装、分发和对外发布
-- `archive/` 用于保留旧阶段快照，不作为当前安装入口
+</div>
 
-## 功能概览
+---
 
-- 支持 `Google`、`MyMemory`、`DeepL` 三种翻译引擎
-- 支持 100+ 目标语言
-- 支持帖子正文与评论内容翻译
-- 支持右下角小地球按钮一键翻译当前可见内容
-- 支持双语显示与原文 / 译文切换
-- 支持滚动场景中的自动翻译
-- 支持长文本与多段内容自动分块翻译
-- 支持请求并发、速率、单次文本长度、单次段落数限制
-- 支持请求超时保护，降低网络异常导致队列卡住的概率
-- 支持 `TTS`、历史记录、缓存、隐身模式
-- 支持主题切换、自定义颜色和快捷键
-- 支持 `DeepL API Key` 保存、测试和轮换
+## 📥 Installation
 
-## 仓库结构
+1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/) for your browser
+2. Click **[Install Script](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Confirm installation — done ✅
 
-- `Reddit 翻译器 Pro 修7.js`
-  当前开发源文件。后续功能修改优先落在这里。
-- `reddit-translator-pro-auto.user.js`
-  当前正式发布产物。已同步 `修7` 内容，用于安装、分发、GreasyFork 更新和版本说明。
-- `archive/`
-  存放 `修1` 到 `修6` 以及更早的历史快照，仅用于回溯和对照。
-- `tests/`
-  Playwright 冒烟测试。
-- `scripts/`
-  本地浏览器启动脚本。
-- `更新日志.md`
-  发布记录与阶段演进说明。
+> The script auto-updates when a new version is published.
 
-## 安装方式
+---
 
-1. 在浏览器中安装 `Tampermonkey` 或 `Violentmonkey`
-2. 任选一种安装方式：
-   通过 Greasy Fork 直接[安装](https://greasyfork.org/zh-CN/scripts/574557-reddit-%E7%BF%BB%E8%AF%91%E5%99%A8-pro-auto)
-   或导入仓库中的 `reddit-translator-pro-auto.user.js`
-3. 打开 `https://www.reddit.com/`
-4. 按 `F2` 打开脚本面板并完成语言、引擎与自动翻译设置
+## ⚙️ Features
 
-## 发布入口
+| Feature | Description |
+|---|---|
+| 🌍 **100+ languages** | Translate to any of 100+ supported languages via Google Translate, MyMemory or DeepL |
+| 🔑 **DeepL support** | Use your own DeepL API key (Free or Pro) for higher quality translations |
+| 📖 **Bilingual mode** | See original and translated text side by side |
+| 📜 **History** | Browse your last 50 translations |
+| ⚡ **Auto-translate on scroll** | Translations appear automatically as you scroll through the feed |
+| 🔄 **Unit converter** | Automatically converts imperial ↔ metric units inline |
+| 🎨 **Custom colors** | Customize accent, text, background and success colors |
+| ⌨️ **Hotkeys** | Configurable keyboard shortcut to open/close the panel (default: `F2`) |
+| 📤 **Export / Import** | Back up and restore your settings |
+| 🏴‍☠️ **Easter eggs** | Pirate mode, Yoda mode and a surprise language button |
+| 🌐 **15 UI languages** | The interface itself supports 15 languages and auto-detects from your browser |
 
-- Greasy Fork 页面地址：<https://greasyfork.org/scripts/574557-reddit-translator-pro-auto>
-- GitHub 仓库地址：<https://github.com/Dylan-ZQL/reddit-translator-auto>
+---
 
-## 使用方法
+## 🌍 Supported UI Languages
 
-1. 进入任意 Reddit 帖子页、评论页或首页信息流
-2. 点击帖子或评论旁的翻译按钮翻译当前内容
-3. 单击右下角小地球按钮 `🌐`，可批量翻译当前屏幕附近可见内容
-4. 双击右下角小地球按钮 `🌐`，可打开设置面板
-5. 使用右下角“显示原文 / 显示译文”按钮，可在原文和译文之间切换
-6. 在设置面板中选择目标语言、翻译引擎和双语模式
-7. 如需长文本稳定性，可调整请求并发、请求频率、单次字符数和单次段落数
-8. 开启自动翻译后，脚本会在内容进入视口时自动尝试翻译
+The interface is fully translated into **15 languages** and automatically detects your browser language on first install:
 
-## 当前发布线说明
+| | Language | Code |
+|---|---|---|
+| 🇷🇺 | Русский | `ru` |
+| 🇺🇦 | Українська | `uk` |
+| 🇬🇧 | English | `en` |
+| 🇩🇪 | Deutsch | `de` |
+| 🇫🇷 | Français | `fr` |
+| 🇪🇸 | Español | `es` |
+| 🇮🇹 | Italiano | `it` |
+| 🇧🇷 | Português | `pt` |
+| 🇵🇱 | Polski | `pl` |
+| 🇹🇷 | Türkçe | `tr` |
+| 🇰🇷 | 한국어 | `ko` |
+| 🇻🇳 | Tiếng Việt | `vi` |
+| 🇸🇦 | العربية | `ar` |
+| 🇨🇳 | 中文 | `zh` |
+| 🇯🇵 | 日本語 | `ja` |
 
-`v1.0.9` 是当前正式发布版本。发布文件已由 `Reddit 翻译器 Pro 修7.js` 同步产出，当前发布线的重点包括：
+---
 
-- 发布入口统一为 `reddit-translator-pro-auto.user.js`
-- 默认体验偏向开箱即用，发布文件内的默认配置已针对自动翻译场景做过整理
-- 请求调度、分块翻译、滚动触发、缓存和历史记录能力已进入稳定可用阶段
-- 右下角小地球按钮恢复为可见内容批量翻译入口，并保留 `F2` 面板快捷键
-- 网络请求加入超时保护，异常响应解析也会回落到默认结果
-- `DeepL` 缓存键不再写入完整 API Key，降低本地存储暴露风险
-- 发布线与历史快照分离，减少仓库根目录中的版本噪音
+## 📋 Changelog
 
-当前 `Reddit 翻译器 Pro 修7.js` 与 `reddit-translator-pro-auto.user.js` 已同步。后续文档、安装说明和外部链接都应以 `reddit-translator-pro-auto.user.js` 为准。
+### v1.0.10 — Current
+- 🌍 Added 5 new UI languages: Italian, Portuguese, Korean, Vietnamese, Arabic (now 15 total)
+- 🔗 Fixed DeepL help link: now correctly points to `deepl.com/pro-api`
+- 🎨 Removed Light / Cyberpunk / Dracula theme selection — dark theme only (more stable)
+- 🌐 UI language is now auto-detected from browser/system settings on first install
+- 🔑 Full localization of DeepL API Keys and Request Limits sections in all UI languages
+- ⏱️ Request delay slider unit now localizes correctly (`ms`, `мс`, `毫秒`)
 
-## 开发与发布约定
+### v1.0.0
+- 🚀 Initial public release
 
-1. 新功能、修复和结构调整优先修改 `Reddit 翻译器 Pro 修7.js`
-2. 需要对外发布时，再整理生成 `reddit-translator-pro-auto.user.js`
-3. 发布版本号、README 说明和 `更新日志.md` 需要同步更新
-4. 历史阶段文件不再放回根目录，继续留在 `archive/`
+---
 
-## 本地验证
+## 🛠️ Usage
 
-仓库内已经保留本地验证工具：
+1. Open any Reddit post or feed
+2. Press **F2** (or your custom hotkey) to open the settings panel
+3. Select your **target language** and **translation engine**
+4. Click the **Translate** button next to any post or comment
+5. Use **bilingual mode** to see original and translated text together
 
-- `npm run pw:smoke`
-  运行 Playwright 冒烟测试
-- `npm run browser:chrome`
-  使用脚本启动 Chrome
-- `npm run browser:edge`
-  使用脚本启动 Edge
+### DeepL Setup
+1. Get a free API key at [deepl.com/pro-api](https://deepl.com/pro-api)
+2. Open the panel → paste your key in the **DeepL API Keys** field
+3. Click **Save DeepL Keys** and select DeepL as your engine
 
-如果只是安装脚本给浏览器使用，不需要这些 Node.js 工具；这些内容仅用于本地验证和回归检查。
+---
 
-## 历史文件
+## 📁 Repository Structure
 
-- `archive/Reddit 翻译器 Pro 修1.js`
-- `archive/Reddit 翻译器 Pro 修2.js`
-- `archive/Reddit 翻译器 Pro 修3.js`
-- `archive/Reddit 翻译器 Pro 修4.js`
-- `archive/Reddit 翻译器 Pro 修5.js`
-- `archive/Reddit 翻译器 Pro 修6.js`
-- `archive/reddit-translator-v1_0_0.js`
+```
+reddit-translator/
+├── reddit-translator-pro-auto.user.js   # Main userscript (install this)
+├── archive/                             # Previous development versions
+├── scripts/                             # Build & utility scripts
+├── tests/                               # Playwright tests
+└── README.md
+```
 
-这些文件用于保留脚本演进过程，不作为当前正式安装入口。
+---
 
-## 维护原则
+## 🙏 Credits & Acknowledgements
 
-- 对外发布、安装和说明，以 `reddit-translator-pro-auto.user.js` 为准
-- 日常开发和调试，以 `Reddit 翻译器 Pro 修7.js` 为准
-- 历史快照只做归档和对照，不再作为并行维护入口
-- 变更记录请参考 [更新日志.md](./更新日志.md)
+**Author & maintainer:** [ebayybe](https://github.com/ebayybe)
+
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) — free to use, modify and distribute.
+
+---
+
+<div align="center">
+
+⚠️ *Неофициальный любительский проект · Unofficial amateur project · 非官方业余项目*
+
+</div>
+
+---
+
+<details>
+<summary>🇷🇺 Русский</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Любительский пользовательский скрипт для встроенного перевода Reddit прямо в браузере.
+
+### Установка
+1. Установите [Tampermonkey](https://www.tampermonkey.net/) или [Violentmonkey](https://violentmonkey.github.io/)
+2. Нажмите **[Установить скрипт](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Подтвердите установку ✅
+
+### Возможности
+- 🌍 100+ языков перевода (Google, MyMemory, DeepL)
+- 📖 Двуязычный режим
+- 📜 История переводов
+- ⚡ Автоперевод при прокрутке
+- 🎨 Настраиваемые цвета
+- 🌐 Интерфейс на 15 языках с автоопределением
+
+### Благодарности
+**Автор:** [ebayybe](https://github.com/ebayybe)  
+**Особая благодарность [Dylan-ZQL](https://github.com/Dylan-ZQL)** — за значительный вклад в раннее развитие проекта, включая оригинальную архитектуру, систему мультиязычности, дизайн UI и интеграцию DeepL. 🫶
+
+</details>
+
+<details>
+<summary>🇺🇦 Українська</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Аматорський користувацький скрипт для вбудованого перекладу Reddit прямо у браузері.
+
+### Встановлення
+1. Встановіть [Tampermonkey](https://www.tampermonkey.net/) або [Violentmonkey](https://violentmonkey.github.io/)
+2. Натисніть **[Встановити скрипт](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Підтвердіть встановлення ✅
+
+### Можливості
+- 🌍 100+ мов перекладу (Google, MyMemory, DeepL)
+- 📖 Двомовний режим
+- 📜 Історія перекладів
+- ⚡ Автопереклад при прокрутці
+- 🎨 Налаштовувані кольори
+- 🌐 Інтерфейс на 15 мовах з автовизначенням
+
+### Подяки
+**Автор:** [ebayybe](https://github.com/ebayybe)  
+**Особлива подяка [Dylan-ZQL](https://github.com/Dylan-ZQL)** — за значний внесок у ранній розвиток проекту, включно з оригінальною архітектурою, системою мультимовності, дизайном UI та інтеграцією DeepL. 🫶
+
+</details>
+
+<details>
+<summary>🇩🇪 Deutsch</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Ein Amateur-Userscript für eingebettete Reddit-Übersetzungen direkt im Browser.
+
+### Installation
+1. Installiere [Tampermonkey](https://www.tampermonkey.net/) oder [Violentmonkey](https://violentmonkey.github.io/)
+2. Klicke auf **[Skript installieren](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Installation bestätigen ✅
+
+### Funktionen
+- 🌍 100+ Sprachen (Google, MyMemory, DeepL)
+- 📖 Zweisprachiger Modus
+- 📜 Übersetzungsverlauf
+- ⚡ Automatische Übersetzung beim Scrollen
+- 🎨 Anpassbare Farben
+- 🌐 Oberfläche in 15 Sprachen mit automatischer Erkennung
+
+### Danksagungen
+**Autor:** [ebayybe](https://github.com/ebayybe)  
+**Besonderer Dank an [Dylan-ZQL](https://github.com/Dylan-ZQL)** — für bedeutende Beiträge zur frühen Entwicklung dieses Projekts. 🫶
+
+</details>
+
+<details>
+<summary>🇫🇷 Français</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Un userscript amateur pour traduire Reddit directement dans le navigateur.
+
+### Installation
+1. Installez [Tampermonkey](https://www.tampermonkey.net/) ou [Violentmonkey](https://violentmonkey.github.io/)
+2. Cliquez sur **[Installer le script](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Confirmez l'installation ✅
+
+### Fonctionnalités
+- 🌍 100+ langues (Google, MyMemory, DeepL)
+- 📖 Mode bilingue
+- 📜 Historique des traductions
+- ⚡ Traduction automatique au défilement
+- 🎨 Couleurs personnalisables
+- 🌐 Interface en 15 langues avec détection automatique
+
+### Remerciements
+**Auteur :** [ebayybe](https://github.com/ebayybe)  
+**Remerciements spéciaux à [Dylan-ZQL](https://github.com/Dylan-ZQL)** — pour ses contributions significatives au développement initial de ce projet. 🫶
+
+</details>
+
+<details>
+<summary>🇪🇸 Español</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Un userscript amateur para traducir Reddit directamente en el navegador.
+
+### Instalación
+1. Instala [Tampermonkey](https://www.tampermonkey.net/) o [Violentmonkey](https://violentmonkey.github.io/)
+2. Haz clic en **[Instalar script](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Confirma la instalación ✅
+
+### Características
+- 🌍 100+ idiomas (Google, MyMemory, DeepL)
+- 📖 Modo bilingüe
+- 📜 Historial de traducciones
+- ⚡ Traducción automática al desplazarse
+- 🎨 Colores personalizables
+- 🌐 Interfaz en 15 idiomas con detección automática
+
+### Agradecimientos
+**Autor:** [ebayybe](https://github.com/ebayybe)  
+**Agradecimiento especial a [Dylan-ZQL](https://github.com/Dylan-ZQL)** — por sus contribuciones significativas al desarrollo inicial de este proyecto. 🫶
+
+</details>
+
+<details>
+<summary>🇵🇱 Polski</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Amatorski skrypt użytkownika do tłumaczenia Reddita bezpośrednio w przeglądarce.
+
+### Instalacja
+1. Zainstaluj [Tampermonkey](https://www.tampermonkey.net/) lub [Violentmonkey](https://violentmonkey.github.io/)
+2. Kliknij **[Zainstaluj skrypt](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. Potwierdź instalację ✅
+
+### Funkcje
+- 🌍 100+ języków (Google, MyMemory, DeepL)
+- 📖 Tryb dwujęzyczny
+- 📜 Historia tłumaczeń
+- ⚡ Automatyczne tłumaczenie podczas przewijania
+- 🎨 Konfigurowalne kolory
+- 🌐 Interfejs w 15 językach z automatycznym wykrywaniem
+
+### Podziękowania
+**Autor:** [ebayybe](https://github.com/ebayybe)  
+**Szczególne podziękowania dla [Dylan-ZQL](https://github.com/Dylan-ZQL)** — za znaczący wkład we wczesny rozwój projektu. 🫶
+
+</details>
+
+<details>
+<summary>🇹🇷 Türkçe</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+Doğrudan tarayıcıda Reddit çevirisi için amatör bir kullanıcı betiği.
+
+### Kurulum
+1. [Tampermonkey](https://www.tampermonkey.net/) veya [Violentmonkey](https://violentmonkey.github.io/) yükleyin
+2. **[Betiği yükle](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)** bağlantısına tıklayın
+3. Kurulumu onaylayın ✅
+
+### Özellikler
+- 🌍 100+ dil (Google, MyMemory, DeepL)
+- 📖 İki dilli mod
+- 📜 Çeviri geçmişi
+- ⚡ Kaydırırken otomatik çeviri
+- 🎨 Özelleştirilebilir renkler
+- 🌐 Otomatik algılamalı 15 dilde arayüz
+
+### Teşekkürler
+**Yazar:** [ebayybe](https://github.com/ebayybe)  
+**[Dylan-ZQL](https://github.com/Dylan-ZQL)'ye özel teşekkürler** — projenin erken gelişimine yaptığı önemli katkılar için. 🫶
+
+</details>
+
+<details>
+<summary>🇨🇳 中文</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+一个用于在浏览器中直接翻译 Reddit 的业余用户脚本。
+
+### 安装
+1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)
+2. 点击 **[安装脚本](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
+3. 确认安装 ✅
+
+### 功能
+- 🌍 100+ 种语言（Google、MyMemory、DeepL）
+- 📖 双语模式
+- 📜 翻译历史记录
+- ⚡ 滚动时自动翻译
+- 🎨 可自定义颜色
+- 🌐 支持 15 种界面语言，自动检测浏览器语言
+
+### 致谢
+**作者：** [ebayybe](https://github.com/ebayybe)  
+**特别感谢 [Dylan-ZQL](https://github.com/Dylan-ZQL)** — 感谢他对本项目早期开发的重要贡献，包括原始架构、多语言系统、UI 设计以及 DeepL 集成。 🫶
+
+</details>
+
+<details>
+<summary>🇯🇵 日本語</summary>
+
+## 🌐 Reddit Translator Pro Auto
+
+ブラウザで直接 Reddit を翻訳するためのアマチュアユーザースクリプト。
+
+### インストール
+1. [Tampermonkey](https://www.tampermonkey.net/) または [Violentmonkey](https://violentmonkey.github.io/) をインストール
+2. **[スクリプトをインストール](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)** をクリック
+3. インストールを確認 ✅
+
+### 機能
+- 🌍 100以上の言語（Google・MyMemory・DeepL）
+- 📖 バイリンガルモード
+- 📜 翻訳履歴
+- ⚡ スクロール時の自動翻訳
+- 🎨 カスタムカラー
+- 🌐 自動検出対応の15言語UI
+
+### 謝辞
+**作者：** [ebayybe](https://github.com/ebayybe)  
+**[Dylan-ZQL](https://github.com/Dylan-ZQL) への特別な感謝** — プロジェクトの初期開発への多大な貢献に対して。 🫶
+
+</details>
