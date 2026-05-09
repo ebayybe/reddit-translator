@@ -46,8 +46,8 @@
 // @connect      api.mymemory.translated.net
 // @connect      api.deepl.com
 // @connect      api-free.deepl.com
-// @downloadURL 
-// @updateURL 
+// @downloadURL https://raw.githubusercontent.com/ebayybe/reddit-translator/refs/heads/main/reddit-translator-pro-auto.user.js
+// @updateURL https://raw.githubusercontent.com/ebayybe/reddit-translator/refs/heads/main/reddit-translator-pro-auto.user.js
 // ==/UserScript==
 
 (function () {
