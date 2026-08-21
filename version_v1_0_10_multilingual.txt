@@ -1,0 +1,18 @@
+Reddit Translator Pro
+Version: v1.0.10
+
+🇬🇧 English: Script version v1.0.10
+🇷🇺 Русский: Версия скрипта v1.0.10
+🇺🇦 Українська: Версія скрипта v1.0.10
+🇩🇪 Deutsch: Skriptversion v1.0.10
+🇫🇷 Français: Version du script v1.0.10
+🇪🇸 Español: Versión del script v1.0.10
+🇮🇹 Italiano: Versione dello script v1.0.10
+🇧🇷 Português: Versão do script v1.0.10
+🇵🇱 Polski: Wersja skryptu v1.0.10
+🇹🇷 Türkçe: Script sürümü v1.0.10
+🇰🇷 한국어: 스크립트 버전 v1.0.10
+🇻🇳 Tiếng Việt: Phiên bản script v1.0.10
+🇸🇦 العربية: إصدار السكربت v1.0.10
+🇨🇳 中文: 脚本版本 v1.0.10
+🇯🇵 日本語: スクリプトバージョン v1.0.10
