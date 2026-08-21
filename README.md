@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/version-v1.0.10-ff4500?style=for-the-badge&logo=reddit&logoColor=white"/>
+<img src="https://img.shields.io/badge/version-v1.2.0-ff4500?style=for-the-badge&logo=reddit&logoColor=white"/>
 <img src="https://img.shields.io/badge/license-MIT-60d394?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/languages-100%2B-bd93f9?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Tampermonkey-ready-ff4500?style=for-the-badge"/>
@@ -22,7 +22,7 @@
 2. Click **[Install Script](https://raw.githubusercontent.com/ebayybe/reddit-translator/main/reddit-translator-pro-auto.user.js)**
 3. Confirm installation — done ✅
 
-> The script auto-updates when a new version is published.
+> The script checks for updates itself and will let you know when a newer version is available. Actual installation is still handled by Tampermonkey/Violentmonkey, exactly as before — see **Automatic Updates** below.
 
 ---
 
@@ -37,8 +37,11 @@
 | ⚡ **Auto-translate on scroll** | Translations appear automatically as you scroll through the feed |
 | 🔄 **Unit converter** | Automatically converts imperial ↔ metric units inline |
 | 🎨 **Custom colors** | Customize accent, text, background and success colors |
+| 🔊 **Sound effects** | Optional UI sound effects (Web Audio API, no external files) with global volume control and per-category toggles |
+| 🚩 **Offline flag icons** | Real embedded flag icons in the language pickers — no emoji, no network requests, consistent on every browser/OS |
+| 🔄 **Automatic update checks** | The script can check for newer versions and notify you, or open the update page automatically — installation itself always stays with Tampermonkey/Violentmonkey |
 | ⌨️ **Hotkeys** | Configurable keyboard shortcut to open/close the panel (default: `F2`) |
-| 📤 **Export / Import** | Back up and restore your settings |
+| 📤 **Export / Import** | Back up and restore your settings — API keys are never included in exports |
 | 🏴‍☠️ **Easter eggs** | Pirate mode, Yoda mode and a surprise language button |
 | 🌐 **15 UI languages** | The interface itself supports 15 languages and auto-detects from your browser |
 
@@ -70,7 +73,16 @@ The interface is fully translated into **15 languages** and automatically detect
 
 ## 📋 Changelog
 
-### v1.0.10 — Current
+### v1.2.0 — Current
+See the full [release notes](releases.md) for details. Highlights since v1.0.10:
+- 🔊 **New: Sound effects** — a full Web Audio API SFX system with a global on/off switch, master volume slider, 13 independently toggleable categories, 28 distinct sounds, and a "Test Sound" button. Fully independent from TTS, no external audio files
+- 🚩 **New: Offline flag icons** — Unicode emoji flags replaced with self-contained embedded SVG icons for every language, in both the Interface and Translation language pickers. Fully offline, consistent across Chrome, Firefox and any OS
+- 🔄 **New: Automatic Updates section** — the script can now check a trusted source and let you know about newer versions (*Check and open update* / *Notify me about updates* / *Disable update checks*), with a manual "Check for Updates" button. Native Tampermonkey/Violentmonkey updates remain a separate, clearly-labeled mechanism
+- 🔒 **Security fix:** DeepL API keys are no longer included in exported settings files, and are never overwritten by an import
+- 🛡️ **Stricter import validation** — every imported setting (language, theme, engine, numeric ranges, sound settings, update mode) is now validated instead of blindly trusted
+- 🎨 UI polish: responsive layout fix for the Automatic Updates section, plus dedicated click sounds for the Import and DeepL Test buttons
+
+### v1.0.10
 - 🌍 Added 5 new UI languages: Italian, Portuguese, Korean, Vietnamese, Arabic (now 15 total)
 - 🔗 Fixed DeepL help link: now correctly points to `deepl.com/pro-api`
 - 🎨 Removed Light / Cyberpunk / Dracula theme selection — dark theme only (more stable)
@@ -96,6 +108,14 @@ The interface is fully translated into **15 languages** and automatically detect
 2. Open the panel → paste your key in the **DeepL API Keys** field
 3. Click **Save DeepL Keys** and select DeepL as your engine
 
+### Automatic Updates
+The panel's **Settings → Automatic Updates** section lets you choose how the script checks for new versions:
+- **Check and open update** — checks periodically in the background and automatically opens the update page when a newer version is found
+- **Notify me about updates** — checks periodically and shows a notification, without opening anything automatically
+- **Disable update checks** — the script never checks on its own (you can still use the manual **Check for Updates** button anytime)
+
+In every mode, the script only ever detects a version number and, at most, opens a page — it never downloads or executes remote code, and it never installs anything itself. The actual installation of a new version is always handled by Tampermonkey/Violentmonkey, exactly like before.
+
 ---
 
 ## 📁 Repository Structure
@@ -106,6 +126,7 @@ reddit-translator/
 ├── archive/                             # Previous development versions
 ├── scripts/                             # Build & utility scripts
 ├── tests/                               # Playwright tests
+├── releases.md                          # Full multilingual release notes
 └── README.md
 ```
 
@@ -150,6 +171,9 @@ reddit-translator/
 - 📜 История переводов
 - ⚡ Автоперевод при прокрутке
 - 🎨 Настраиваемые цвета
+- 🔊 Звуковые эффекты интерфейса с гибкими настройками громкости и категорий
+- 🚩 Настоящие иконки флагов вместо эмодзи — работают полностью офлайн
+- 🔄 Автоматическая проверка обновлений (само обновление по-прежнему выполняет Tampermonkey/Violentmonkey)
 - 🌐 Интерфейс на 15 языках с автоопределением
 
 ### Благодарности
@@ -176,6 +200,9 @@ reddit-translator/
 - 📜 Історія перекладів
 - ⚡ Автопереклад при прокрутці
 - 🎨 Налаштовувані кольори
+- 🔊 Звукові ефекти інтерфейсу з гнучкими налаштуваннями гучності та категорій
+- 🚩 Справжні іконки прапорів замість емодзі — працюють повністю офлайн
+- 🔄 Автоматична перевірка оновлень (саме оновлення, як і раніше, виконує Tampermonkey/Violentmonkey)
 - 🌐 Інтерфейс на 15 мовах з автовизначенням
 
 ### Подяки
@@ -202,6 +229,9 @@ Ein Amateur-Userscript für eingebettete Reddit-Übersetzungen direkt im Browser
 - 📜 Übersetzungsverlauf
 - ⚡ Automatische Übersetzung beim Scrollen
 - 🎨 Anpassbare Farben
+- 🔊 Soundeffekte mit Lautstärkeregler und einzeln schaltbaren Kategorien
+- 🚩 Echte Flaggen-Icons statt Emoji — funktionieren komplett offline
+- 🔄 Automatische Update-Prüfung (die eigentliche Aktualisierung übernimmt weiterhin Tampermonkey/Violentmonkey)
 - 🌐 Oberfläche in 15 Sprachen mit automatischer Erkennung
 
 ### Danksagungen
@@ -228,6 +258,9 @@ Un userscript amateur pour traduire Reddit directement dans le navigateur.
 - 📜 Historique des traductions
 - ⚡ Traduction automatique au défilement
 - 🎨 Couleurs personnalisables
+- 🔊 Effets sonores avec réglage du volume et catégories activables séparément
+- 🚩 Vraies icônes de drapeaux au lieu d'emojis — fonctionnent entièrement hors ligne
+- 🔄 Vérification automatique des mises à jour (l'installation reste gérée par Tampermonkey/Violentmonkey)
 - 🌐 Interface en 15 langues avec détection automatique
 
 ### Remerciements
@@ -254,6 +287,9 @@ Un userscript amateur para traducir Reddit directamente en el navegador.
 - 📜 Historial de traducciones
 - ⚡ Traducción automática al desplazarse
 - 🎨 Colores personalizables
+- 🔊 Efectos de sonido con control de volumen y categorías activables por separado
+- 🚩 Iconos de banderas reales en lugar de emojis — funcionan totalmente sin conexión
+- 🔄 Comprobación automática de actualizaciones (la instalación la sigue gestionando Tampermonkey/Violentmonkey)
 - 🌐 Interfaz en 15 idiomas con detección automática
 
 ### Agradecimientos
@@ -280,6 +316,9 @@ Amatorski skrypt użytkownika do tłumaczenia Reddita bezpośrednio w przegląda
 - 📜 Historia tłumaczeń
 - ⚡ Automatyczne tłumaczenie podczas przewijania
 - 🎨 Konfigurowalne kolory
+- 🔊 Efekty dźwiękowe z regulacją głośności i osobno przełączanymi kategoriami
+- 🚩 Prawdziwe ikony flag zamiast emoji — działają całkowicie offline
+- 🔄 Automatyczne sprawdzanie aktualizacji (samą aktualizację nadal wykonuje Tampermonkey/Violentmonkey)
 - 🌐 Interfejs w 15 językach z automatycznym wykrywaniem
 
 ### Podziękowania
@@ -306,6 +345,9 @@ Doğrudan tarayıcıda Reddit çevirisi için amatör bir kullanıcı betiği.
 - 📜 Çeviri geçmişi
 - ⚡ Kaydırırken otomatik çeviri
 - 🎨 Özelleştirilebilir renkler
+- 🔊 Ses düzeyi ve ayrı ayrı açılıp kapatılabilen kategorilere sahip ses efektleri
+- 🚩 Emoji yerine gerçek bayrak simgeleri — tamamen çevrimdışı çalışır
+- 🔄 Otomatik güncelleme kontrolü (gerçek güncellemeyi hâlâ Tampermonkey/Violentmonkey yapar)
 - 🌐 Otomatik algılamalı 15 dilde arayüz
 
 ### Teşekkürler
@@ -332,6 +374,9 @@ Doğrudan tarayıcıda Reddit çevirisi için amatör bir kullanıcı betiği.
 - 📜 翻译历史记录
 - ⚡ 滚动时自动翻译
 - 🎨 可自定义颜色
+- 🔊 界面音效，支持音量调节和分类开关
+- 🚩 真实旗帜图标取代表情符号 — 完全离线可用
+- 🔄 自动检查更新（实际更新安装仍由 Tampermonkey/Violentmonkey 完成）
 - 🌐 支持 15 种界面语言，自动检测浏览器语言
 
 ### 致谢
@@ -358,6 +403,9 @@ Doğrudan tarayıcıda Reddit çevirisi için amatör bir kullanıcı betiği.
 - 📜 翻訳履歴
 - ⚡ スクロール時の自動翻訳
 - 🎨 カスタムカラー
+- 🔊 音量調整とカテゴリー別のオン/オフに対応したサウンド効果
+- 🚩 絵文字ではなく本物の国旗アイコン — 完全にオフラインで動作
+- 🔄 自動アップデート確認（実際の更新は引き続き Tampermonkey/Violentmonkey が行います）
 - 🌐 自動検出対応の15言語UI
 
 ### 謝辞
