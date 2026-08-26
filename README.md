@@ -74,7 +74,7 @@ The interface is fully translated into **15 languages** and automatically detect
 ## 📋 Changelog
 
 ### v1.2.0 — Current
-See the full [release notes](releases.md) for details. Highlights since v1.0.10:
+See the full [release notes](https://github.com/ebayybe/reddit-translator/blob/main/CHANGELOG/CHANGELOG_en.md) for details. Highlights since v1.0.10:
 - 🔊 **New: Sound effects** — a full Web Audio API SFX system with a global on/off switch, master volume slider, 13 independently toggleable categories, 28 distinct sounds, and a "Test Sound" button. Fully independent from TTS, no external audio files
 - 🚩 **New: Offline flag icons** — Unicode emoji flags replaced with self-contained embedded SVG icons for every language, in both the Interface and Translation language pickers. Fully offline, consistent across Chrome, Firefox and any OS
 - 🔄 **New: Automatic Updates section** — the script can now check a trusted source and let you know about newer versions (*Check and open update* / *Notify me about updates* / *Disable update checks*), with a manual "Check for Updates" button. Native Tampermonkey/Violentmonkey updates remain a separate, clearly-labeled mechanism
